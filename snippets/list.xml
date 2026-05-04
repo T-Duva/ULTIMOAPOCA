@@ -24,6 +24,20 @@
                 name="init"
                 order="3"
                 repeats="true"/>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="4"
+                name="draw"
+                order="2"
+                repeats="true"/>
+            <event
+                displayName="Step"
+                enabled="true"
+                id="5"
+                name="step"
+                order="1"
+                repeats="true"/>
         </events>
     </snippet>
     <snippet
