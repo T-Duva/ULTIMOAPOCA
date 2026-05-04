@@ -30,26 +30,9 @@
     <group eventID="3" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <if comment="false" x="0" y="0">
-                    <group eventID="3" id="-1">
-                        <scene-change-through comment="false" x="0" y="0">
-                            <scene eid="4" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="5"/>
-                        </scene-change-through>
-                    </group>
-                    <get-val-5-1 comment="false" id="0" x="0" y="0"/>
-                </if>
-                <else comment="false" x="0" y="0">
-                    <group eventID="3" id="-1">
-                        <show-alert comment="false" x="0" y="0">
-                            <tostring comment="false" id="0" x="0" y="0">
-                                <int id="0" val="PROHIBIDO PASAR"/>
-                            </tostring>
-                            <int id="1" val="Primero consigue todas las medallas necesarias"/>
-                        </show-alert>
-                    </group>
-                </else>
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="var _md16:Int=(untyped Engine._playerMedallas==null)?0:Std.parseInt(Std.string(untyped Engine._playerMedallas)); if(_md16 &amp;gt;= 16){switchScene(2, null, createCrossfadeTransition(5));}else{showAlert(&amp;quot;PROHIBIDO PASAR&amp;quot;, &amp;quot;Hola viajero! Necesitaras 16 medallas para pasar por el portal. Vuelve pronto!&amp;quot;);}"/>
+                </custom-code>
             </group>
             <actortype eid="0" id="0"/>
             <actortype eid="5" id="1"/>
