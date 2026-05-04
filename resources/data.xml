@@ -606,6 +606,24 @@
                 sensor="true"/>
         </anim>
     </sprite>
+    <background
+        atlasID="0"
+        desc=""
+        durations="1200,2000000"
+        dx="-0.0"
+        dy="-0.0"
+        height="760"
+        id="91"
+        name="Historia1"
+        numframes="2"
+        oid="-1"
+        readable="false"
+        repeats="false"
+        resized="false"
+        shared="false"
+        width="1280"
+        xpf="1.0"
+        ypf="1.0"/>
     <music
         atlasID="0"
         desc=""
@@ -618,6 +636,24 @@
         stream="false"
         type="mp3"
         volume="1"/>
+    <background
+        atlasID="0"
+        desc=""
+        durations="1200,2000000"
+        dx="-0.0"
+        dy="-0.0"
+        height="760"
+        id="88"
+        name="Instrucciones1"
+        numframes="2"
+        oid="-1"
+        readable="false"
+        repeats="false"
+        resized="false"
+        shared="false"
+        width="1280"
+        xpf="1.0"
+        ypf="1.0"/>
     <actor
         adamp="0.0"
         ascale="true"
@@ -1196,6 +1232,24 @@
                 sensor="false"/>
         </anim>
     </sprite>
+    <background
+        atlasID="0"
+        desc=""
+        durations="100"
+        dx="-0.0"
+        dy="-0.0"
+        height="760"
+        id="87"
+        name="menu"
+        numframes="1"
+        oid="-1"
+        readable="false"
+        repeats="false"
+        resized="false"
+        shared="false"
+        width="1280"
+        xpf="1.0"
+        ypf="1.0"/>
     <music
         atlasID="0"
         desc=""

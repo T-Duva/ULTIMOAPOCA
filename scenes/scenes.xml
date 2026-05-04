@@ -6,4 +6,6 @@
     <scene desc="" id="3" name="L2"/>
     <scene desc="" id="4" name="L3"/>
     <scene desc="" id="5" name="Batalla"/>
+    <scene desc="" id="9" name="Instrucciones"/>
+    <scene desc="" id="10" name="Historia"/>
 </scenes>

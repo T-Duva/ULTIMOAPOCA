@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene
+    depth="1"
+    desc=""
+    eventsnippetid="43"
+    extheight="14300"
+    extwidth="43008"
+    extx="-1024"
+    exty="-572"
+    format="4.0.1"
+    gravx="-0.0"
+    gravy="0.0"
+    height="13156"
+    id="8"
+    name="instrucciones"
+    revision=""
+    savecount="0"
+    tiled="1"
+    tileh="572"
+    tilew="1024"
+    type="standard"
+    width="40960">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <layer
+            blendMode="normal"
+            color="100,168,234"
+            id="0"
+            locked="false"
+            name="Layer 0"
+            opacity="100"
+            order="0"
+            scrollFactorX="1.0"
+            scrollFactorY="1.0"
+            visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors/>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

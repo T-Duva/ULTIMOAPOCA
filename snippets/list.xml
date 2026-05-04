@@ -18,13 +18,6 @@
         <blocks/>
         <events>
             <event
-                displayName="SONIDO"
-                enabled="true"
-                id="3"
-                name="init"
-                order="3"
-                repeats="true"/>
-            <event
                 displayName="Drawing"
                 enabled="true"
                 id="4"
@@ -37,6 +30,13 @@
                 id="5"
                 name="step"
                 order="1"
+                repeats="true"/>
+            <event
+                displayName="sonido"
+                enabled="true"
+                id="6"
+                name="init"
+                order="3"
                 repeats="true"/>
         </events>
     </snippet>
@@ -1328,5 +1328,71 @@
         type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet
+        attachedevent="true"
+        class="scripts.SceneEvents_9"
+        classname="scripts.SceneEvents_9"
+        desc="Scene Specific Events"
+        description="Scene Specific Events"
+        design="true"
+        drawOrder="0"
+        id="44"
+        name="SceneEvents_9"
+        oid="-1"
+        package="scripts."
+        sceneid="9"
+        shared="false"
+        type="scene">
+        <blocks/>
+        <events>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="4"
+                name="draw"
+                order="2"
+                repeats="true"/>
+            <event
+                displayName="Step"
+                enabled="true"
+                id="5"
+                name="step"
+                order="1"
+                repeats="true"/>
+        </events>
+    </snippet>
+    <snippet
+        attachedevent="true"
+        class="scripts.SceneEvents_10"
+        classname="scripts.SceneEvents_10"
+        desc="Scene Specific Events"
+        description="Scene Specific Events"
+        design="true"
+        drawOrder="0"
+        id="45"
+        name="SceneEvents_10"
+        oid="-1"
+        package="scripts."
+        sceneid="10"
+        shared="false"
+        type="scene">
+        <blocks/>
+        <events>
+            <event
+                displayName="Drawing"
+                enabled="true"
+                id="4"
+                name="draw"
+                order="2"
+                repeats="true"/>
+            <event
+                displayName="Step"
+                enabled="true"
+                id="5"
+                name="step"
+                order="1"
+                repeats="true"/>
+        </events>
     </snippet>
 </pack>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val=""/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="{var mx:Float=Input.mouseX/Engine.SCALE; var my:Float=Input.mouseY/Engine.SCALE; var btns=[[506,267,276,74],[506,350,276,74],[506,433,276,74]]; for(i in 0...3){ var b=btns[i]; var bx:Int=b[0]; var by:Int=b[1]; var bw:Int=b[2]; var bh:Int=b[3]; var hover:Bool=(mx&gt;bx&amp;&amp;mx&lt;(bx+bw)&amp;&amp;my&gt;by&amp;&amp;my&lt;(by+bh)); if(hover){ g.fillColor=0x1A996600; g.fillRect(bx-6,by-6,bw+12,bh+12); }}}"/>
+                </custom-code>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val="{if(Input.mousePressed){ var mx:Float=Input.mouseX/Engine.SCALE; var my:Float=Input.mouseY/Engine.SCALE; if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;267&amp;&amp;my&lt;341){ switchScene(GameModel.get().scenes.get(1).getID(),null,createCrossfadeTransition(4.0)); }}}"/>
+                </custom-code>
+            </group>
+        </step>
+    </group>
+</groups>

@@ -2,26 +2,26 @@
 <scene
     depth="1"
     desc=""
-    eventsnippetid="1"
-    extheight="784"
-    extwidth="1344"
-    extx="-32"
-    exty="-32"
+    eventsnippetid="44"
+    extheight="18000"
+    extwidth="53760"
+    extx="-1280"
+    exty="-720"
     format="4.0.1"
     gravx="-0.0"
     gravy="0.0"
-    height="720"
-    id="0"
-    name="Menu"
+    height="16560"
+    id="9"
+    name="Instrucciones"
     revision=""
     savecount="0"
-    tiled="0"
-    tileh="32"
-    tilew="32"
+    tiled="1"
+    tileh="720"
+    tilew="1280"
     type="standard"
-    width="1280">
+    width="51200">
     <layers>
-        <color-bg blue="255" green="255" red="255"/>
+        <color-bg blue="0" green="0" red="0"/>
         <layer
             blendMode="normal"
             color="100,168,234"
@@ -29,7 +29,7 @@
             locked="false"
             name="Layer 0"
             opacity="100"
-            order="2"
+            order="1"
             scrollFactorX="1.0"
             scrollFactorY="1.0"
             visible="true"/>
@@ -38,22 +38,10 @@
             customScrollFactor="false"
             id="1"
             locked="true"
-            name="menu"
-            opacity="100"
-            order="1"
-            rid="87"
-            scrollFactorX="1.0"
-            scrollFactorY="1.0"
-            visible="true"/>
-        <background
-            blendMode="normal"
-            customScrollFactor="false"
-            id="2"
-            locked="true"
-            name="menu"
+            name="Instrucciones1"
             opacity="100"
             order="0"
-            rid="87"
+            rid="88"
             scrollFactorX="1.0"
             scrollFactorY="1.0"
             visible="true"/>
