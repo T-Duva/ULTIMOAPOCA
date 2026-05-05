@@ -15,6 +15,66 @@
         sceneid="0"
         shared="false"
         type="scene">
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="medallas"
+            hidden="false"
+            id="1"
+            name="_medallas"
+            order="0"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="permisoPortal"
+            hidden="false"
+            id="2"
+            name="_permisoPortal"
+            order="1"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedNpc"
+            hidden="false"
+            id="3"
+            name="_firedNpc"
+            order="2"/>
+        <boolean
+            default="false"
+            defaultValue="false"
+            desc=""
+            dropdown=""
+            fullname="firedPortal"
+            hidden="false"
+            id="4"
+            name="_firedPortal"
+            order="3"/>
+        <text
+            default=""
+            defaultValue=""
+            desc=""
+            dropdown=""
+            fullname="mensajeHUD"
+            hidden="false"
+            id="5"
+            name="_mensajeHUD"
+            order="4"/>
+        <number
+            default="0.0"
+            defaultValue="0.0"
+            desc=""
+            dropdown=""
+            fullname="mensajeTimer"
+            hidden="false"
+            id="6"
+            name="_mensajeTimer"
+            order="5"/>
         <blocks/>
         <events>
             <event
@@ -34,9 +94,9 @@
             <event
                 displayName="sonido"
                 enabled="true"
-                id="6"
+                id="7"
                 name="init"
-                order="3"
+                order="4"
                 repeats="true"/>
         </events>
     </snippet>

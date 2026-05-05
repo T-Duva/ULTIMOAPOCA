@@ -29,7 +29,7 @@
             locked="false"
             name="Layer 0"
             opacity="100"
-            order="1"
+            order="2"
             scrollFactorX="1.0"
             scrollFactorY="1.0"
             visible="true"/>
@@ -37,6 +37,18 @@
             blendMode="normal"
             customScrollFactor="false"
             id="1"
+            locked="true"
+            name="credts"
+            opacity="100"
+            order="1"
+            rid="92"
+            scrollFactorX="1.0"
+            scrollFactorY="1.0"
+            visible="true"/>
+        <background
+            blendMode="normal"
+            customScrollFactor="false"
+            id="2"
             locked="true"
             name="credts"
             opacity="100"
