@@ -53,7 +53,7 @@
         <actor
             a="0.0"
             aid="0"
-            c="true"
+            c="false"
             group="3"
             id="0"
             name="jUGADOR"
@@ -62,35 +62,7 @@
             sy="0.3"
             x="614"
             y="608"
-            z="0">
-            <snippets>
-                <s enabled="true" id="6">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                    <prop id="32" list="0" val="down"/>
-                    <prop id="33" list="0" val="left"/>
-                    <prop id="34" list="0" val="right"/>
-                    <prop id="38" list="0" val="0.0"/>
-                    <prop id="39" list="0" val="0.0"/>
-                    <prop id="40" list="0" val="true"/>
-                    <prop id="11" list="0" val="5.0"/>
-                    <prop id="44" list="0" val="false"/>
-                    <prop id="45" list="0" val="false"/>
-                    <prop id="46" list="0" val="true"/>
-                    <prop id="47" list="0" val="false"/>
-                    <prop id="49" list="0" val="false"/>
-                    <prop id="50" list="0" val="Arriba"/>
-                    <prop id="51" list="0" val="Arriba"/>
-                    <prop id="52" list="0" val="Abajo"/>
-                    <prop id="53" list="0" val="Abajo"/>
-                    <prop id="54" list="0" val="Izquierda"/>
-                    <prop id="55" list="0" val="Izquierda"/>
-                    <prop id="56" list="0" val="Derecha"/>
-                    <prop id="57" list="0" val="Derecha"/>
-                    <prop id="58" list="0" val="true"/>
-                    <prop id="31" list="0" val="up"/>
-                </s>
-            </snippets>
-        </actor>
+            z="0"/>
         <actor
             a="0.0"
             aid="5"

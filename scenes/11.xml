@@ -2,24 +2,24 @@
 <scene
     depth="1"
     desc=""
-    eventsnippetid="3"
-    extheight="784"
-    extwidth="1344"
-    extx="-32"
-    exty="-32"
+    eventsnippetid="46"
+    extheight="19000"
+    extwidth="53760"
+    extx="-1280"
+    exty="-760"
     format="4.0.1"
     gravx="-0.0"
     gravy="0.0"
-    height="720"
-    id="2"
+    height="17480"
+    id="11"
     name="Creditos"
     revision=""
     savecount="0"
-    tiled="0"
-    tileh="32"
-    tilew="32"
+    tiled="1"
+    tileh="760"
+    tilew="1280"
     type="standard"
-    width="1280">
+    width="51200">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
         <layer
