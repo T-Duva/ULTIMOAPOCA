@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups format="1">
-	<group eventID="21" id="0">
-		<init comment="false" x="15" y="15">
-			<group eventID="21" id="-1">
-				<custom-code comment="false" x="0" y="0">
-					<int id="0" val=""/>
-				</custom-code>
-			</group>
-		</init>
-	</group>
-	<group eventID="22" id="0">
-		<step comment="false" x="15" y="15">
-			<group eventID="22" id="-1">
-				<custom-code comment="false" x="0" y="0">
-					<int id="0" val=""/>
-				</custom-code>
-			</group>
-		</step>
-	</group>
-	<group eventID="23" id="0">
-		<draw comment="false" x="15" y="15">
-			<group eventID="23" id="-1">
-				<custom-code comment="false" x="0" y="0">
-					<int id="0" val=""/>
-				</custom-code>
-			</group>
-		</draw>
-	</group>
+    <group eventID="21" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="21" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val=""/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="22" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="22" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val=""/>
+                </custom-code>
+            </group>
+        </step>
+    </group>
+    <group eventID="23" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="23" id="-1">
+                <custom-code comment="false" x="0" y="0">
+                    <int id="0" val=""/>
+                </custom-code>
+            </group>
+        </draw>
+    </group>
 </groups>
