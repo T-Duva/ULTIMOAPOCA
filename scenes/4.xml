@@ -52,19 +52,6 @@
     <actors>
         <actor
             a="0.0"
-            aid="1"
-            c="false"
-            group="3"
-            id="5"
-            name="Portal_Nivel 1"
-            order="0"
-            sx="0.2"
-            sy="0.2"
-            x="1060"
-            y="-116"
-            z="0"/>
-        <actor
-            a="0.0"
             aid="0"
             c="false"
             group="3"
@@ -75,6 +62,19 @@
             sy="0.4"
             x="620"
             y="617"
+            z="0"/>
+        <actor
+            a="0.0"
+            aid="1"
+            c="false"
+            group="3"
+            id="5"
+            name="Portal_Nivel 1"
+            order="0"
+            sx="0.2"
+            sy="0.2"
+            x="1060"
+            y="-116"
             z="0"/>
         <actor
             a="0.0"

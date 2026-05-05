@@ -13,7 +13,7 @@
         <draw comment="false" x="15" y="15">
             <group eventID="4" id="-1">
                 <custom-code comment="false" x="0" y="0">
-                    <int id="0" val="{var mx:Float=Input.mouseX/Engine.SCALE; var my:Float=Input.mouseY/Engine.SCALE; var btns=[[506,267,276,74],[506,359,276,74],[506,451,276,74]]; for(i in 0...3){ var b=btns[i]; var bx:Int=b[0]; var by:Int=b[1]; var bw:Int=b[2]; var bh:Int=b[3]; var hover:Bool=(mx&gt;bx&amp;&amp;mx&lt;(bx+bw)&amp;&amp;my&gt;by&amp;&amp;my&lt;(by+bh)); if(hover){ g.fillColor=0x44FFCC00; g.drawRect(bx,by,bw,bh); }}}"/>
+                    <int id="0" val="{var mx:Float=Input.mouseX/Engine.SCALE;var my:Float=Input.mouseY/Engine.SCALE;var btns=[[506,267,276,74],[506,359,276,74],[506,451,276,74]];for(i in 0...3){var b=btns[i];var bx:Int=b[0];var by:Int=b[1];var bw:Int=b[2];var bh:Int=b[3];var hover:Bool=(mx&gt;bx&amp;&amp;mx&lt;(bx+bw)&amp;&amp;my&gt;by&amp;&amp;my&lt;(by+bh));if(hover){g.fillColor=0x44FFCC00;g.drawRect(bx,by,bw,bh);}}}"/>
                 </custom-code>
             </group>
         </draw>
@@ -22,7 +22,7 @@
         <step comment="false" x="15" y="15">
             <group eventID="5" id="-1">
                 <custom-code comment="false" x="0" y="0">
-                    <int id="0" val="{if(Input.mousePressed){ var mx:Float=Input.mouseX/Engine.SCALE; var my:Float=Input.mouseY/Engine.SCALE; if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;267&amp;&amp;my&lt;341){ switchScene(GameModel.get().scenes.get(1).getID(),null,createCrossfadeTransition(4.0)); } if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;359&amp;&amp;my&lt;433){ switchScene(GameModel.get().scenes.get(10).getID(),null,createCrossfadeTransition(1.0)); } if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;451&amp;&amp;my&lt;525){ switchScene(GameModel.get().scenes.get(9).getID(),null,createCrossfadeTransition(1.0)); }}}"/>
+                    <int id="0" val="{if(Input.mousePressed){var mx:Float=Input.mouseX/Engine.SCALE;var my:Float=Input.mouseY/Engine.SCALE;if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;267&amp;&amp;my&lt;341){switchScene(GameModel.get().scenes.get(1).getID(),null,createCrossfadeTransition(4.0));}if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;359&amp;&amp;my&lt;433){switchScene(GameModel.get().scenes.get(10).getID(),null,createCrossfadeTransition(1.0));}if(mx&gt;506&amp;&amp;mx&lt;782&amp;&amp;my&gt;451&amp;&amp;my&lt;525){switchScene(GameModel.get().scenes.get(9).getID(),null,createCrossfadeTransition(1.0));}}}"/>
                 </custom-code>
             </group>
         </step>
