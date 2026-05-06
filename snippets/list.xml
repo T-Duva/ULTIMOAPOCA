@@ -1465,4 +1465,58 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet
+        actorid="59"
+        attachedevent="true"
+        class="scripts.ActorEvents_59"
+        classname="scripts.ActorEvents_59"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="48"
+        name="ActorEvents_59"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="67"
+        attachedevent="true"
+        class="scripts.ActorEvents_67"
+        classname="scripts.ActorEvents_67"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="49"
+        name="ActorEvents_67"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet
+        actorid="93"
+        attachedevent="true"
+        class="scripts.ActorEvents_93"
+        classname="scripts.ActorEvents_93"
+        desc="Actor Specific Events"
+        description="Actor Specific Events"
+        design="true"
+        drawOrder="0"
+        id="50"
+        name="ActorEvents_93"
+        oid="-1"
+        package="scripts."
+        shared="false"
+        type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
 </pack>

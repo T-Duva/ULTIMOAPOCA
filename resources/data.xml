@@ -211,7 +211,7 @@
         bodytype="0"
         continuous="true"
         desc=""
-        eventsnippetid="0"
+        eventsnippetid="48"
         fixedrot="true"
         fric="0.2"
         gid="3"
@@ -243,7 +243,7 @@
             across="1"
             down="1"
             durations="100"
-            height="559"
+            height="1024"
             id="0"
             loop="true"
             name="Animation 0"
@@ -252,7 +252,7 @@
             originy="279"
             sync="false"
             version="2"
-            width="1024">
+            width="1025">
             <poly
                 data="4,0,559,1024,559,1024,0,0,0"
                 density="0.1"
@@ -391,7 +391,7 @@
         bodytype="0"
         continuous="true"
         desc=""
-        eventsnippetid="0"
+        eventsnippetid="49"
         fixedrot="true"
         fric="0.2"
         gid="3"
@@ -423,7 +423,7 @@
             across="1"
             down="1"
             durations="100"
-            height="447"
+            height="1024"
             id="0"
             loop="true"
             name="Animation 0"
@@ -432,7 +432,7 @@
             originy="223"
             sync="false"
             version="2"
-            width="870">
+            width="1025">
             <poly
                 data="4,0,447,870,447,870,0,0,0"
                 density="0.1"
@@ -654,6 +654,66 @@
         stream="false"
         type="mp3"
         volume="1"/>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="true"
+        desc=""
+        eventsnippetid="50"
+        fixedrot="false"
+        fric="0.2"
+        gid="3"
+        id="93"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="Inmovilizar_raices"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="94"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="94"
+        name="Inmovilizar_raices"
+        readable="false"
+        shared="false">
+        <anim
+            across="2"
+            down="2"
+            durations="800,800,100000"
+            height="816"
+            id="0"
+            loop="true"
+            name="Inmovilizar_raices"
+            numframes="3"
+            originx="463"
+            originy="204"
+            sync="false"
+            version="2"
+            width="1852">
+            <poly
+                data="4,0,0,863,0,863,556,0,556"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
     <background
         atlasID="0"
         desc=""
