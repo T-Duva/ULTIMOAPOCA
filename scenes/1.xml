@@ -226,8 +226,8 @@
             id="0"
             name="jUGADOR"
             order="0"
-            sx="0.3"
-            sy="0.3"
+            sx="0.6"
+            sy="0.6"
             x="600"
             y="620"
             z="0">
@@ -257,6 +257,7 @@
                     <prop id="58" list="0" val="true"/>
                     <prop id="31" list="0" val="up"/>
                 </s>
+                <s enabled="true" id="47"/>
             </snippets>
         </actor>
         <actor
