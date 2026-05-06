@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_AnchortoScreen"
+    classname="scripts.Design_0_0_AnchortoScreen"
+    desc="Make the actor&apos;s position relative to the screen."
+    description="Make the actor&apos;s position relative to the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Anchor to Screen"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="2147483647"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

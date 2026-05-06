@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-joystick
+version: 9724f0bf6e225d9775b9abaa5123f5cf00bec35b
+tags: stencyl_engine,base_bundle

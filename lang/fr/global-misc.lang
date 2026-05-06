@@ -1,0 +1,177 @@
+
+# LEGAL
+cp=© Copyright 2009 Stencyl, SARL. Tous droits réservés. Stencyl, le logo Stencyl et le c-denté Stencyl sont des marques déposées par Stencyl, SARL aux États-Unis et/ou dans tout autre pays. L'utilisation de StencylWorks est régit par notre Contrat de Licence Utilisateur Final (CLUF).
+# MISC
+progress=Progression
+statusbar=Barre de Statut
+welcome.newgame=Créer un nouveau Jeu...
+welcome.importgame=Importer le Jeu...
+welcome.exportgame=Exporter le Jeu...
+welcome.opengame=Ouvrir Jeu
+welcome.tabtitle=Centre d'Accueil
+welcome.title1=Mes Jeux
+welcome.title2=Mes Kits
+welcome.published=Mes Jeux Publiés
+# LOADING
+load.loading=Chargement
+load.lnf=Apparence
+load.ui=Interface
+# PHYSICS UNITS (Leave these as is)
+kg=kg
+m=m
+n=n
+s=s
+kg.m2=kg m<0>
+pixels=pixels
+# DEBUG
+crusher.prompt=Voulez-vous optimiser la taille de <0>?
+crusher.prompt.i=Vous devriez faire une sauvagarde de secours avant de procéder.
+crusher.success=Stencyl a terminé l'optimisation de la taille de votre Jeu.
+logger.success=A écrit les Logs à l'endroit suivant:
+logger.fail=Les logs n'ont pas pu être écrits dans la location choisi.
+# FEEDBACK
+feedback.ask=Posez Nous une Question
+feedback.bug=Reporter un Bug
+feedback.sugg=Suggestion
+feedback.stuck=Je suis bloqué
+feedback.other=Autre
+feedback.title=Sommaire
+feedback.msg=Message
+feedback.comments=Vos Commentaires
+feedback.info=Soyez aussi précis que possible. Si vous expérimentez un problème, décrivez le afin que nous puissions le reproduire.
+feedback.info2=Nous vous recontacterons par mail au besoin.
+feedback.success=Merci de nous avoir soumis votre suggestion ou retour. Un membre de notre équipe va entrer en contact avec vous par courriel au besoin.
+# CALL
+call.title=Demande d'Aide
+call.subtitle=Bloqué avec quelque chose? L'Aide est juste à un clique de là.
+call.forums=Demandez sur le Forum
+call.forums2=Votre meilleur chance pour obtenir une réponse rapidement.
+call.pedia=Stencylpedia
+call.pedia2=Le guide indispensable à propos de Stencyl.
+call.chat=Chat
+call.chat2=Parlez en temps réel avec d'autres utilisateurs de Stencyl.
+# HELP
+help.gui.prev=Page Précédente
+help.gui.next=Page Suivante
+help.error.img=Ne parvient pas à charger l'image.
+# TIME
+date.short=MMM d, yyyy
+date.realtime=h:mm:ss a
+today=Ajourd'hui
+yesterday=Hier
+hours.ago=<0> heures auparavant
+# TEMPORARY
+temp.followinst=Suivez ces instructions.
+temp.resourcepack=Pour ajouter une ressource à un paque, faites un clic droit sur la ressource et choisissez l'option 'Ajouter au Pack' du menu contextuel.
+# SIGN OUT
+signout.prompt=Stencyl va maintenant fermer pour finaliser la déconnexion.
+signout.prompt.i=Il vous sera demandé de sauvegarder votre Jeu si vous en avez un d'ouvert.
+# DIALOGS
+image.jpg=Image JPEG
+image.gif=Image GIF
+image.tiff=Image TIFF
+image.png=Image PNG
+# DOWNLOADER
+downloader.generic=Téléchargement...
+downloader.title=Téléchargement <0>...
+downloader.fail=Echec dans le téléchargement ou la sauvegarde : <0>
+downloader.success=<0> a été téléchargé avec succés.
+downloader.caches=Les caches
+downloader.pencyl=Pencyl - Editeur d'Images
+downloader.pencyl.title=Téléchargement Pencyl
+downloader.pencyl.desc=Pencyl est un éditeur basique d'images. Cliquer sur OK pour télécharger. Si vous ne voyez pas la barre de progression, glissez cette fenêtre sur le côté. 
+downloader.pencyl.error=Pencyl n'a pas pu être installé. Partagez vos logs sur les forums.
+downloader.pencyl.success=Pencyl n'a pas pu être installé. Répétez votre action précédente pour commencer à éditer.
+downloader.pixelitor=Pixelitor - Editeur d'Images
+downloader.pixelitor.title=Download Pixelitor
+downloader.pixelitor.desc=Pixelitor est un éditeur basique d'images. Cliquer sur OK pour télécharger. Si vous ne voyez pas la barre de progression, glissez cette fenêtre sur le côté. 
+downloader.pixelitor.error=Pixelitor n'a pas pu être installé. Partagez vos logs sur les forums.
+downloader.pixelitor.success=Pixelitor n'a pas pu être installé. Répétez votre action précédente pour commencer à éditer.
+# EXTENSIONS
+extensions.engine=Extensions du Moteur
+extensions.toolset=Extensions des Outils
+extensions.repo=Dépôts des Extensions 
+extensions.title=Extensions
+extensions.more=Plus d'Extensions...
+extensions.update.all=Mettre tout à jour
+# EXTERNAL APPS
+external.image.send=Envoi vers l'éditeur d'images...
+external.image.error=Echec de l'ouverture d'éditeur d'images
+external.image.error.desc=Verifier dans Fichier > Préférences > Editeur  que votre éditeur d'images est valide.
+# BUILDING
+build.swf.generate=Génération du SWF...
+build.swf.finalize=Finalisation du SWF...
+build.swf.behaviors=Génération du SWF (<0>%)
+build.resource.error1=N'a pas pu sauvegarder le listing des Ressources.
+build.resource.error2=Fermez et ouvrez de nouveau le jeu. Si cela échoue, postez les logs sur les forums et mentionnez ce message.
+build.resource.error3=Echec lors de la sauvegarde de un ou plusieurs ressources.
+build.atlas.error1=Atlas (<0>) excède la taille de 2048 x 2048.
+build.atlas.error2=Veuillez partager l'atlas en 2 ou plus petits atlas.
+# CHROME
+build.chrome.title=Publiez sur le Web Store Chrome
+build.chrome.icon16=Icône 16 x 16
+build.chrome.icon128=Icône 128 x 128
+build.chrome.error.icon1=L'icône 16 x 16 soit n'existe pas, n'est pas une image ou ne fait pas la taille 16 x 16.
+build.chrome.error.icon2=L'icône 128 x 128 soit n'existe pas, n'est pas une image ou ne fait pas la taille 128 x 128.
+build.chrome.error=Incapable d'exporter.
+build.chrome.error.info=Vérifiez vos logs. Les icônes que vous avez choisies n'existent peut-être pas.
+build.chrome.done=Suivez les instructions Google pour publier le jeu.
+build.chrome.done.info=Nous allons vous montrer le fichier ZIP que vous allez charger sur Google.
+build.chrome.done.error=Incapable d'exporter. Vérifiez vos logs et assurez-vous que le fichier suivant existe.
+# HAXE
+build.hx.eventsfor=Evènements pour '<0>'
+build.hx.error.sound=Les sons pour les jeux desktop doivent être importés en format OGG.
+build.hx.error.sound.i=Importer un OGG pour: <0>
+build.hx.error.actor=Les acteurs ne peuvent pas avoir d'animations avec 0 image.
+build.hx.error.actor.i=<0> a une animation de 0 image ('<1>').
+build.hx.msg.building=Construction ...
+build.hx.msg.finalizing=Finalisation ...
+build.hx.msg.compiling=Compilation ...
+build.hx.msg.launching=Lancement ...
+build.hx.msg.copying=Copie ...
+build.hx.msg.success=Votre jeu a été exporté.
+build.hx.msg.install=Installation <0> de <1>
+build.hx.msg.fail=Echec de l'exportation du jeu à la location demandée. (Vérifiez vos logs)
+build.hx.error.compile=Erreurs de compilation
+build.hx.error.compile.snippet=Erreurs de Comportement
+build.hx.error.compile.snippet.help=Erreurs dans les Comportements. Cliquez sur l'un d'entre eux pour l'ouvrir.
+build.hx.error.compile.freeform= Erreurs dans le code libre
+build.hx.error.compile.freeform.help=Erreurs dans le code libre. Cliquez sur l'un d'entre eux pour ouvrir le code.
+build.hx.error.compile.extension=Erreurs dans les extensions moteurs.
+build.hx.error.compile.extension.help=Une extension moteur a échoué à la compilation. L'extension doit être réparé, ou elle est incompatible avec votre version Stencyl ou la plateforme ciblée..
+build.hx.error.compile.other=Autres Erreurs
+build.hx.error.compile.other.help=Le jeu n'a pas pu être compilé à cause d'une erreur dans le moteur. Veuillez générer les logs et postez les sur le forum.
+build.hx.error.generic=Encountered errors while building your game.
+build.hx.error.generic.i=Vérifiez les logs et postez les sur le forum. <0>
+build.hx.error.generic.i2=Veuillez décrire ce que vous étiez en train de faire. Soyez le plus précis possible. <0>
+build.hx.error.behavior=Des erreurs ont été rencontrés lors de la construction du jeu. Les comportement problématiques vont maintenant s'ouvrir. 
+build.hx.error.sound=Erreur d'encodage MP3
+build.hx.error.sound.i=Seuls les MP3 Layer-II sont supportés dans Flash. Vous avez fourni un MP3 Layer-I ou Layer-II.
+build.hx.error.sound.i2=Seuls les MP3 Layer-II sont supportés dans Flash. Vous avez fourni un MP3 Layer-I ou Layer-II : <0>.
+build.hx.error.sound.ogg=Cette plateforme requiert des sons OGG.
+build.hx.error.sound.ogg.i= Importez les sons comme OGG. Le son problématique va maintenant s'ouvrir.
+build.hx.error.sound.mp3=Cette plateforme requiert des sons MP3.
+build.hx.error.sound.mp3.i=Importez vos sons comme MP3. Le son problématique son va maintenant s'ouvrir.
+build.hx.error.server=Le serveur web n'a pas pu démarrer comme le port 18254 est déjà utilisé ou bloqué.
+build.hx.error.server2=Sur Windows, vous pouvez avoir une fenêtre de dialogue du Pare-feu Windows. Cliquez sur 'Autoriser l'accés' pour continuer.
+build.hx.msg.js=Note : Vous pourriez avoir besoin de charger le jeu sur un serveur web pour pourvoir l'exécuter.
+build.hx.error.amd=Version différente sur l'Appareil <-> Ordinateur
+build.hx.error.amd.i=La version de votre appareil iOS doit concorder avec celui de votre ordinateur. ("AMDeviceInstallApplication failed: -402653058")
+build.hx.error.cltools=Echec de la construction, de l'App ("format fichier de l'objet non reconnu, invalide ou inapproprié")
+build.hx.error.cltools.i=Installer la ligne de commande Xcode (Xcode > Préférences > Téléchargements)
+build.hx.error.devicedir=N'a pas pu localiser le répertoire du support de l'appareil (DeviceSupport)
+build.hx.error.devicedir.i=Dans Xcode.app, copiez la plus récente version du répertoire iOS et renommez le en "Latest" (See: http://community.stencyl.com/index.php/topic,17240.15.html)
+# HAXE - JDK
+build.hx.jdk.title=Installation JDK de Java
+build.hx.jdk.required=Stencyl nécessite le JDK de Java <0> ou plus pour pouvoir utiliser cette fonctionnalité.
+build.hx.jdk.required.exact=Stencyl nécessite le JDK Java <0> pour pouvoir utiliser cette fonctionnalité.
+build.hx.jdk.install=Aucun JDK a été trouvé. Voulez-vous l'installer ?
+build.hx.jdk.reinstall=Un JDK  Java est déjà installé. Voulez-vous le réinstaller ?
+build.hx.jdk.orcale=Installer le JDK de Java à partir d'Oracle.
+build.hx.jdk.act1=Votre navigateur web va s'ouvrir.
+build.hx.jdk.act2=Téléchargez et installez le JDK de Java. Exécuter le jeu de nouveau pour pouvoir continuer.
+build.hx.jdk.act2.locate=Téléchargez et installez le JDK de Java. Ensuite localisez le répertoire JDK.
+build.hx.jdk.locate=Localisez le répertoire JDK de Java (ex: 'jdk-8-oracle-x64')
+build.hx.jdk.locate.notvalid=Désolé, ce répertoire n'est pas une installation valide de JDK.
+build.hx.jdk.locate.tryagain=Voulez-vous chercher encore ?
+build.hx.jdk.locate.tryagainbutton=Essayez un autre répertoire

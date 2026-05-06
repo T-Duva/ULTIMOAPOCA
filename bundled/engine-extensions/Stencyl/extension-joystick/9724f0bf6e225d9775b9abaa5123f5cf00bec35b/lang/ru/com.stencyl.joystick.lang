@@ -1,0 +1,8 @@
+x=x
+y=y
+joystick-set-xy=Установить %0 для джойстика в %1 [c:mobile]
+joystick-set-xy.help=Задать позицию для джойстика (Только для фиксированного режима. Настраивается в «Настройках игры для мобильного»)
+block.enable=Разрешить
+block.disable=Запретить
+joystick-show-hide=%0 джойстик [c:mobile]
+joystick-show-hide.help=Разрешить/запретить джойстик.

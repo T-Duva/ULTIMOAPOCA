@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-10"
+    blocktype="ACTION"
+    code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelHeight&quot;, []);"
+    desc=""
+    global="false"
+    gui="set label height to %1 for %0"
+    id="10"
+    message="SetLabelHeight"
+    name="SetLabelHeight"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+    <blank name="height" order="1" type="number"/>
+</custom-block>

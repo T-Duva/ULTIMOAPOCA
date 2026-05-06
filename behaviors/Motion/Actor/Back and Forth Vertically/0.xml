@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_BackandForthVertically"
+    classname="scripts.Design_0_0_BackandForthVertically"
+    desc="Makes the actor move back and forth vertically."
+    description="Makes the actor move back and forth vertically."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Back and Forth Vertically"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Start"
+        hidden="true"
+        id="13"
+        name="_Start"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="End"
+        hidden="true"
+        id="15"
+        name="_End"
+        order="2"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The movement speed."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="16"
+        name="_Speed"
+        order="3"/>
+    <number
+        default="100.0"
+        defaultValue="100.0"
+        desc="The distance the actor will be moving up."
+        dropdown=""
+        fullname="Distance Up"
+        hidden="false"
+        id="17"
+        name="_DistanceUp"
+        order="5"/>
+    <number
+        default="100.0"
+        defaultValue="100.0"
+        desc="The distance the actor will be moving down."
+        dropdown=""
+        fullname="Distance Down"
+        hidden="false"
+        id="18"
+        name="_DistanceDown"
+        order="6"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The direction in which the actor will be moving when created."
+        dropdown="Up=-1&#10;Down=1"
+        fullname="Initial Direction"
+        hidden="false"
+        id="19"
+        name="_InitialDirection"
+        order="4"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will change the movement direction when colliding.&lt;br /&gt;&#10;If unselected, the actor will try to keep on moving in the current direction."
+        dropdown=""
+        fullname="Change Direction on Collision"
+        hidden="false"
+        id="20"
+        name="_ChangeDirectiononCollision"
+        order="7"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="2"
+            name="draw"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Actor - Any"
+            enabled="true"
+            id="4"
+            name="collide"
+            order="3"
+            repeats="true"/>
+    </events>
+</snippet>

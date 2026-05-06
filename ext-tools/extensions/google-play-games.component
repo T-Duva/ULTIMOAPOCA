@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-google-play-games
+version: ef6eef56bf13617f829426b94d04c34b0ad94e30
+tags: stencyl_engine,base_bundle

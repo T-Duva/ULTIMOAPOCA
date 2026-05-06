@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_CustomMouseCursor"
+    classname="scripts.Design_0_0_CustomMouseCursor"
+    desc="Allows you to change or hide the mouse cursor.&lt;br/&gt;"
+    description="Allows you to change or hide the mouse cursor.&lt;br/&gt;"
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Custom Mouse Cursor"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <actortype
+        default=""
+        defaultValue=""
+        desc="The actor type to use as a mouse cursor.&lt;br/&gt;&#10;Only used when &lt;var&gt;Cursor Mode&lt;/var&gt; is set to &lt;var&gt;Custom&lt;/var&gt;."
+        dropdown=""
+        fullname="Custom Cursor"
+        hidden="false"
+        id="3"
+        name="_CustomCursor"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="A horizontal offset at which the custom cursor is displayed.&lt;br/&gt;&#10;"
+        dropdown=""
+        fullname="X-Offset"
+        hidden="false"
+        id="4"
+        name="_XOffset"
+        order="4"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="A vertical offset at which the custom cursor is displayed.&lt;br/&gt;&#10;"
+        dropdown=""
+        fullname="Y-Offset"
+        hidden="false"
+        id="5"
+        name="_YOffset"
+        order="5"/>
+    <actor
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Cursor Actor"
+        hidden="true"
+        id="9"
+        name="_CursorActor"
+        order="6"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="&lt;var&gt;Default&lt;var/&gt; - show the default cursor&lt;br/&gt;&#10;&lt;var&gt;Hidden&lt;var/&gt; - don&apos;t show a cursor&lt;br/&gt;&#10;&lt;var&gt;Custom&lt;var/&gt; - show the image of the actor type selected below"
+        dropdown="Default=Default&#10;Hidden=Hidden&#10;Custom=Custom&#10;"
+        fullname="Cursor Mode"
+        hidden="false"
+        id="10"
+        name="_CursorMode"
+        order="2"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="5"
+            name="draw"
+            order="6"
+            repeats="true"/>
+    </events>
+</snippet>

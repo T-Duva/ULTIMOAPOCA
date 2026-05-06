@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stencyl-addons>
+
+	<palette-addon target="stencyl-behavior-palette">
+		<merge-section id="game.flash">
+			<header title="Newgrounds" icon="question" action="help:kongregate-mochi-newgrounds" />
+			<block tag="newgrounds-ad-show" />
+			<block tag="newgrounds-score-submit" />
+			<block tag="newgrounds-score-show" />
+			<block tag="newgrounds-medal-achieved" />
+			<block tag="newgrounds-medal-move" />
+		</merge-section>
+	</palette-addon>
+
+	<property-page-addon target="dashboard.sidebar">
+		<header label="@newgrounds" />
+		<field name="newgroundsID" />
+		<field name="newgroundsKey" />
+	</property-page-addon>
+
+</stencyl-addons>

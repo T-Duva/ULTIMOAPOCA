@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_OpenURLButton"
+    classname="scripts.Design_0_0_OpenURLButton"
+    desc="Make a button that opens an URL in the default web browser when clicked or touched."
+    description="Make a button that opens an URL in the default web browser when clicked or touched."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Open URL Button"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <text
+        default="http://www.stencyl.com"
+        defaultValue="http://www.stencyl.com"
+        desc="The URL to open in the default webbrowser. The URL has to start with &lt;em&gt;http://&lt;/em&gt; followed by the web address.&lt;br/&gt;&#10;This behavior only works if the SWF is hosted on a server or if you open the SWF in a browser (i.e. if the SWF is in a &lt;em&gt;remote&lt;/em&gt; or &lt;em&gt;localWithNetwork&lt;/em&gt; sandbox.)"
+        dropdown=""
+        fullname="URL"
+        hidden="false"
+        id="1"
+        name="_URL"
+        order="2"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an pressed-down state."
+        dropdown=""
+        fullname="Pressed Animation"
+        hidden="false"
+        id="2"
+        name="_PressedAnimation"
+        order="4"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Down"
+        hidden="true"
+        id="3"
+        name="_Down"
+        order="1"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an unpressed state."
+        dropdown=""
+        fullname="Normal Animation"
+        hidden="false"
+        id="5"
+        name="_NormalAnimation"
+        order="3"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in a focused state. Not used in mobile games."
+        dropdown=""
+        fullname="Hover Animation"
+        hidden="false"
+        id="6"
+        name="_HoverAnimation"
+        order="5"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="4"
+            name="event-mouse-enter-exit-actor"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="5"
+            name="event-mouse-enter-exit-actor"
+            order="8"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="6"
+            name="event-mouse-enter-exit-actor"
+            order="9"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="7"
+            name="event-mouse-enter-exit-actor"
+            order="10"
+            repeats="true"/>
+        <event
+            displayName="Action"
+            enabled="true"
+            id="8"
+            name="event-custom"
+            order="11"
+            repeats="true"/>
+    </events>
+</snippet>

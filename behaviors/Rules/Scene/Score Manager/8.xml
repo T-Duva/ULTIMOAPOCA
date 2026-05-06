@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-8"
+    blocktype="ACTION"
+    code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_SetScoreFont&quot;, []);"
+    desc=""
+    global="false"
+    gui="Set Score Font To %0"
+    id="8"
+    message="SetScoreFont"
+    name="SetScoreFont"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Font" order="0" type="font"/>
+</custom-block>

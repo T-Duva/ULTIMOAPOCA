@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FollowtheMouse"
+    classname="scripts.Design_0_0_FollowtheMouse"
+    desc="Makes the actor follow the mouse."
+    description="Makes the actor follow the mouse."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Follow the Mouse"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="2"
+        name="_DistanceX"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="3"
+        name="_DistanceY"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance"
+        hidden="true"
+        id="4"
+        name="_Distance"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Direction"
+        hidden="true"
+        id="5"
+        name="_Direction"
+        order="4"/>
+    <number
+        default="30.0"
+        defaultValue="30.0"
+        desc="The speed to move towards the mouse."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="6"
+        name="_Speed"
+        order="6"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The actor will not move closer than this to the mouse."
+        dropdown=""
+        fullname="Margin"
+        hidden="false"
+        id="7"
+        name="_Margin"
+        order="7"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will move faster if farther away from the mouse and slower if closer to to the mouse.&lt;br /&gt;&#10;If unselected, the actor will move towards the target at a constant speed as specified in the &lt;var&gt;Speed&lt;/var&gt; attribute."
+        dropdown=""
+        fullname="Easing"
+        hidden="false"
+        id="8"
+        name="_Easing"
+        order="8"/>
+    <number
+        default="5.0"
+        defaultValue="5.0"
+        desc="Only used when &lt;var&gt;Easing&lt;/var&gt; is selected.&lt;br /&gt;&#10;The actor will move at least at this speed. The actual speed depends on the distance to the mouse. The maximum speed is &lt;var&gt;Minimum Easing Speed&lt;/var&gt; plus &lt;var&gt;Speed&lt;/var&gt;. The actor will move at maximum speed if it is in the opposite diagonal corner of the mouse."
+        dropdown=""
+        fullname="Minimum Easing Speed"
+        hidden="false"
+        id="10"
+        name="_MinimumEasingSpeed"
+        order="9"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Screen Diagonal"
+        hidden="true"
+        id="12"
+        name="_ScreenDiagonal"
+        order="5"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="&lt;em&gt;Always&lt;/em&gt;: The actor will always follow the mouse.&lt;br/&gt;&#10;&lt;em&gt;When Pressed&lt;/em&gt;: The actor will follow the mouse only when it is pressed, and keep on moving when the mouse is released.&lt;br/&gt;&#10;&lt;em&gt;When Pressed, Else Stop&lt;/em&gt;: The actor will follow the mouse only when it is pressed, and stop when the mouse is released.&lt;/br&gt;&#10;"
+        dropdown="Always=Always&#10;When Pressed=WhenPressed&#10;When Pressed, Else Stop=WhenPressedElseStop"
+        fullname="Follow"
+        hidden="false"
+        id="13"
+        name="_Follow"
+        order="10"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

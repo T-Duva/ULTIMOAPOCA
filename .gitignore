@@ -1,0 +1,6 @@
+Juegos/log-*/
+Juegos/stencylworks/logs/
+Juegos/stencylworks/games/*/.cache/
+Juegos/stencylworks/games/*/export/
+Juegos/stencylworks/games-generated/*/.cache/
+Juegos/stencylworks/games-generated/*/export/

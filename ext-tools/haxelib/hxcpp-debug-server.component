@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: hxcpp-debugger
+version: 6d67d88a8b4b5913f76ee186da3f7b676ecede2e
+tags: stencyl_engine

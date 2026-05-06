@@ -1,0 +1,28 @@
+gamecenter-achievement-banner=affiche une bannière avec (titre: %0, message: %1 ) [c:gamecenter]
+gamecenter-achievement-banner.help=Afficher une bannière représentant un succès Game Center.
+
+gamecenter-achievement-show-reset=%0 succès [c:gamecenter]
+gamecenter-achievement-show-reset.help=Affiche le tableau des succès ou remet à zéro les données "datas" du joueur pour ce jeu.
+
+gamecenter-achievement-submit=rapporter le succès %0 comme %1 [pct] complété [c:gamecenter]
+gamecenter-achievement-submit.help=Soumet un succès au Game Center.
+
+gamecenter-board-show=afficher le tableau des meilleurs score pour %0 [c:gamecenter]
+gamecenter-board-show.help=Affiche un tableau Mochi des meilleurs scores du Game Center.
+
+gamecenter-board-submit=soumettre le score à [c:gamecenter] avec (id: %1 , valeur: %0 )
+gamecenter-board-submit.help=Soumet un Score au Game Center.
+
+gamecenter-enabled=le Game Center est initialisé [c:gamecenter]
+gamecenter-enabled.help=Retourne Vrai si le Game Center est initialisé.
+
+gamecenter-id-name=%0 du joueur [c:gamecenter]
+gamecenter-id-name.help=Affiche le nom ou l'ID interne.
+
+gamecenter-init=démarrer le Game Center [c:gamecenter]
+gamecenter-init.help=Initialise l'API Game Center.
+
+show=affiche
+reset=réinitialise
+name=nom
+ID=ID

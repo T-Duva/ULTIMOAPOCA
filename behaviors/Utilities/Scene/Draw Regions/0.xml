@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DrawRegions"
+    classname="scripts.Design_0_0_DrawRegions"
+    desc="Draw all regions with custom fill and outline."
+    description="Draw all regions with custom fill and outline."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Draw Regions"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The thickness of the outline to be drawn.&lt;br/&gt;&#10;Only used when &lt;var&gt;Outline&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Outline Thickness"
+        hidden="false"
+        id="2"
+        name="_OutlineThickness"
+        order="4"/>
+    <color
+        default="153,204,255,255"
+        defaultValue="153,204,255,255"
+        desc="The color of the outline.&lt;br/&gt;&#10;Only used when &lt;var&gt;Outline&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Outline Color"
+        hidden="false"
+        id="3"
+        name="_OutlineColor"
+        order="5"/>
+    <color
+        default="204,255,255,255"
+        defaultValue="204,255,255,255"
+        desc="The color to fill the regions.&lt;br/&gt;&#10;Only used when &lt;var&gt;Fill&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Fill Color"
+        hidden="false"
+        id="4"
+        name="_FillColor"
+        order="2"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the regions will be filled."
+        dropdown=""
+        fullname="Fill"
+        hidden="false"
+        id="5"
+        name="_Fill"
+        order="1"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Terrain List"
+        hidden="true"
+        id="6"
+        name="_TerrainList"
+        order="0"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the contour of the regions will be drawn."
+        dropdown=""
+        fullname="Outline"
+        hidden="false"
+        id="7"
+        name="_Outline"
+        order="3"/>
+    <blocks>
+        <receiver blockID="715" id="1"/>
+        <receiver blockID="716" id="2"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="3"
+            name="draw"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Import"
+            enabled="true"
+            id="5"
+            name="event-custom-import"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

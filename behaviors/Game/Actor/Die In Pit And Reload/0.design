@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                        <say-this comment="false" x="0" y="0">
+                            <int id="0" val="Reload"/>
+                        </say-this>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <isalive comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </isalive>
+                        <more comment="false" id="1" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-wh>
+                            </plus>
+                            <scene-wh comment="false" id="1" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                        </more>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <ignore-screen-tolerance2 comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                </ignore-screen-tolerance2>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Fade"/>
+                            </eq>
+                        </if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="1"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Blinds"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="2"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Bubbles"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="3"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="3"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Spotlight"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="4"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="4"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Blur"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-color comment="false" x="0" y="0">
+                                    <int id="0" val="5"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="5"/>
+                                    <get-val-0-4 comment="false" id="4" x="0" y="0"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Box"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-through comment="false" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                </scene-reload-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Crossfade"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-through comment="false" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                </scene-reload-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Up"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-through comment="false" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                </scene-reload-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Down"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-through comment="false" x="0" y="0">
+                                    <int id="0" val="3"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                </scene-reload-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Left"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="12" id="-1">
+                                <scene-reload-through comment="false" x="0" y="0">
+                                    <int id="0" val="4"/>
+                                    <get-val-0-3 comment="false" id="1" x="0" y="0"/>
+                                </scene-reload-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Right"/>
+                            </eq>
+                        </else-if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <is-transitioning comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="Reload"/>
+        </event-custom>
+    </group>
+</groups>

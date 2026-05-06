@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-gestures
+version: 9439d186879aaa99a9b12851e4cdef0665344abe
+tags: stencyl_engine,base_bundle

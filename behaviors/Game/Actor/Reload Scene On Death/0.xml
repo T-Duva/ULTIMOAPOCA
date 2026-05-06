@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_ReloadSceneOnDeath"
+    classname="scripts.Design_0_0_ReloadSceneOnDeath"
+    desc="Reload the scene when this actor dies."
+    description="Reload the scene when this actor dies."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Reload Scene On Death"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition out, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise the time to transition out and in."
+        dropdown=""
+        fullname="Out Time"
+        hidden="false"
+        id="1"
+        name="_OutTime"
+        order="2"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition in, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise it is ignored."
+        dropdown=""
+        fullname="In Time"
+        hidden="false"
+        id="2"
+        name="_InTime"
+        order="3"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The style to use for the reload transition."
+        dropdown="Fade=Fade&#10;Blinds=Blinds&#10;Bubbles=Bubbles&#10;Spotlight=Spotlight&#10;Blur=Blur&#10;Box=Box&#10;Crossfade=Crossfade&#10;Slide Up=Slide Up&#10;Slide Down=Slide Down&#10;Slide Left=Slide Left&#10;Slide Right=Slide Right"
+        fullname="Transition Style"
+        hidden="false"
+        id="3"
+        name="_TransitionStyle"
+        order="1"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Actor Created"
+            enabled="true"
+            id="1"
+            name="event-actor-create-kill"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Reload"
+            enabled="true"
+            id="2"
+            name="event-custom"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

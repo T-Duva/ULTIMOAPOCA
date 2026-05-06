@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_IntroTitle"
+    classname="scripts.Design_0_0_IntroTitle"
+    desc="Shows an intro title, which slides away after the specified time."
+    description="Shows an intro title, which slides away after the specified time."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Intro Title"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="INTERNAL ATTRIBUTE. Whether or not the slide-off has started."
+        dropdown=""
+        fullname="Started"
+        hidden="true"
+        id="5"
+        name="_Started"
+        order="0"/>
+    <font
+        default=""
+        defaultValue=""
+        desc="The font to use when drawing the intro title. Specify from the list of fonts you have created in Stencyl."
+        dropdown=""
+        fullname="Font To Use"
+        hidden="false"
+        id="6"
+        name="_FontToUse"
+        order="7"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The amount of time, in seconds, before that the intro title should wait before beginning its exit of the screen."
+        dropdown=""
+        fullname="Time Before Retreat"
+        hidden="false"
+        id="7"
+        name="_TimeBeforeRetreat"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The y-position, in screen coordinates, of the centre of the Intro Title."
+        dropdown=""
+        fullname="Y Centre Position"
+        hidden="false"
+        id="8"
+        name="_YCentrePosition"
+        order="4"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Show this text in the Intro Title. Leave blank to use the scene&apos;s name."
+        dropdown=""
+        fullname="Alternative Text"
+        hidden="false"
+        id="10"
+        name="_AlternativeText"
+        order="6"/>
+    <number
+        default="-5.0"
+        defaultValue="-5.0"
+        desc="The initial speed to slide off the screen at."
+        dropdown=""
+        fullname="Slide Speed"
+        hidden="false"
+        id="11"
+        name="_SlideSpeed"
+        order="1"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="Should a rounded rectangle be drawn behind the text?"
+        dropdown=""
+        fullname="Draw Rounded Rectangle?"
+        hidden="false"
+        id="12"
+        name="_DrawRectangle"
+        order="9"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The x-position, in screen coordinates, of the centre of the Intro Title."
+        dropdown=""
+        fullname="X Centre Position"
+        hidden="false"
+        id="13"
+        name="_XCentrePosition"
+        order="3"/>
+    <color
+        default="204,255,255,255"
+        defaultValue="204,255,255,255"
+        desc="The fill colour for the rounded rectangle behind the text, if one is drawn."
+        dropdown=""
+        fullname="Fill Colour"
+        hidden="false"
+        id="14"
+        name="_FillColour"
+        order="10"/>
+    <color
+        default="153,204,255,255"
+        defaultValue="153,204,255,255"
+        desc="The stroke colour for the rounded rectangle behind the text, if one is drawn. (Stroke is the outline)."
+        dropdown=""
+        fullname="Stroke Colour"
+        hidden="false"
+        id="15"
+        name="_StrokeColour"
+        order="11"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The thickness, in pixels, of the stroke around the outside of the rounded rectangle behind the text, if one is drawn."
+        dropdown=""
+        fullname="Stroke Thickness"
+        hidden="false"
+        id="16"
+        name="_StrokeThickness"
+        order="12"/>
+    <number
+        default="4.0"
+        defaultValue="4.0"
+        desc="Padding around the text, in pixels, for the rounded rectangle behind the text, if one is drawn."
+        dropdown=""
+        fullname="Padding"
+        hidden="false"
+        id="17"
+        name="_Padding"
+        order="13"/>
+    <number
+        default="2.0"
+        defaultValue="2.0"
+        desc="The amount the rounded rectangle is rounded, if one is drawn. (Use 0 for right-angled corners)."
+        dropdown=""
+        fullname="Rounding"
+        hidden="false"
+        id="18"
+        name="_Rounding"
+        order="14"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The direction the Intro Title slides away to."
+        dropdown="Up=Up&#10;Down=Down&#10;Left=Left&#10;Right=Right"
+        fullname="Slide Direction"
+        hidden="false"
+        id="19"
+        name="_SlideDirection"
+        order="8"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The slide speed is incremented by this value every update."
+        dropdown=""
+        fullname="Slide Speed Change"
+        hidden="false"
+        id="20"
+        name="_SlideSpeedChange"
+        order="2"/>
+    <blocks>
+        <receiver blockID="113" id="1"/>
+        <receiver blockID="15" id="2"/>
+        <receiver blockID="16" id="3"/>
+        <receiver blockID="18" id="4"/>
+        <receiver blockID="111" id="5"/>
+        <receiver blockID="112" id="6"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="3"
+            name="draw"
+            order="3"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,44 @@
+gpg-check-quests=a complété la nouvelle quête [c:google]
+gpg-check-quests.help=Vérifie si une nouvelle quête a été completée.
+
+gpg-completed-quests=liste de quêtes complétée  [c:google]
+gpg-completed-quests.help=Obtient la liste des quêtes completées.
+
+gpg-connection=connexion %0 [c:google]
+gpg-connection.help=Vérifier l'état de la connexion des services de Google Play Games.
+
+gpg-get-reward=récompense pour la quête avec l'ID %0 [c:google]
+gpg-get-reward.help=Obtient le text de récompense pour la quête complétée.
+
+gpg-increment-achievments=augmenter le succés avec ID %0 de %1 [c:google]
+gpg-increment-achievments.help=Incrémente la valeur d'un succès par la valeur donnée.
+
+gpg-initialize=%0 Google Play Games [c:google]
+gpg-initialize.help=S'identifier/se déconnecter des services Google Play Games.
+
+gpg-show=montrer %0 [c:google]
+gpg-show.help=Montrer les quêtes/succès/tableaux de scores.
+
+gpg-show-leaderboard=montrer tableau des meilleurs scores avec ID %0 [c:google]
+gpg-show-leaderboard.help=Montrer un tableau des scores spécifique.
+
+gpg-submit-score=soumettre le score %1 au tableau des meilleurs scores avec ID %0 [c:google]
+gpg-submit-score.help=Soumettre un score à un tableau des scores spécifiques.
+
+gpg-unlock-achievments=débloquer succés avec ID %0 [c:google]
+gpg-unlock-achievments.help=Débloque un succès du jeu.
+
+gpg-update-event=actualiser l'évènement ID %0 avec la valeur %1 [c:google]
+gpg-update-event.help=Actualiser un évènement par la valeur donnée.
+
+established=a été établie
+pending=est en attente
+failed=a échoué
+cancelled=a été annulé par l'utilisateur
+
+initialize=initialiser
+signout=de déconnecter de 
+
+achievements=les succès
+leaderboards=tableaux de score
+quests=quêtes

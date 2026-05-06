@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stencyl-addons>
+
+	<palette-addon target="stencyl-behavior-palette">
+		<merge-section id="game.mobile">
+			<header title="@events.defs.gpg" icon="question" action="help:google-play-games" />
+			<block tag="gpg-initialize" />
+			<block tag="gpg-connection" />
+			<spacer />
+			<block tag="gpg-show" />
+			<block tag="gpg-show-leaderboard" />
+			<spacer />
+			<block tag="gpg-unlock-achievments" />
+			<block tag="gpg-increment-achievments" />
+			<block tag="gpg-submit-score" />
+			<spacer />
+		</merge-section>
+	</palette-addon>
+
+	<property-page-addon target="dashboard.sidebar">
+		<header label="@googleplaygames"/>
+		<field name="enableGPG" />
+		<field name="googleAppID" />
+	</property-page-addon>
+
+</stencyl-addons>

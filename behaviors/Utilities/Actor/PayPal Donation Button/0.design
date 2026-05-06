@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <anchor-screen comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </anchor-screen>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <setanim comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-0-8 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-9>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="20" id="-1">
+                        <say-this comment="false" x="0" y="0">
+                            <int id="0" val="Action"/>
+                        </say-this>
+                    </group>
+                    <get-val-0-9 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="0" y="0">
+                    <group eventID="15" id="-1">
+                        <setanim comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-0-7 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <is-platform comment="false" id="0" x="0" y="0">
+                        <int id="0" val="6"/>
+                    </is-platform>
+                </if>
+                <else comment="false" x="0" y="0">
+                    <group eventID="15" id="-1">
+                        <setanim comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-0-10 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                </else>
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-9>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="5" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <setanim comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-0-10 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="6" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <setanim comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-0-7 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-9>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="7" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-val-0-1 comment="false" x="0" y="0">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;amp;business="/>
+                        <code-short comment="false" id="1" x="0" y="0">
+                            <int id="0" val="StringTools.urlEncode(_Email)"/>
+                        </code-short>
+                    </str-combine>
+                </set-val-0-1>
+                <set-val-0-1 comment="false" x="0" y="0">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                        <str-combine comment="false" id="1" x="0" y="0">
+                            <int id="0" val="&amp;amp;item_name="/>
+                            <code-short comment="false" id="1" x="0" y="0">
+                                <int id="0" val="StringTools.urlEncode(_Purpose)"/>
+                            </code-short>
+                        </str-combine>
+                    </str-combine>
+                </set-val-0-1>
+                <set-val-0-1 comment="false" x="0" y="0">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                        <str-combine comment="false" id="1" x="0" y="0">
+                            <int id="0" val="&amp;amp;currency_code="/>
+                            <code-short comment="false" id="1" x="0" y="0">
+                                <int id="0" val="StringTools.urlEncode(_CurrencyCode)"/>
+                            </code-short>
+                        </str-combine>
+                    </str-combine>
+                </set-val-0-1>
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <set-val-0-1 comment="false" x="0" y="0">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                                <str-combine comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="&amp;amp;amount="/>
+                                    <tostring comment="false" id="1" x="0" y="0">
+                                        <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                                    </tostring>
+                                </str-combine>
+                            </str-combine>
+                        </set-val-0-1>
+                    </group>
+                    <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <show-browser comment="false" x="0" y="0">
+                    <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                </show-browser>
+            </group>
+            <int id="0" val="Action"/>
+        </event-custom>
+    </group>
+</groups>

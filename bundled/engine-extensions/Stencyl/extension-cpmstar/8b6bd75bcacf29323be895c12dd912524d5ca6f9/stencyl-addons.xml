@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stencyl-addons>
+
+	<property-page-addon target="dashboard.sidebar">
+		<header label="@cpmstar"/>
+		<field name="cpmstarID" />
+	</property-page-addon>
+
+</stencyl-addons>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<include>
+		<field name="enableGPG" type="boolean" />
+		<field name="googleAppID" type="text" />
+	</include>
+
+</data>

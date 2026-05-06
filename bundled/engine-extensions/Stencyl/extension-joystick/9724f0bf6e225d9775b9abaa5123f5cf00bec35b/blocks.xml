@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+    
+    <dropdown id="outerInner">
+        <choices>
+            <c text="@outer" code="true" />
+            <c text="@inner" code="false" />
+        </choices>
+    </dropdown>
+
+    <!-- Core blocks -->
+    
+    <block tag="joystick-add-static"
+           code="com.stencyl.joystick.Joystick.addJoystick(~, ~, ~, 0, 0, 0, 0, 0, false);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <number order="1"></number>
+            <number order="2"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-add-relative"
+           code="com.stencyl.joystick.Joystick.addJoystick(~, ~, ~, 1, ~, ~, ~, ~, false);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <number order="1"></number>
+            <number order="2"></number>
+            <number order="3"></number>
+            <number order="4"></number>
+            <number order="5"></number>
+            <number order="6"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-remove"
+           code="com.stencyl.joystick.Joystick.removeJoystick(~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+        </fields>
+    </block>
+    
+    <!-- Setter blocks -->
+    
+    <block tag="joystick-set-default-direction"
+           code="com.stencyl.joystick.Joystick.setDefaultDirection(~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <number order="1"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-center"
+           code="com.stencyl.joystick.Joystick.setJoystickCenter(~, ~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <number order="1"></number>
+            <number order="2"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-radius"
+           code="com.stencyl.joystick.Joystick.setJoystickRadius(~, ~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1" id="outerInner" />
+            <number order="2"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-region"
+           code="com.stencyl.joystick.Joystick.setTouchRegionForRJ(~, ~, ~, ~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <number order="1"></number>
+            <number order="2"></number>
+            <number order="3"></number>
+            <number order="4"></number>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-image"
+           code="com.stencyl.joystick.Joystick.setJoystickImage(~, ~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1" id="outerInner" />
+            <text order="2"></text>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-alpha"
+           code="com.stencyl.joystick.Joystick.setJoystickAlpha(~, ~, ~, ~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1" id="outerInner" />
+            <number order="2"></number>
+            <dropdown order="3">
+              <choices>
+                <c text="@released" code="true"></c>
+                <c text="@pressed" code="false"></c>
+              </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="joystick-set-always-hide"
+           code="com.stencyl.joystick.Joystick.alwaysHideRJ(~);"
+           type="action"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+        </fields>
+    </block>
+    
+    <!-- Getter blocks-->
+    
+    <block tag="joystick-is-pressed"
+           code="com.stencyl.joystick.Joystick.isJoystickPressed(~)"
+           type="normal"
+           color="gray"
+           returns="boolean"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+        </fields>
+    </block>
+    
+    <block tag="joystick-get-distance-direction"
+           code="com.stencyl.joystick.Joystick.getJoystickDisDir(~, ~)"
+           type="normal"
+           returns="number"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1">
+              <choices>
+                <c text="@direction" code="false"></c>
+                <c text="@distance" code="true"></c>
+              </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="joystick-get-center"
+           code="com.stencyl.joystick.Joystick.getJoystickCenter(~, ~)"
+           type="normal"
+           returns="number"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1">
+              <choices>
+                <c text="@x-center" code="true"></c>
+                <c text="@y-center" code="false"></c>
+              </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="joystick-get-radius"
+           code="com.stencyl.joystick.Joystick.getJoystickRadius(~, ~)"
+           type="normal"
+           returns="number"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1" id="outerInner" />
+        </fields>
+    </block>
+    
+    <block tag="joystick-get-touch-region-property"
+           code="com.stencyl.joystick.Joystick.getTouchRegionPropertyForRJ(~, ~)"
+           type="normal"
+           returns="void"
+           category="input"
+           helpURL="input-joystick">
+        <fields>
+            <int order="0"></int>
+            <dropdown order="1">
+              <choices>
+                <c text="@x" code="1"></c>
+                <c text="@y" code="2"></c>
+                <c text="@width" code="3"></c>
+                <c text="@height" code="4"></c>
+              </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <!-- deprecated -->
+
+    <dropdown id="joystickStyle">
+        <choices>
+            <c text="@fixed" code="0" />
+            <c text="@show.pressed" code="1" />
+        </choices>
+    </dropdown>
+
+    <dropdown id="joysticks">
+        <choices>
+            <c text="@joystick1" code="0" />
+            <c text="@joystick2" code="1" />
+            <c text="@both" code="0" />
+        </choices>
+    </dropdown>
+
+    <dropdown id="joysticks2">
+        <choices>
+            <c text="@joystick1" code="0" />
+            <c text="@joystick2" code="1" />
+        </choices>
+    </dropdown>
+
+    <dropdown id="directionDistance">
+        <choices>
+            <c text="@direction" code="Direction" />
+            <c text="@distance" code="Distance" />
+        </choices>
+    </dropdown>    
+
+    <block tag="joystick-direction"
+           code="0"
+           type="normal"
+           returns="number"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+    </block>
+
+    <block tag="joystick-info"
+           code="#if mobile JoystickController.get~(~) #else 0 #end"
+           type="normal"
+           returns="number"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0" id="directionDistance" />
+            <dropdown order="1" id="joysticks2" />
+        </fields>
+    </block>
+
+    <block tag="joystick-magnitude"
+           code="0"
+           type="normal"
+           returns="number"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+    </block>
+
+    <block tag="joystick-set-style"
+           code="#if mobile JoystickController.setStyle(~, ~); #end"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0" id="joysticks" />
+            <dropdown order="1" id="joystickStyle" />
+        </fields>
+    </block>
+
+    <block tag="joystick-set-xy"
+           code="#if mobile JoystickController.set~(~, ~); #end"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@x" code="X" />
+                    <c text="@y" code="Y" />
+                </choices>
+            </dropdown>
+            <dropdown order="1" id="joysticks" />
+            <number order="2" />
+        </fields>
+    </block>
+
+    <block tag="joystick-show-hide"
+           code="#if mobile JoystickController.~(~); #end"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="input-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@block.enable" code="enable" />
+                    <c text="@block.disable" code="disable" />
+                </choices>
+            </dropdown>
+            <dropdown order="1" id="joysticks" />
+        </fields>
+    </block>
+    
+</palette>

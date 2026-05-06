@@ -1,0 +1,21 @@
+gamecenter-achievement-submit=передать достижение %0 как %1 [pct] завершенные [c:gamecenter]
+gamecenter-achievement-submit.help=Передать достижение в Game Center
+
+gamecenter-board-show=показать список лидеров %0 [c:gamecenter]
+gamecenter-board-show.help=Показать доску лидеров Game Center
+
+gamecenter-board-submit=передать очки в [c:gamecenter] с ( личн.№: %1 и значением: %0 )
+gamecenter-board-submit.help=Передать очки в Game Center
+
+gamecenter-enabled=Game Center готов к работе [c:gamecenter]
+gamecenter-enabled.help=Возвращает «Истина», если Game Center готов к работе.
+
+gamecenter-id-name=%0 у [c:gamecenter] игрока
+gamecenter-id-name.help=Показать имя или Внутренний личный номер.
+
+gamecenter-init=подготовить к работе Game Center [c:gamecenter]
+gamecenter-init.help=Подготовить к работе Game Center API
+
+show=Показать
+name=название
+ID=личн.№

@@ -1,0 +1,5 @@
+public.release=true
+branch=releases/4.1
+build=12249
+date=24-07-01_23-18-56
+version=4.1.4

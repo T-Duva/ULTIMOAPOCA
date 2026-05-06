@@ -1,0 +1,12 @@
+
+code.edit.compat.i=Sélectionnez un Éditeur de Code sous Préférences > Espace de Travail
+code.edit.compat.i2=Nous vous recommandons TextWrangler, Smultron, Fraise en gratuit, faible poids en options. SublimeText est un bon éditeur de texte commercial.
+
+code.edit.compat.i=Sélectionnez un Éditeur de Code sous Préférences > Espace de Travail
+code.edit.compat.i2=Nous vous recommandons TextWrangler, Smultron, Fraise car ils sont gratuits et légers. SublimeText est un bon éditeur de texte commercial.
+code.edit.ext=Ouvrir dans un Editeur Externe
+code.edit.find=Rechercher
+code.edit.replace=Remplacer
+code.edit.replaceall=Remplacer Tout
+code.edit.regex=Regex
+code.edit.case=Respecter la Casse

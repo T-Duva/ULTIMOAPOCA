@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+    
+    <!-- Events -->
+    
+    <block tag="admob-ad-is-type"
+           code="adEvent.match(AdEvent(#0, _))"
+           type="normal"
+           returns="boolean"
+           category="mobile"
+           helpURL="event-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@banner" code="BANNER" />
+                    <c text="@interstitial" code="INTERSTITIAL" />
+                    <c text="@rewarded" code="REWARDED" />
+                    <c text="@rewardedinterstitial" code="REWARDED_INTERSTITIAL" />
+                </choices>
+            </dropdown>
+        </fields>
+        <context>
+            <requiredContext type="has" value="adEvent:com.stencyl.admob.AdMob.AdEventData" />
+        </context>
+    </block>
+
+    <block tag="event-mobile-ads"
+           type="event"
+           returns="void"
+           category="events"
+           helpURL="event-mobile">
+        <code>
+            <event-def
+                listener="addListener(com.stencyl.admob.AdMob.get().adEvent, ${eventRef});"
+                params="adEvent:com.stencyl.admob.AdMob.AdEventData"
+                condition="#0"
+                innerCode="#1"  />
+        </code>
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@event.mobile.ads.viewed" code="Type.enumEq(adEvent, AdEvent(BANNER, OPENED))" />
+                    <c text="@event.mobile.ads.closed" code="Type.enumEq(adEvent, AdEvent(BANNER, CLOSED))" />
+                    <c text="@event.mobile.ads.loaded" code="Type.enumEq(adEvent, AdEvent(BANNER, LOADED))" />
+                    <c text="@event.mobile.ads.failed" code="Type.enumEq(adEvent, AdEvent(BANNER, FAILED_TO_LOAD))" />
+                    <c text="@event.mobile.ads.clicked" code="Type.enumEq(adEvent, AdEvent(BANNER, CLICKED))" />
+                    <c text="@event.mobile.fullads.viewed" code="adEvent.match(AdEvent(INTERSTITIAL | REWARDED | REWARDED_INTERSTITIAL, OPENED))" />
+                    <c text="@event.mobile.fullads.closed" code="adEvent.match(AdEvent(INTERSTITIAL | REWARDED | REWARDED_INTERSTITIAL, CLOSED))" />
+                    <c text="@event.mobile.fullads.loaded" code="adEvent.match(AdEvent(INTERSTITIAL | REWARDED | REWARDED_INTERSTITIAL, LOADED))" />
+                    <c text="@event.mobile.fullads.failed" code="adEvent.match(AdEvent(INTERSTITIAL | REWARDED | REWARDED_INTERSTITIAL, FAILED_TO_LOAD))" />
+                    <c text="@event.mobile.fullads.clicked" code="adEvent.match(AdEvent(INTERSTITIAL | REWARDED | REWARDED_INTERSTITIAL, CLICKED))" />
+                </choices>
+            </dropdown>
+            <code-block order="1" />
+        </fields>
+        <context>
+            <innerContext type="class" value="com.stencyl.behavior.Script" />
+            <innerContext type="has" value="adEvent:com.stencyl.admob.AdMob.AdEventData" />
+        </context>
+    </block>
+
+    <block tag="admob-ad-reward-type"
+           code="rewardType"
+           type="normal"
+           hidden="true"
+           returns="text"
+           category="mobile"
+           helpURL="event-mobile" />
+    <block tag="admob-ad-reward-amount"
+           code="rewardAmount"
+           type="normal"
+           hidden="true"
+           returns="number"
+           category="mobile"
+           helpURL="event-mobile" />
+    <block tag="event-mobile-ads-reward"
+           type="event"
+           returns="void"
+           category="events"
+           helpURL="event-mobile">
+        <code>
+            <event-def
+                listener="addListener(com.stencyl.admob.AdMob.get().rewardEvent, ${eventRef});"
+                params="rewardType:String, rewardAmount:Float"
+                condition="true"
+                innerCode="#0" />
+        </code>
+        <fields>
+            <code-block order="0" />
+            <attached-block order="1" tag="admob-ad-reward-type"/>
+            <attached-block order="2" tag="admob-ad-reward-amount"/>
+        </fields>
+        <context>
+            <innerContext type="class" value="com.stencyl.behavior.Script" />
+        </context>
+    </block>
+    
+    <!-- Core blocks -->
+    
+    <dropdown id="topbottom">
+        <choices>
+            <c text="@bottom" code="0" />
+            <c text="@top" code="1" />
+        </choices>
+    </dropdown>
+
+    <block tag="admob-setDebugGeography"
+           code="com.stencyl.admob.AdMob.setDebugGeography(&quot;~&quot;);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@debugGeography.eea"      code="eea" />
+                    <c text="@debugGeography.not_eea"  code="not_eea" />
+                    <c text="@debugGeography.disabled" code="" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="admob-setChildDirectedTreatment"
+           code="com.stencyl.admob.AdMob.setChildDirectedTreatment(&quot;~&quot;);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@true"        code="true" />
+                    <c text="@false"       code="false" />
+                    <c text="@unspecified" code="" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="admob-setUnderAgeOfConsent"
+           code="com.stencyl.admob.AdMob.setUnderAgeOfConsent(&quot;~&quot;);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@true"        code="true" />
+                    <c text="@false"       code="false" />
+                    <c text="@unspecified" code="" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="admob-setMaxAdContentRating"
+           code="com.stencyl.admob.AdMob.setMaxAdContentRating(&quot;~&quot;);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@rating.g"    code="g" />
+                    <c text="@rating.pg"   code="pg" />
+                    <c text="@rating.t"    code="t" />
+                    <c text="@rating.ma"   code="ma" />
+                    <c text="@unspecified" code="" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="admob-initialize2"
+           code="com.stencyl.admob.AdMob.initSdk(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0" id="topbottom" />
+        </fields>
+    </block>
+    
+    <block tag="admob-show-hide-banner"
+           code="com.stencyl.admob.AdMob.~Banner();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@show" code="show" />
+                    <c text="@hide" code="hide" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="admob-show-fullscreen"
+           code="com.stencyl.admob.AdMob.~Interstitial();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@load" code="load" />
+                    <c text="@show" code="show" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="admob-show-rewarded"
+           code="com.stencyl.admob.AdMob.~Rewarded();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@load" code="load" />
+                    <c text="@show" code="show" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="admob-show-rewardedinterstitial"
+           code="com.stencyl.admob.AdMob.~RewardedInterstitial();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@load" code="load" />
+                    <c text="@show" code="show" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+    
+    <block tag="admob-reinit-banner"
+           code="com.stencyl.admob.AdMob.reinitBanner();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+        </fields>
+    </block>
+    
+    <block tag="admob-setbanner-position"
+           code="com.stencyl.admob.AdMob.setBannerPosition(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0" id="topbottom" />
+        </fields>
+    </block>
+
+    <block tag="admob-showConsentForm"
+           code="com.stencyl.admob.AdMob.showConsentForm(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@consent-check-existing" code="true" />
+                    <c text="@consent-always-show" code="false" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="iad-height"
+           code="com.stencyl.admob.AdMob.getBannerHeight()"
+           type="normal"
+           returns="int"
+           category="mobile"
+           helpURL="game-mobile">
+    </block>
+
+    <!-- deprecated blocks -->
+
+    <block tag="admob-initialize"
+           code="com.stencyl.admob.AdMob.initSdk(#1);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <text order="0" />
+            <dropdown order="1" id="topbottom" />
+        </fields>
+    </block>
+
+    <block tag="admob-setPrivacyURL"
+           code="com.stencyl.admob.AdMob.setPrivacyURL(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+    
+    <block tag="iad-load-show"
+           code="~MobileAd();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@block.load" code="loadFull" />
+                    <c text="@block.show" code="showFull" />
+                </choices>
+            </dropdown>
+        </fields>
+        <context>
+            <requiredContext type="staticimport" value="com.stencyl.behavior.Script" />
+        </context>
+    </block>
+
+    <block tag="iad-show-hide"
+           code="~MobileAd();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile"
+           hidden="true"
+           deprecated="true">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@block.hide" code="hide" />
+                    <c text="@block.show" code="show" />
+                </choices>
+            </dropdown>
+        </fields>
+        <context>
+            <requiredContext type="staticimport" value="com.stencyl.behavior.Script" />
+        </context>
+    </block>
+    
+</blocks>

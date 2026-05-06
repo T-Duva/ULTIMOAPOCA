@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-val-0-2 comment="false" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="5"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                            </minus>
+                        </set-val-0-2>
+                        <set-val-0-3 comment="false" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="5"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                            </minus>
+                        </set-val-0-3>
+                        <setangle comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <to-degreesradians comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <atan2 comment="false" id="1" x="0" y="0">
+                                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                                    </atan2>
+                                </to-degreesradians>
+                                <get-val-0-4 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="5"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="5"/>
+                        </isalive>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+</groups>

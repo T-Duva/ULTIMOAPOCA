@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-font-new comment="false" x="0" y="0">
+                            <font eid="var" id="0" vid="1"/>
+                        </set-font-new>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="3" id="-1">
+                                <set-val-0-42 comment="false" x="0" y="0">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-42>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-28 comment="false" x="0" y="0">
+                                            <str-split comment="false" id="0" x="0" y="0">
+                                                <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="\\n"/>
+                                            </str-split>
+                                        </set-val-0-28>
+                                    </group>
+                                    <get-val-0-30 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-28 comment="false" x="0" y="0">
+                                            <create-list comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-28>
+                                        <add-list comment="false" x="0" y="0">
+                                            <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-0-4 comment="false" id="1" x="0" y="0"/>
+                                        </add-list>
+                                    </group>
+                                </else>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-37 comment="false" x="0" y="0">
+                                            <create-list comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-37>
+                                        <repeat comment="false" x="0" y="0">
+                                            <group eventID="3" id="-1">
+                                                <add-list comment="false" x="0" y="0">
+                                                    <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                    <code-short comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="&amp;quot;&amp;quot;"/>
+                                                    </code-short>
+                                                </add-list>
+                                                <set-val-0-41 comment="false" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <length-list comment="false" id="0" x="0" y="0">
+                                                            <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                        </length-list>
+                                                        <int id="1" val="1"/>
+                                                    </minus>
+                                                </set-val-0-41>
+                                                <for-each comment="false" x="0" y="0">
+                                                    <group eventID="3" id="-1">
+                                                        <if comment="false" x="0" y="0">
+                                                            <group eventID="3" id="-1">
+                                                                <replace-list comment="false" x="0" y="0">
+                                                                    <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                    <get-val-0-41 comment="false" id="1" x="0" y="0"/>
+                                                                    <for-each-item comment="false" id="2" x="0" y="0"/>
+                                                                </replace-list>
+                                                            </group>
+                                                            <eq comment="false" id="0" x="0" y="0">
+                                                                <get-item comment="false" id="0" x="0" y="0">
+                                                                    <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                    <get-val-0-41 comment="false" id="1" x="0" y="0"/>
+                                                                </get-item>
+                                                                <code-short comment="false" id="1" x="0" y="0">
+                                                                    <int id="0" val="&amp;quot;&amp;quot;"/>
+                                                                </code-short>
+                                                            </eq>
+                                                        </if>
+                                                        <else-if comment="false" x="0" y="0">
+                                                            <group eventID="3" id="-1">
+                                                                <replace-list comment="false" x="0" y="0">
+                                                                    <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                    <get-val-0-41 comment="false" id="1" x="0" y="0"/>
+                                                                    <str-combine comment="false" id="2" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                            <get-val-0-41 comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item>
+                                                                        <str-combine comment="false" id="1" x="0" y="0">
+                                                                            <code-short comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="&amp;quot; &amp;quot;"/>
+                                                                            </code-short>
+                                                                            <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                                        </str-combine>
+                                                                    </str-combine>
+                                                                </replace-list>
+                                                            </group>
+                                                            <lesseq comment="false" id="0" x="0" y="0">
+                                                                <get-font-width comment="false" id="0" x="0" y="0">
+                                                                    <str-combine comment="false" id="0" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                            <get-val-0-41 comment="false" id="1" x="0" y="0"/>
+                                                                        </get-item>
+                                                                        <str-combine comment="false" id="1" x="0" y="0">
+                                                                            <code-short comment="false" id="0" x="0" y="0">
+                                                                                <int id="0" val="&amp;quot; &amp;quot;"/>
+                                                                            </code-short>
+                                                                            <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                                        </str-combine>
+                                                                    </str-combine>
+                                                                </get-font-width>
+                                                                <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                                            </lesseq>
+                                                        </else-if>
+                                                        <else comment="false" x="0" y="0">
+                                                            <group eventID="3" id="-1">
+                                                                <add-list comment="false" x="0" y="0">
+                                                                    <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                                                    <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                                </add-list>
+                                                                <set-val-0-41 comment="false" x="0" y="0">
+                                                                    <plus comment="false" id="0" x="0" y="0">
+                                                                        <get-val-0-41 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                </set-val-0-41>
+                                                            </group>
+                                                        </else>
+                                                    </group>
+                                                    <str-split-space comment="false" id="0" x="0" y="0">
+                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                            <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item>
+                                                    </str-split-space>
+                                                </for-each>
+                                            </group>
+                                            <length-list comment="false" id="0" x="0" y="0">
+                                                <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                                            </length-list>
+                                        </repeat>
+                                        <set-val-0-28 comment="false" x="0" y="0">
+                                            <get-val-0-37 comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-28>
+                                    </group>
+                                    <get-val-0-39 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                            </group>
+                            <get-val-0-42 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <set-val-0-27 comment="false" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <length-list comment="false" id="0" x="0" y="0">
+                                    <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                                </length-list>
+                                <get-font-height comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </set-val-0-27>
+                        <set-val-0-21 comment="false" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </set-val-0-21>
+                        <set-val-0-43 comment="false" x="0" y="0">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-43>
+                        <repeat comment="false" x="0" y="0">
+                            <group eventID="3" id="-1">
+                                <set-val-0-29 comment="false" x="0" y="0">
+                                    <get-item comment="false" id="0" x="0" y="0">
+                                        <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </get-item>
+                                </set-val-0-29>
+                                <set-val-0-33 comment="false" x="0" y="0">
+                                    <get-font-width comment="false" id="0" x="0" y="0">
+                                        <get-val-0-29 comment="false" id="0" x="0" y="0"/>
+                                    </get-font-width>
+                                </set-val-0-33>
+                                <set-val-0-34 comment="false" x="0" y="0">
+                                    <get-font-height comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-34>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-21 comment="false" x="0" y="0">
+                                            <get-val-0-33 comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-21>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <get-val-0-33 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-0-21 comment="false" id="1" x="0" y="0"/>
+                                    </more>
+                                </if>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-11 comment="false" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </set-val-0-11>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-17 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Left"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-11 comment="false" x="0" y="0">
+                                            <div comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-val-0-18 comment="false" id="0" x="0" y="0"/>
+                                                    <get-val-0-33 comment="false" id="1" x="0" y="0"/>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </div>
+                                        </set-val-0-11>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-17 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Center"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-11 comment="false" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <get-val-0-18 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-0-33 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                        </set-val-0-11>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-17 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Right"/>
+                                    </eq>
+                                </else-if>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-26 comment="false" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </set-val-0-26>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-24 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Top"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-26 comment="false" x="0" y="0">
+                                            <div comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <get-val-0-25 comment="false" id="0" x="0" y="0"/>
+                                                    <get-val-0-27 comment="false" id="1" x="0" y="0"/>
+                                                </minus>
+                                                <int id="1" val="2"/>
+                                            </div>
+                                        </set-val-0-26>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-24 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Middle"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-26 comment="false" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <get-val-0-25 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-0-27 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                        </set-val-0-26>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-24 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="Bottom"/>
+                                    </eq>
+                                </else-if>
+                                <set-val-0-26 comment="false" x="0" y="0">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-0-26 comment="false" id="0" x="0" y="0"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-0-34 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </plus>
+                                </set-val-0-26>
+                                <draw-text comment="false" x="0" y="0">
+                                    <get-val-0-29 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-0-26 comment="false" id="2" x="0" y="0"/>
+                                </draw-text>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-val-0-43 comment="false" x="0" y="0">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-43>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <and comment="false" id="0" x="0" y="0">
+                                            <moreeq comment="false" id="0" x="0" y="0">
+                                                <mousexy comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <int id="1" val="0"/>
+                                                </mousexy>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="4"/>
+                                                    </get-xy>
+                                                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                                </plus>
+                                            </moreeq>
+                                            <less comment="false" id="1" x="0" y="0">
+                                                <mousexy comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <int id="1" val="0"/>
+                                                </mousexy>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="4"/>
+                                                    </get-xy>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-val-0-11 comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-0-33 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                </plus>
+                                            </less>
+                                        </and>
+                                        <and comment="false" id="1" x="0" y="0">
+                                            <moreeq comment="false" id="0" x="0" y="0">
+                                                <mousexy comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <int id="1" val="1"/>
+                                                </mousexy>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="5"/>
+                                                    </get-xy>
+                                                    <get-val-0-26 comment="false" id="1" x="0" y="0"/>
+                                                </plus>
+                                            </moreeq>
+                                            <less comment="false" id="1" x="0" y="0">
+                                                <mousexy comment="false" id="0" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                    <int id="1" val="1"/>
+                                                </mousexy>
+                                                <plus comment="false" id="1" x="0" y="0">
+                                                    <get-xy comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="this" id="0"/>
+                                                        <int id="1" val="5"/>
+                                                    </get-xy>
+                                                    <plus comment="false" id="1" x="0" y="0">
+                                                        <get-val-0-26 comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-0-34 comment="false" id="1" x="0" y="0"/>
+                                                    </plus>
+                                                </plus>
+                                            </less>
+                                        </and>
+                                    </and>
+                                </if>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="3" id="-1">
+                                        <set-thickness comment="false" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                        </set-thickness>
+                                        <drawfill-rect comment="false" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                            <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                            <get-val-0-26 comment="false" id="2" x="0" y="0"/>
+                                            <get-val-0-33 comment="false" id="3" x="0" y="0"/>
+                                            <get-val-0-34 comment="false" id="4" x="0" y="0"/>
+                                        </drawfill-rect>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <scene-has-snippet comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="Game Debugger"/>
+                                        </scene-has-snippet>
+                                        <as-boolean comment="false" id="1" x="0" y="0">
+                                            <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="Game Debugger"/>
+                                                <int id="1" val="_Enabled"/>
+                                            </scene-get-attribute>
+                                        </as-boolean>
+                                    </and>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-0-28 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                        </repeat>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="3" id="-1">
+                                <set-stroke-color comment="false" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Game Debugger"/>
+                                        <int id="1" val="_CustomColor"/>
+                                    </scene-get-attribute>
+                                </set-stroke-color>
+                                <set-thickness comment="false" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Game Debugger"/>
+                                        <int id="1" val="_StrokeThickness"/>
+                                    </scene-get-attribute>
+                                </set-thickness>
+                                <draw-transtoby comment="false" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-transtoby>
+                                <drawfill-rect comment="false" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <get-val-0-18 comment="false" id="3" x="0" y="0"/>
+                                    <get-val-0-25 comment="false" id="4" x="0" y="0"/>
+                                </drawfill-rect>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <scene-has-snippet comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Game Debugger"/>
+                                </scene-has-snippet>
+                                <as-boolean comment="false" id="1" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Game Debugger"/>
+                                        <int id="1" val="_Enabled"/>
+                                    </scene-get-attribute>
+                                </as-boolean>
+                            </and>
+                        </if>
+                    </group>
+                    <get-val-0-31 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="5" id="-1">
+                        <anchor-screen comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </anchor-screen>
+                    </group>
+                    <get-val-0-14 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="0" y="0">
+                    <group eventID="5" id="-1">
+                        <toggle-image comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </toggle-image>
+                    </group>
+                    <get-val-0-32 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-0-31 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-31>
+                <set-val-0-42 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-42>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="0">
+        <receiver-1-4 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-0-4 comment="false" x="0" y="0">
+                    <get-byobval-0-4-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-4>
+                <set-val-0-42 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-42>
+            </group>
+        </receiver-1-4>
+    </group>
+    <group eventID="7" id="0">
+        <receiver-2-5 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-0-1 comment="false" x="0" y="0">
+                    <get-byobval-0-5-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-1>
+                <set-val-0-42 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-42>
+            </group>
+        </receiver-2-5>
+    </group>
+    <group eventID="8" id="0">
+        <receiver-3-6 comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-val-0-17 comment="false" x="0" y="0">
+                    <int id="0" val="Left"/>
+                </set-val-0-17>
+            </group>
+        </receiver-3-6>
+    </group>
+    <group eventID="9" id="0">
+        <receiver-4-1 comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <set-val-0-17 comment="false" x="0" y="0">
+                    <int id="0" val="Center"/>
+                </set-val-0-17>
+            </group>
+        </receiver-4-1>
+    </group>
+    <group eventID="10" id="0">
+        <receiver-5-2 comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <set-val-0-17 comment="false" x="0" y="0">
+                    <int id="0" val="Right"/>
+                </set-val-0-17>
+            </group>
+        </receiver-5-2>
+    </group>
+    <group eventID="11" id="0">
+        <receiver-6-3 comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <set-val-0-18 comment="false" x="0" y="0">
+                    <get-byobval-0-3-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-18>
+                <set-val-0-42 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-42>
+            </group>
+        </receiver-6-3>
+    </group>
+    <group eventID="13" id="0">
+        <receiver-7-7 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <set-val-0-24 comment="false" x="0" y="0">
+                    <int id="0" val="Top"/>
+                </set-val-0-24>
+            </group>
+        </receiver-7-7>
+    </group>
+    <group eventID="14" id="0">
+        <receiver-8-8 comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <set-val-0-24 comment="false" x="0" y="0">
+                    <int id="0" val="Middle"/>
+                </set-val-0-24>
+            </group>
+        </receiver-8-8>
+    </group>
+    <group eventID="15" id="0">
+        <receiver-9-9 comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <set-val-0-24 comment="false" x="0" y="0">
+                    <int id="0" val="Bottom"/>
+                </set-val-0-24>
+            </group>
+        </receiver-9-9>
+    </group>
+    <group eventID="16" id="0">
+        <receiver-10-10 comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <set-val-0-25 comment="false" x="0" y="0">
+                    <get-byobval-0-10-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-25>
+                <set-val-0-42 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-42>
+            </group>
+        </receiver-10-10>
+    </group>
+    <group eventID="17" id="0">
+        <receiver-12-11 comment="false" x="15" y="15">
+            <group eventID="17" id="-1">
+                <set-val-0-31 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-31>
+            </group>
+        </receiver-12-11>
+    </group>
+    <group eventID="18" id="0">
+        <receiver-13-12 comment="false" x="15" y="15">
+            <group eventID="18" id="-1">
+                <set-val-0-31 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-31>
+            </group>
+        </receiver-13-12>
+    </group>
+    <group eventID="19" id="0">
+        <receiver-15-13 comment="false" x="15" y="15">
+            <group eventID="19" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-43 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-15-13>
+    </group>
+    <group eventID="20" id="0">
+        <receiver-16-14 comment="false" x="15" y="15">
+            <group eventID="20" id="-1">
+                <return comment="false" x="0" y="0">
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="0"/>
+                                </mousexy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="4"/>
+                                </get-xy>
+                            </moreeq>
+                            <less comment="false" id="1" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="0"/>
+                                </mousexy>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="4"/>
+                                    </get-xy>
+                                    <get-val-0-18 comment="false" id="1" x="0" y="0"/>
+                                </plus>
+                            </less>
+                        </and>
+                        <and comment="false" id="1" x="0" y="0">
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="1"/>
+                                </mousexy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="5"/>
+                                </get-xy>
+                            </moreeq>
+                            <less comment="false" id="1" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="1"/>
+                                </mousexy>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="5"/>
+                                    </get-xy>
+                                    <get-val-0-25 comment="false" id="1" x="0" y="0"/>
+                                </plus>
+                            </less>
+                        </and>
+                    </and>
+                </return>
+            </group>
+        </receiver-16-14>
+    </group>
+</groups>

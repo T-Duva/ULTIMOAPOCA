@@ -1,0 +1,50 @@
+
+# New Game Dialog
+dg.game.new.title=Créer un Nouveau Jeu...
+dg.kit.new.title=Créer un Nouveau Kit...
+dg.game.new.info.basic=Info Basique
+dg.game.new.info.name=Nom
+dg.game.new.info.size=Taille de l'Écran (Web)
+dg.game.new.info.standard=640 x 480
+dg.game.new.info.size.info=En train de créer un jeu pour mobiles? Utilisez 320 x 480 (ou 480 x 320).
+dg.game.new.info.custom=Personnalisée
+dg.game.new.info.width=Largeur
+dg.game.new.info.height=Hauteur
+dg.game.new.save.prompt=Vous êtes sur le point de créer un nouveau jeu.
+# Rename
+dg.game.rename=Vous devez enregistrer le jeu pour compléter cette action. Voulez vous l'enregistrer?
+dg.game.rename2=Renommer un jeu requiert de l'enregistrer au préalable.
+dg.game.rename.samename.warning=Choisissez un nom différent pour le nouveau jeu
+dg.game.rename.samename.warning.i=Si vous voulez utilisez ce nom, renommez le jeu, puis sauvegarder le avec le nom désiré.
+dg.game.rename.fail=Impossible de renommer ce jeu
+dg.game.rename.fail.i=Stencyl ne dispose pas des droits suffisant pour renommer le jeu. Choisissez un nom différent.
+# LOGO
+dg.game.logo=Logo du Jeu
+dg.game.logo.info=La taille optimale est de 120 x 90 pixels.
+dg.game.icon=Icône
+dg.game.icon.info=1024 x 1024 pixels. Utilisé pour les jeux mobiles & d'ordinateurs. Se redimensionnera si ce n'est pas la taille réelle.
+# Kits
+dg.game.step1=Quel type de jeu voulez-vous créer?
+dg.game.step1.info=(Étape 1 sur 2)
+dg.game.step2=Jeu Basé sur: <0>
+dg.game.step2.info=(Étape 2 sur 2)
+dg.game.kits.blank=Jeu Vierge
+dg.game.kits.blank.desc=Commencer de zéro avec un jeu vierge.
+# MISSING KIT
+dg.game.kit.missing=Ne parvient pas à localiser le Kit <0> .
+dg.game.kit.missing.i=Téléchargez le Kit manquant à partir de StencylForge.
+# ERRORS
+dg.game.new.error=Ne parvient pas à Créer un Nouveau Jeu...
+dg.game.new.error.game.open=Vous ne pouvez créer un nouveau Jeu tant que le Jeu actuel n'est pas fermé.
+dg.game.new.tutorial=Tutorials help you learn your away around Stencyl.<br><br>To begin, give your game a name.
+# SCALING
+dg.game.scale=Scaling
+dg.game.scale.mode=Scale Mode
+dg.game.scale.info=Exécute un jeu à une plus haute résolution que "1x". Ne s'applique pas quand c'est en plein écran.
+dg.game.scale.mode.info=Pour un jeu web ou d'ordinateur, spécifie si des graphiques en en Haute Résolution son utilisés ou si les images sont redimensionnés dynamiquement.
+dg.game.scale.highres=Utiliser des Graphiques Haute Résolution (Défaut)
+dg.game.scale.dynamic=Redimensionner dynamiquement
+# PHYS
+dg.game.phys=Utilisez 'Physique Simplifiée' si votre jeu ne nécessite pas de la physique réaliste, <br> se joue au tour par tour, ou a beaucoup d'acteurs sur l'écran.
+dg.game.phys1=Box2D (Défaut)
+dg.game.phys2=Physique Simplifiée

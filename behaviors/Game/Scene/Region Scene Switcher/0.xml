@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_RegionSceneSwitcher"
+    classname="scripts.Design_0_0_RegionSceneSwitcher"
+    desc="Switch to different scenes when an actor of a given type enters different regions."
+    description="Switch to different scenes when an actor of a given type enters different regions."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Region Scene Switcher"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <region
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Region"
+        hidden="true"
+        id="1"
+        name="_Region"
+        order="2"/>
+    <scene
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Scene"
+        hidden="true"
+        id="2"
+        name="_Scene"
+        order="4"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc="A list containing the ID of the region followed by the scene to switch to when entering this region.&#10;The format is&lt;br/&gt;&#10;&lt;em&gt;Region ID,Scene Name&lt;/em&gt;&lt;br/&gt;&lt;br/&gt;&#10;Optionally you can also include coordinates where to spawn the actor in the next scene.&#10;In this case the format is&lt;br/&gt;&#10;&lt;em&gt;Region ID,Scene Name,X,Y&lt;/em&gt;"
+        dropdown=""
+        fullname="Region Scene List"
+        hidden="false"
+        id="7"
+        name="_RegionSceneList"
+        order="10"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Entry"
+        hidden="true"
+        id="8"
+        name="_Entry"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Region ID"
+        hidden="true"
+        id="9"
+        name="_RegionID"
+        order="1"/>
+    <text
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Scene Name"
+        hidden="true"
+        id="10"
+        name="_SceneName"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X"
+        hidden="true"
+        id="13"
+        name="_XVar"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y"
+        hidden="true"
+        id="14"
+        name="_YVar"
+        order="6"/>
+    <actortype
+        default=""
+        defaultValue=""
+        desc="When an actor of this type enters one of the regions in the &lt;var&gt;Region Scene List&lt;var/&gt; it will trigger the scene switch."
+        dropdown=""
+        fullname="Actor Type"
+        hidden="false"
+        id="15"
+        name="_ActorType"
+        order="9"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, only switch scene, when &lt;var&gt;Switch Control&lt;/var&gt; is pressed, while the actor is within a region."
+        dropdown=""
+        fullname="Only Switch On Key Press"
+        hidden="false"
+        id="16"
+        name="_OnlySwitchOnKeyPress"
+        order="11"/>
+    <control
+        default=""
+        defaultValue=""
+        desc="The Control to trigger the scene switch if &lt;var&gt;Only Switch On Key Press&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Switch Control"
+        hidden="false"
+        id="17"
+        name="_SwitchControl"
+        order="12"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="In Region"
+        hidden="true"
+        id="18"
+        name="_InRegion"
+        order="7"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Done"
+        hidden="true"
+        id="19"
+        name="_Done"
+        order="8"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition out, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise the time to transition out and in."
+        dropdown=""
+        fullname="Out Time"
+        hidden="false"
+        id="20"
+        name="_OutTime"
+        order="14"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition in, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise it is ignored."
+        dropdown=""
+        fullname="In Time"
+        hidden="false"
+        id="21"
+        name="_InTime"
+        order="15"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The style to use for the switch scene transition."
+        dropdown="Fade=Fade&#10;Blinds=Blinds&#10;Bubbles=Bubbles&#10;Spotlight=Spotlight&#10;Blur=Blur&#10;Box=Box&#10;Crossfade=Crossfade&#10;Slide Up=Slide Up&#10;Slide Down=Slide Down&#10;Slide Left=Slide Left&#10;Slide Right=Slide Right"
+        fullname="Transition Style"
+        hidden="false"
+        id="22"
+        name="_TransitionStyle"
+        order="13"/>
+    <blocks>
+        <receiver blockID="132" id="1"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Keyboard"
+            enabled="true"
+            id="2"
+            name="event-key-press-release"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="SwitchScene"
+            enabled="true"
+            id="4"
+            name="event-custom"
+            order="4"
+            repeats="true"/>
+    </events>
+</snippet>

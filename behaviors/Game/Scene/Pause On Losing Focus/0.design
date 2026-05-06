@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <event-focus-changed comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-9>
+                <pause-unpause comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                </pause-unpause>
+            </group>
+            <int id="0" val="0"/>
+        </event-focus-changed>
+    </group>
+    <group eventID="2" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="2" id="-1">
+                        <pause-unpause comment="false" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </pause-unpause>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <is-paused comment="false" id="0" x="0" y="0"/>
+                        <get-val-0-9 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-9>
+            </group>
+            <int id="0" val="1"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="6" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="-1" id="-1">
+                        <pause-unpause comment="false" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </pause-unpause>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <is-paused comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+                <else comment="false" x="0" y="0">
+                    <group eventID="-1" id="-1">
+                        <pause-unpause comment="false" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </pause-unpause>
+                    </group>
+                </else>
+            </group>
+            <CONTROL eid="var" id="0" vid="2"/>
+            <int id="1" val="1"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="7" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="7" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="7" id="-1">
+                                <set-color comment="false" x="0" y="0">
+                                    <color id="0" vid="8"/>
+                                </set-color>
+                                <set-alpha comment="false" x="0" y="0">
+                                    <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                                </set-alpha>
+                                <drawfill-rect comment="false" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <screen-wh comment="false" id="3" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <screen-wh comment="false" id="4" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                </drawfill-rect>
+                            </group>
+                            <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="7" id="-1">
+                                <set-font-new comment="false" x="0" y="0">
+                                    <FONT eid="var" id="0" vid="11"/>
+                                </set-font-new>
+                                <draw-text comment="false" x="0" y="0">
+                                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                    <div comment="false" id="1" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <get-font-width comment="false" id="1" x="0" y="0">
+                                                <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                            </get-font-width>
+                                        </minus>
+                                        <int id="1" val="2"/>
+                                    </div>
+                                    <div comment="false" id="2" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </screen-wh>
+                                            <get-font-height comment="false" id="1" x="0" y="0"/>
+                                        </minus>
+                                        <int id="1" val="2"/>
+                                    </div>
+                                </draw-text>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <str-length comment="false" id="0" x="0" y="0">
+                                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                </str-length>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <is-paused comment="false" id="0" x="0" y="0"/>
+                        <get-val-0-9 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+            </group>
+        </draw>
+    </group>
+</groups>

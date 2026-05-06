@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <set-val-0-2 comment="false" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-xy>
+                                    <mousexy comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <int id="1" val="0"/>
+                                    </mousexy>
+                                </plus>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                            </minus>
+                        </set-val-0-2>
+                        <set-val-0-3 comment="false" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-xy>
+                                    <mousexy comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <int id="1" val="1"/>
+                                    </mousexy>
+                                </plus>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                            </minus>
+                        </set-val-0-3>
+                        <setangle comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <to-degreesradians comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <atan2 comment="false" id="1" x="0" y="0">
+                                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                                    </atan2>
+                                </to-degreesradians>
+                                <get-val-0-4 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                        </setangle>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                        <mousestate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </mousestate>
+                    </or>
+                </if>
+            </group>
+        </step>
+    </group>
+</groups>

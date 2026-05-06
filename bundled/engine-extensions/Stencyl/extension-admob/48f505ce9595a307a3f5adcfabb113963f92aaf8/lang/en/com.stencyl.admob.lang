@@ -1,0 +1,128 @@
+# blocks
+
+admob-initialize2=initialize AdMob ads (set banner position to %0) [c:mobile]
+admob-initialize2.help=Initialize AdMob banner and/or fullscreen ads, use only once in your first scene. Set banner position if you are using banners. If you are only using fullscreen ads ignor banner position
+
+admob-show-hide-banner=%0 AdMob banner ad [c:mobile]
+admob-show-hide-banner.help=Shows and hide the AdMob banner.
+
+admob-show-fullscreen=%0 AdMob fullscreen ad [c:mobile]
+admob-show-fullscreen.help=Load/Show AdMob fullscreen ads
+
+admob-show-rewarded=%0 AdMob rewarded ad [c:mobile]
+admob-show-rewarded.help=Load/Show AdMob rewarded ads
+
+admob-show-rewardedinterstitial=%0 AdMob rewarded interstitial ad [c:mobile]
+admob-show-rewardedinterstitial.help=Load/Show AdMob rewarded interstitial ads
+
+admob-reinit-banner=reinitialize AdMob banner [c:mobile]
+admob-reinit-banner.help=Reinitialize Admob banner.
+
+admob-setbanner-position=move banner to %0 [c:mobile]
+admob-setbanner-position.help=Move banner position.
+
+admob-showConsentForm=show consent form %0 [c:mobile]
+admob-showConsentForm.help=Show the consent form (will only appear to players in the EEA).
+
+admob-setDebugGeography=set AdMob debug geography to %0 [c:mobile]
+admob-setDebugGeography.help=A debug geography can be specified to test consent forms in another region
+admob-setChildDirectedTreatment=set AdMob child-directed tag to %0 [c:mobile]
+admob-setChildDirectedTreatment.help=Set the child-directed treatment tag. This overrides the setting in the online AdMob dashboard.
+admob-setUnderAgeOfConsent=set AdMob "under age of consent" tag to %0 [c:mobile]
+admob-setUnderAgeOfConsent.help=Set the "under age of consent" tag. This overrides the setting in the online AdMob dashboard.
+admob-setMaxAdContentRating=set AdMob max ad content rating to %0 [c:mobile]
+admob-setMaxAdContentRating.help=Set the max ad content rating. This overrides the setting in the online AdMob dashboard.
+
+admob-ad-is-type=ad is %0
+admob-ad-is-type.help=check the type of ad this event is reacting to
+
+# events
+
+event-mobile-ads=when %0 [c:ad]
+event-mobile-ads.help=When ads are shown.
+
+event-mobile-ads-reward=when rewarded ad is completed %1 %2 [c:ad]
+event-mobile-ads-reward.help=This event occurs when a rewarded ad is completed. The reward should be given to the player.
+
+admob-ad-reward-type=reward type
+admob-ad-reward-amount=reward amount
+
+# block dropdowns
+
+banner=banner ad
+interstitial=interstitial ad
+rewarded=rewarded ad
+rewardedinterstitial=rewarded interstitial ad
+bottom=bottom
+top=top
+show=show
+hide=hide
+load=load
+debugGeography.eea=in the eea
+debugGeography.not_eea=not in the eea
+debugGeography.disabled=disabled
+rating.g=g
+rating.pg=pg
+rating.t=t
+rating.ma=ma
+true=true
+false=false
+unspecified=unspecified
+consent-check-existing=check existing consent
+consent-always-show=always show
+event.mobile.ads.viewed=a banner ad is showing
+event.mobile.ads.closed=a banner ad is closed
+event.mobile.ads.loaded=the banner ad area loads
+event.mobile.ads.failed=the banner ad area fails to load
+event.mobile.ads.clicked=the banner ad area is clicked
+event.mobile.fullads.viewed=a fullscreen ad is showing
+event.mobile.fullads.closed=a fullscreen ad is closed
+event.mobile.fullads.loaded=the fullscreen ad area loads
+event.mobile.fullads.failed=the fullscreen ad area fails to load
+event.mobile.fullads.clicked=the fullscreen ad area is clicked
+
+events.defs.ads=Ads
+events.defs.ads.reward=Ad Reward
+
+# gui
+
+mobile.settings.money.admob=AdMob Ads
+
+fields.enableAdmobAds.label=Enable Admob Ads
+fields.enableAdmobAds.hint=To use Admob in your game, you must enable Admob first. If it's disabled, the blocks and test ads will not work.
+
+fields.enableTestAds.label=Enable Test Ads
+fields.enableTestConsent.label=Enable Test Consent Forms
+
+mobile.settings.money.admob.ios=AdMob Ads - iOS
+mobile.settings.money.admob.android=AdMob Ads - Android
+
+fields.appID.label=AdMob Application Identifier
+fields.bannerKey.label=AdMob Banner Key
+fields.interstitialKey.label=AdMob Interstitial Key
+fields.rewardedKey.label=AdMob Rewarded Key
+fields.rewardedInterstitialKey.label=AdMob Rewarded Interstitial Key
+
+# build
+
+errors.appid=To enable ads in your game, your AdMob Application Identifier must be set.
+
+# deprecated
+
+admob-initialize=initialize AdMob ads with app ID %0 (set banner position to %1) [c:mobile]
+
+admob-setPrivacyURL=set privacy policy URL to %0 [c:mobile]
+admob-setPrivacyURL.help=Set your privacy policy URL that is used by the consent SDK.
+
+iad-height=height of mobile ad [c:mobile]
+iad-height.help=Height of the Mobile banner Ads - it changes based on portrait/landscape
+
+iad-load-show=%0 mobile fullscreen ad [c:mobile]
+iad-load-show.help=Load/Hide Fullscreen MobileAds
+
+iad-show-hide=%0 mobile banner ad [c:mobile]
+iad-show-hide.help=Show/Hide Banner MobileAds
+
+block.load=load
+block.show=show
+block.hide=hide

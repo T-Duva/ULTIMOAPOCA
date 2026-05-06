@@ -1,0 +1,6 @@
+type: extension-github
+group: Stencyl
+name: extension-cpmstar
+version: 8b6bd75bcacf29323be895c12dd912524d5ca6f9
+semver: 1.0.0
+tags: stencyl_engine,base_bundle

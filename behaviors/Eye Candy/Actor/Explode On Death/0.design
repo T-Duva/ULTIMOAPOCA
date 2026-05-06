@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="2" id="-1">
+                        <repeat comment="false" x="0" y="0">
+                            <group eventID="2" id="-1">
+                                <create-actor3 comment="false" x="0" y="0">
+                                    <actortype eid="var" id="0" vid="22"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-val-0-28 comment="false" x="0" y="0">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <int id="1" val="360"/>
+                                    </randint>
+                                </set-val-0-28>
+                                <set-xy comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="lastcreated" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-wh>
+                                        </minus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-0-27 comment="false" id="0" x="0" y="0"/>
+                                            <trig-master comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <get-val-0-28 comment="false" id="1" x="0" y="0"/>
+                                                </to-degreesradians>
+                                                <int id="2" val="1"/>
+                                            </trig-master>
+                                        </times>
+                                    </plus>
+                                </set-xy>
+                                <set-xy comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-xy>
+                                            <get-wh comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="lastcreated" id="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-wh>
+                                        </minus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-0-27 comment="false" id="0" x="0" y="0"/>
+                                            <trig-master comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <to-degreesradians comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                    <get-val-0-28 comment="false" id="1" x="0" y="0"/>
+                                                </to-degreesradians>
+                                                <int id="2" val="1"/>
+                                            </trig-master>
+                                        </times>
+                                    </plus>
+                                </set-xy>
+                                <setvel comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <get-val-0-28 comment="false" id="1" x="0" y="0"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-val-0-25 comment="false" id="0" x="0" y="0"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <random comment="false" id="0" x="0" y="0"/>
+                                            <get-val-0-17 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </plus>
+                                </setvel>
+                                <setav comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <neg comment="false" id="0" x="0" y="0">
+                                            <get-val-0-24 comment="false" id="0" x="0" y="0"/>
+                                        </neg>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <times comment="false" id="0" x="0" y="0">
+                                                <random comment="false" id="0" x="0" y="0"/>
+                                                <get-val-0-24 comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                            <int id="1" val="2"/>
+                                        </times>
+                                    </plus>
+                                </setav>
+                            </group>
+                            <get-val-0-23 comment="false" id="0" x="0" y="0"/>
+                        </repeat>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="22"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="0" y="0">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="0" y="0">
+                            <actortype eid="var" id="0" vid="29"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-xy comment="false" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                        <set-xy comment="false" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="29"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+</groups>

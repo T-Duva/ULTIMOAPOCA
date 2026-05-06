@@ -1,0 +1,6 @@
+type: extension-github
+group: Stencyl
+name: extension-kongregate
+version: 203f6339855d95e3712c966d7146a3db1e2fc26f
+semver: 1.0.0
+tags: stencyl_engine,base_bundle

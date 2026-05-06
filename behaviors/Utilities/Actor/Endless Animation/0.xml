@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_EndlessAnimation"
+    classname="scripts.Design_0_0_EndlessAnimation"
+    desc="Create animations consisting of several successively playing animations."
+    description="Create animations consisting of several successively playing animations."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Endless Animation"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc="Animations that should be played like a single animation have to be named with a common prefix followed by &apos;-&apos;, followed by a number specifying the order of the animations. &lt;br/&gt;For example:&lt;br/&gt;&#10;&lt;em&gt;Anim-1&lt;/em&gt;&lt;br/&gt;&#10;&lt;em&gt;Anim-2&lt;/em&gt;&lt;br/&gt;&#10;&lt;em&gt;Anim-3&lt;/em&gt;&lt;br/&gt;&#10;&lt;br/&gt;&#10;To treat an animations as a single animation, add&#10;&lt;br/&gt;&#10;&lt;em&gt;Prefix,StartIndex,EndIndex&lt;/em&gt;&#10;&lt;br/&gt;&#10;to the list. In the example above, you would add &lt;em&gt;Anim,1,3&lt;/em&gt;&#10;to the list.&lt;br/&gt;&#10;&lt;br/&gt;&#10;You can change the mode for each set of animations by providing a forth parameter in the list entry&#10;&lt;br/&gt;&#10;&lt;em&gt;Prefix,StartIndex,EndIndex,Mode&lt;/em&gt;&#10;&lt;br/&gt;&#10;where &lt;em&gt;Mode&lt;/em&gt; must be &lt;em&gt;Loop&lt;/em&gt;, &lt;em&gt;Stop&lt;/em&gt; or &lt;em&gt;Reverse&lt;/em&gt;."
+        dropdown=""
+        fullname="Animation List"
+        hidden="false"
+        id="1"
+        name="_AnimationList"
+        order="14"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Entry"
+        hidden="true"
+        id="5"
+        name="_Entry"
+        order="8"/>
+    <text
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Current Animation Prefix"
+        hidden="true"
+        id="6"
+        name="_CurrentAnimationPrefix"
+        order="6"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Parts"
+        hidden="true"
+        id="7"
+        name="_Parts"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Current Animation Index"
+        hidden="true"
+        id="8"
+        name="_CurrentAnimationIndex"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Last Frame Duration"
+        hidden="true"
+        id="10"
+        name="_LastFrameDuration"
+        order="4"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Waiting"
+        hidden="true"
+        id="11"
+        name="_Waiting"
+        order="1"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The default mode used if no mode is specified in a list entry.&lt;br/&gt;&#10;&lt;em&gt;Loop&lt;/em&gt; - Continue with the first animation after the last animation.&lt;br/&gt;&#10;&lt;em&gt;Stop&lt;/em&gt; - Stop after the last animation.&lt;br/&gt;&#10;&lt;em&gt;Reverse&lt;/em&gt; - Reverse the order in which the animations are played after playing the last or first animation."
+        dropdown="Loop=Loop&#10;Stop=Stop&#10;Reverse=Reverse"
+        fullname="Default Mode"
+        hidden="false"
+        id="12"
+        name="_DefaultMode"
+        order="15"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Reverse"
+        hidden="true"
+        id="13"
+        name="_Reverse"
+        order="12"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Last Animation Index"
+        hidden="true"
+        id="14"
+        name="_LastAnimationIndex"
+        order="10"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="First Animation Index"
+        hidden="true"
+        id="15"
+        name="_FirstAnimationIndex"
+        order="9"/>
+    <text
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Current Mode"
+        hidden="true"
+        id="16"
+        name="_CurrentMode"
+        order="11"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Current Frame"
+        hidden="true"
+        id="17"
+        name="_CurrentFrame"
+        order="3"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Current Animation"
+        hidden="true"
+        id="18"
+        name="_CurrentAnimation"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Next Animation Index"
+        hidden="true"
+        id="20"
+        name="_NextAnimationIndex"
+        order="13"/>
+    <blocks>
+        <receiver blockID="1" id="1"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="3"
+            repeats="false"/>
+        <event
+            displayName="SwitchEndlessAnimation"
+            enabled="true"
+            id="2"
+            name="event-custom-block"
+            order="5"
+            repeats="true"/>
+    </events>
+</snippet>

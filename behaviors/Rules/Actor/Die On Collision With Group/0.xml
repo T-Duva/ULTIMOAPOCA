@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DieOnCollisionWithGroup"
+    classname="scripts.Design_0_0_DieOnCollisionWithGroup"
+    desc="Attach to an actor to make it die when it collides with an actor of a specific collision group."
+    description="Attach to an actor to make it die when it collides with an actor of a specific collision group."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Die On Collision With Group"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <actorgroup
+        default=""
+        defaultValue=""
+        desc="When the actor collides with an actor, it will die if the other actor is of from this group."
+        dropdown=""
+        fullname="Group"
+        hidden="false"
+        id="2"
+        name="_Group"
+        order="1"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Collision"
+            enabled="true"
+            id="1"
+            name="event-collide-actortogroup"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-thickness comment="false" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </set-thickness>
+                        <set-stroke-color comment="false" x="0" y="0">
+                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        </set-stroke-color>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="for (terrain in engine.getTerrainRegions())&#10;{&#10;&#9;var position:B2Vec2 = terrain.getBody().getPosition();&#10;&#10;&#9;var fixture:B2Fixture = terrain.getBody().getFixtureList();&#10;&#9;&#10;&#9;while(fixture != null)&#10;&#9;{&#10;&#9;&#9;var shape:B2Shape = fixture.getShape();&#10;&#10;&#9;&#9;if(Std.is(shape, B2CircleShape))&#10;&#9;&#9;{&#10;&#9;&#9;&#9;var circleShape:B2CircleShape = cast(shape, B2CircleShape);&#10;&#9;&#9;&#9;g.drawCircle(Engine.toPixelUnits(position.x), Engine.toPixelUnits(position.y), Engine.toPixelUnits(circleShape.getRadius()));&#10;&#9;&#9;}&#10;&#9;&#9;else if(Std.is(shape, B2PolygonShape))&#10;&#9;&#9;{&#10;&#9;&#9;&#9;var polygonShape:B2PolygonShape = cast(shape, B2PolygonShape);&#10;&#10;&#9;&#9;&#9;var vertices:Array&amp;lt;B2Vec2&amp;gt; = polygonShape.getVertices();&#10;&#10;&#9;&#9;&#9;g.beginDrawPolygon();&#10;&#9;&#9;&#9;for (vertex in vertices)&#10;&#9;&#9;&#9;{&#10;&#9;&#9;&#9;&#9;g.addPointToPolygon(Engine.toPixelUnits(position.x + vertex.x), Engine.toPixelUnits(position.y + vertex.y));&#10;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;g.endDrawingPolygon();&#10;&#9;&#9;}&#10;&#10;&#9;&#9;fixture = fixture.getNext();&#10;&#9;}&#10;}"/>
+                        </code-long>
+                    </group>
+                    <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-color comment="false" x="0" y="0">
+                            <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                        </set-color>
+                        <set-thickness comment="false" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </set-thickness>
+                        <set-stroke-color comment="false" x="0" y="0">
+                            <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                        </set-stroke-color>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="for (terrain in engine.getTerrainRegions())&#10;{&#10;&#9;var position:B2Vec2 = terrain.getBody().getPosition();&#10;&#10;&#9;var fixture:B2Fixture = terrain.getBody().getFixtureList();&#10;&#9;&#10;&#9;while(fixture != null)&#10;&#9;{&#10;&#9;&#9;var shape:B2Shape = fixture.getShape();&#10;&#10;&#9;&#9;if(Std.is(shape, B2CircleShape))&#10;&#9;&#9;{&#10;&#9;&#9;&#9;var circleShape:B2CircleShape = cast(shape, B2CircleShape);&#10;&#9;&#9;&#9;g.fillCircle(Engine.toPixelUnits(position.x), Engine.toPixelUnits(position.y), Engine.toPixelUnits(circleShape.getRadius()));&#10;&#9;&#9;}&#10;&#9;&#9;else if(Std.is(shape, B2PolygonShape))&#10;&#9;&#9;{&#10;&#9;&#9;&#9;var polygonShape:B2PolygonShape = cast(shape, B2PolygonShape);&#10;&#10;&#9;&#9;&#9;var vertices:Array&amp;lt;B2Vec2&amp;gt; = polygonShape.getVertices();&#10;&#10;&#9;&#9;&#9;g.beginFillPolygon();&#10;&#9;&#9;&#9;for (vertex in vertices)&#10;&#9;&#9;&#9;{&#10;&#9;&#9;&#9;&#9;g.addPointToPolygon(Engine.toPixelUnits(position.x + vertex.x), Engine.toPixelUnits(position.y + vertex.y));&#10;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;g.endDrawingPolygon();&#10;&#9;&#9;}&#10;&#10;&#9;&#9;fixture = fixture.getNext();&#10;&#9;}&#10;}"/>
+                        </code-long>
+                    </group>
+                    <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="0">
+        <event-custom-import comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <code-long comment="false" x="0" y="0">
+                    <int id="0" val="import box2D.common.math.B2Vec2;&#10;import box2D.dynamics.B2Fixture;&#10;import box2D.collision.shapes.B2Shape;&#10;import box2D.collision.shapes.B2CircleShape;&#10;import box2D.collision.shapes.B2PolygonShape;"/>
+                </code-long>
+            </group>
+        </event-custom-import>
+    </group>
+</groups>

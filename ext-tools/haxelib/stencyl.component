@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: stencyl-engine
+version: 0db7dc6799247bbe8b29dec0e2e1f69f2a7337d5
+tags: stencyl_engine,base_bundle

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-7"
+    blocktype="ACTION"
+    code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_DecrementScore&quot;, []);"
+    desc=""
+    global="false"
+    gui="Decrement Score By %0"
+    id="7"
+    message="DecrementScore"
+    name="DecrementScore"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Amount" order="0" type="number"/>
+</custom-block>

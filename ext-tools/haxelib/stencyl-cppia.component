@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: stencyl-cppia
+version: 0b9e1aeb8f793e01e1433b961af284b49716fe8d
+tags: target_cppia

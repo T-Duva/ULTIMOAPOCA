@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-purchases
+version: d3da313e6bca840581d308c66f199153a6dca469
+tags: stencyl_engine,base_bundle

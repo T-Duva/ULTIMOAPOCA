@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-13"
+    blocktype="NORMAL"
+    code="(.say(&quot;Label&quot;, &quot;_customBlock_MouseOverText&quot;) : Bool)"
+    desc=""
+    global="false"
+    gui="is mouse over text for %0"
+    id="13"
+    message="MouseOverText"
+    name="MouseOverText"
+    oid="-1"
+    return="boolean"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

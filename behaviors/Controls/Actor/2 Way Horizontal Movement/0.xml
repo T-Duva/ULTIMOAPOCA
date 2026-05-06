@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_2WayHorizontalMovement"
+    classname="scripts.Design_0_0_2WayHorizontalMovement"
+    desc="Allows the actor to move left and right."
+    description="Allows the actor to move left and right."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="2 Way Horizontal Movement"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="30.0"
+        defaultValue="30.0"
+        desc="The speed of the movement."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="11"
+        name="_Speed"
+        order="6"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Control"
+        hidden="false"
+        id="33"
+        name="_LeftControl"
+        order="4"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Control"
+        hidden="false"
+        id="34"
+        name="_RightControl"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Move X"
+        hidden="true"
+        id="37"
+        name="_MoveX"
+        order="1"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events. &#10;Trigger the events &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed."
+        dropdown=""
+        fullname="Use Controls"
+        hidden="false"
+        id="38"
+        name="_UseControls"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor will not be able to move vertically."
+        dropdown=""
+        fullname="Prevent Vertical Movement"
+        hidden="false"
+        id="39"
+        name="_PreventVerticalMovement"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Start Y"
+        hidden="true"
+        id="40"
+        name="_StartY"
+        order="2"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Animation (Idle)"
+        hidden="false"
+        id="41"
+        name="_LeftAnimationIdle"
+        order="10"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Animation"
+        hidden="false"
+        id="42"
+        name="_LeftAnimation"
+        order="11"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Animation (Idle)"
+        hidden="false"
+        id="43"
+        name="_RightAnimationIdle"
+        order="12"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Animation"
+        hidden="false"
+        id="44"
+        name="_RightAnimation"
+        order="13"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the animation attributes will be used, otherwise they will be ignored."
+        dropdown=""
+        fullname="Use Animations"
+        hidden="false"
+        id="45"
+        name="_UseAnimations"
+        order="9"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will not be able to turn while moving."
+        dropdown=""
+        fullname="Stop Turning"
+        hidden="false"
+        id="46"
+        name="_StopTurning"
+        order="8"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="3"
+            name="step"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="4"
+            name="event-custom"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="5"
+            name="event-custom"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="6"
+            name="init"
+            order="3"
+            repeats="true"/>
+    </events>
+</snippet>

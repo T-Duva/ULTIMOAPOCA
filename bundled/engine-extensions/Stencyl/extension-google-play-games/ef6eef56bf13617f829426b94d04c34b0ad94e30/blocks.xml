@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+
+    <block tag="gpg-connection"
+           code="com.stencyl.googleplaygames.GooglePlayGames.getConnectionInfo(~)"
+           type="normal"
+           returns="boolean"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@established" code="0" />
+                    <c text="@pending" code="1" />
+                    <c text="@failed" code="2" />
+                    <c text="@cancelled" code="3" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="gpg-increment-achievments"
+           code="com.stencyl.googleplaygames.GooglePlayGames.incrementAchievement(~, ~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <text order="0" />
+            <int order="1" />
+        </fields>
+    </block>
+
+    <block tag="gpg-initialize"
+           code="com.stencyl.googleplaygames.GooglePlayGames.~GooglePlayGames();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@initialize" code="init" />
+                    <c text="@signout" code="signOut" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="gpg-show"
+           code="com.stencyl.googleplaygames.GooglePlayGames.show~();"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <dropdown order="0">
+                <choices>
+                    <c text="@achievements" code="Achievements" />
+                    <c text="@leaderboards" code="AllLeaderboards" />
+                    <c text="@quests" code="Quests" />
+                </choices>
+            </dropdown>
+        </fields>
+    </block>
+
+    <block tag="gpg-show-leaderboard"
+           code="com.stencyl.googleplaygames.GooglePlayGames.showLeaderboard(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+
+    <block tag="gpg-submit-score"
+           code="com.stencyl.googleplaygames.GooglePlayGames.submitScore(~, ~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <text order="0" />
+            <int order="1" />
+        </fields>
+    </block>
+
+    <block tag="gpg-unlock-achievments"
+           code="com.stencyl.googleplaygames.GooglePlayGames.unlockAchievement(~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+
+    <!-- deprecated -->
+
+    <block tag="gpg-check-quests"
+           code="com.stencyl.googleplaygames.GooglePlayGames.hasNewQuestCompleted()"
+           type="normal"
+           returns="boolean"
+           category="mobile"
+           helpURL="game-mobile"
+           deprecated="true">
+    </block>
+
+    <block tag="gpg-completed-quests"
+           code="com.stencyl.googleplaygames.GooglePlayGames.getCompletedQuestList()"
+           type="normal"
+           returns="list"
+           category="mobile"
+           helpURL="game-mobile"
+           deprecated="true">
+    </block>
+
+    <block tag="gpg-get-reward"
+           code="com.stencyl.googleplaygames.GooglePlayGames.getQuestReward(~)"
+           type="normal"
+           returns="text"
+           category="mobile"
+           helpURL="game-mobile"
+           deprecated="true">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+
+    <block tag="gpg-update-event"
+           code="com.stencyl.googleplaygames.GooglePlayGames.updateEvent(~, ~);"
+           type="action"
+           returns="void"
+           category="mobile"
+           helpURL="game-mobile"
+           deprecated="true">
+        <fields>
+            <text order="0" />
+            <int order="1" />
+        </fields>
+    </block>
+
+</blocks>

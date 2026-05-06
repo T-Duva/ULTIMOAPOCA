@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_RandomStartingVelocity"
+    classname="scripts.Design_0_0_RandomStartingVelocity"
+    desc="Set the velocity and the turning speed for this actor at random."
+    description="Set the velocity and the turning speed for this actor at random."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Random Starting Velocity"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The minimum speed.&lt;br /&gt;&#10;The starting speed will be a random number between &lt;var&gt;Minimum Speed&lt;/var&gt; and &lt;var&gt;Maximum Speed&lt;/var&gt;."
+        dropdown=""
+        fullname="Minimum Speed"
+        hidden="false"
+        id="7"
+        name="_MinimumSpeed"
+        order="2"/>
+    <number
+        default="20.0"
+        defaultValue="20.0"
+        desc="The maximum speed."
+        dropdown=""
+        fullname="Maximum Speed"
+        hidden="false"
+        id="10"
+        name="_MaximumSpeed"
+        order="3"/>
+    <number
+        default="-180.0"
+        defaultValue="-180.0"
+        desc="The minimum angle for the starting direction.&lt;br /&gt;&#10;The direction of movement will be a random direction between &lt;var&gt;Minimum Angle&lt;/var&gt; and &lt;var&gt;Maximum Angle&lt;/var&gt;."
+        dropdown=""
+        fullname="Minimum Angle"
+        hidden="false"
+        id="11"
+        name="_MinimumAngle"
+        order="4"/>
+    <number
+        default="180.0"
+        defaultValue="180.0"
+        desc="The maximum angle for the starting direction.&lt;br /&gt;"
+        dropdown=""
+        fullname="Maximum Angle"
+        hidden="false"
+        id="12"
+        name="_MaximumAngle"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The minimum turning speed.&lt;br /&gt;&#10;The starting turning speed will be a random number between &lt;var&gt;Minimum Speed&lt;/var&gt; and &lt;var&gt;Maximum Speed&lt;/var&gt;."
+        dropdown=""
+        fullname="Minimum Turning Speed"
+        hidden="false"
+        id="13"
+        name="_MinimumTurningSpeed"
+        order="6"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The maximum turning speed."
+        dropdown=""
+        fullname="Maximum Turning Speed"
+        hidden="false"
+        id="14"
+        name="_MaximumTurningSpeed"
+        order="7"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

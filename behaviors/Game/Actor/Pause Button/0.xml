@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_PauseButton"
+    classname="scripts.Design_0_0_PauseButton"
+    desc="A button to pause/unpause the game."
+    description="A button to pause/unpause the game."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Pause Button"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an unpressed state."
+        dropdown=""
+        fullname="Normal Animation"
+        hidden="false"
+        id="1"
+        name="_NormalAnimation"
+        order="5"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an pressed-down state."
+        dropdown=""
+        fullname="Pressed Animation"
+        hidden="false"
+        id="4"
+        name="_PressedAnimation"
+        order="6"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Down"
+        hidden="true"
+        id="5"
+        name="_Down"
+        order="1"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in a focused state. Not used in mobile games."
+        dropdown=""
+        fullname="Hover Animation"
+        hidden="false"
+        id="6"
+        name="_HoverAnimation"
+        order="7"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the activated button in an unpressed state."
+        dropdown=""
+        fullname="Activated Normal Animation"
+        hidden="false"
+        id="7"
+        name="_ActivatedNormalAnimation"
+        order="8"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Activated"
+        hidden="true"
+        id="10"
+        name="_Activated"
+        order="2"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the activated button in an pressed-down state."
+        dropdown=""
+        fullname="Activated Pressed Animation"
+        hidden="false"
+        id="11"
+        name="_ActivatedPressedAnimation"
+        order="9"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the activated button in a focused state. Not used in mobile games."
+        dropdown=""
+        fullname="Activated Hover Animation"
+        hidden="false"
+        id="12"
+        name="_ActivatedHoverAnimation"
+        order="10"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Toggle"
+            enabled="true"
+            id="14"
+            name="event-custom"
+            order="22"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="17"
+            name="event-mouse-enter-exit-actor"
+            order="16"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="18"
+            name="event-mouse-enter-exit-actor"
+            order="17"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="19"
+            name="event-mouse-enter-exit-actor"
+            order="12"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="20"
+            name="event-mouse-enter-exit-actor"
+            order="15"
+            repeats="true"/>
+        <event
+            displayName="Paused"
+            enabled="true"
+            id="21"
+            name="event-paused"
+            order="18"
+            repeats="true"/>
+        <event
+            displayName="Paused"
+            enabled="true"
+            id="22"
+            name="event-paused"
+            order="21"
+            repeats="true"/>
+        <event
+            displayName="UpdateState"
+            enabled="true"
+            id="23"
+            name="event-custom"
+            order="23"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-data>
+	<config classname="com.stencyl.cpmstar.Config">
+		<field name="cpmstarID" type="text" embedded="true" />
+	</config>
+</game-data>

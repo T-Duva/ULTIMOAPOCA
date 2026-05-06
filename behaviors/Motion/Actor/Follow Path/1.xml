@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="ACTION"
+    code=".say(&quot;Follow Path&quot;, &quot;_customBlock_AddNode&quot;, [, ]);"
+    desc=""
+    global="false"
+    gui="add node ( x: %1 y: %2 ) to path for %0"
+    id="1"
+    message="AddNode"
+    name="AddNode"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+    <blank name="x" order="1" type="number"/>
+    <blank name="y" order="2" type="number"/>
+</custom-block>

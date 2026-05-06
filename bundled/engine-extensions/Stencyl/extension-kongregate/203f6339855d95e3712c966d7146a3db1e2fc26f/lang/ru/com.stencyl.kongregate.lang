@@ -1,0 +1,10 @@
+kong-guest=Игрок [c:kongregate] – это гость?
+kong-guest.help=Текущий игрок – Гость?
+kong-init=вклюючить Kongregate API [c:kongregate]
+kong-init.help=Вызывается до первого использования любого блока Kongregate.
+kong-name=Имя [c:kongregate] игрока
+kong-name.help=Имя текущего Игрока или «Guest» (Гость).
+kong-submit=передать очки в [c:kongregate] с ( именем: %0 , значением: %1 )
+kong-submit.help=Передать очки в Kongregate. Напоминаю, что их сначала надо настроить!
+kong-userid=личн.№ [c:kongregate] игрока
+kong-userid.help=Личный номер текущего Игрока или 0 для гостя.

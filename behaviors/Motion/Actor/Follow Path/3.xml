@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-3"
+    blocktype="ACTION"
+    code=".say(&quot;Follow Path&quot;, &quot;_customBlock_ClearPath&quot;);"
+    desc=""
+    global="false"
+    gui="clear path for %0"
+    id="3"
+    message="ClearPath"
+    name="ClearPath"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

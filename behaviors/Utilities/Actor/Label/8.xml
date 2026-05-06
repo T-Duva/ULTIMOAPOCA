@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-8"
+    blocktype="ACTION"
+    code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentMiddle&quot;);"
+    desc=""
+    global="false"
+    gui="center label vertically for %0"
+    id="8"
+    message="SetLabelAlignmentMiddle"
+    name="SetLabelAlignmentMiddle"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <set-val-0-5 comment="false" x="0" y="0">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-5>
+                        <fadeInOut comment="false" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <get-val-0-1 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </fadeInOut>
+                        <dolater comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="1" id="-1">
+                                        <die comment="false" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </die>
+                                    </group>
+                                    <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                            </group>
+                            <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                        </dolater>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="Fade"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="2" id="-1">
+                        <dolater comment="false" x="0" y="0">
+                            <group eventID="2" id="-1">
+                                <say-this comment="false" x="0" y="0">
+                                    <int id="0" val="Fade"/>
+                                </say-this>
+                            </group>
+                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        </dolater>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </moreeq>
+                </if>
+            </group>
+        </init>
+    </group>
+</groups>

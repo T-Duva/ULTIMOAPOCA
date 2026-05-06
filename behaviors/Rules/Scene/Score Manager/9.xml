@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-9"
+    blocktype="NORMAL"
+    code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetFont&quot;) : Font)"
+    desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms."
+    global="false"
+    gui="Get Font"
+    id="9"
+    message="GetFont"
+    name="GetFont"
+    oid="-1"
+    return="font"
+    shared="false"
+    snippetID="0"/>

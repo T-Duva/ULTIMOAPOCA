@@ -1,0 +1,10 @@
+kong-guest=[c:kongregate] è un ospite
+kong-guest.help=Il giocatore corrente è un ospite?
+kong-init=inizializza [c:kongregate] API
+kong-init.help=Chiama questo prima di utilizzare qualsiasi blocco Kongregate.
+kong-name=nome del giocatore [c:kongregate] 
+kong-name.help=Nome del giocatore corrente o ospite.
+kong-submit=invia punteggio a [c:kongregate] con ( name: %0 , value: %1 )
+kong-submit.help=Invia un punteggio a Kongregate. Ricordati di averlo inizializzato!
+kong-userid=id del giocatore [c:kongregate] 
+kong-userid.help=ID utente del giocatore corrente, oppure 0 per ospiti.

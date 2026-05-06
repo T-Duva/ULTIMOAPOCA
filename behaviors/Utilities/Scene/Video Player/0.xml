@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_VideoPlayer"
+    classname="scripts.Design_0_0_VideoPlayer"
+    desc="Allows you to play external FLV video files in your game.&lt;br/&gt;&#10;This behavior works only in Flash."
+    description="Allows you to play external FLV video files in your game.&lt;br/&gt;&#10;This behavior works only in Flash."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Video Player"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <text
+        default=""
+        defaultValue=""
+        desc="This is an URL to a video file you want to play. The URL has to start with &lt;var&gt;http://&lt;/var&gt; followed by the web address.&lt;br/&gt;&#10;&lt;br/&gt;&lt;br/&gt;&#10;Trigger the following events to control the playback and visibility of the video:&lt;br/&gt;&#10;&lt;var&gt;PlayVideo&lt;/var&gt; - Play the video or restart it from the beginning, if the video was already playing.&lt;br/&gt;&#10;&lt;var&gt;PauseVideo&lt;/var&gt; - Pause or unpause the video.&lt;br/&gt;&#10;&lt;var&gt;ShowVideo&lt;/var&gt; - Show the video.&lt;br/&gt;&#10;&lt;var&gt;HideVideo&lt;/var&gt; - Hide the video.&lt;br/&gt;&#10;&#10;"
+        dropdown=""
+        fullname="Video URL"
+        hidden="false"
+        id="2"
+        name="_VideoURL"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The X-coordinate at which the video is displayed."
+        dropdown=""
+        fullname="Position X"
+        hidden="false"
+        id="3"
+        name="_PositionX"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The Y-coordinate at which the video is displayed."
+        dropdown=""
+        fullname="Position Y"
+        hidden="false"
+        id="4"
+        name="_PositionY"
+        order="6"/>
+    <number
+        default="320.0"
+        defaultValue="320.0"
+        desc="The width of the video."
+        dropdown=""
+        fullname="Video Width"
+        hidden="false"
+        id="5"
+        name="_VideoWidth"
+        order="7"/>
+    <number
+        default="240.0"
+        defaultValue="240.0"
+        desc="The height of the video."
+        dropdown=""
+        fullname="Video Height"
+        hidden="false"
+        id="6"
+        name="_VideoHeight"
+        order="8"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the video will occupy the entire screen. The &lt;var&gt;Position X&lt;/var&gt;, &lt;var&gt;Position Y&lt;/var&gt;, &lt;var&gt;Video Width&lt;/var&gt; and &lt;var&gt;Video Height&lt;/var&gt; attributes will be ignored."
+        dropdown=""
+        fullname="Fullscreen"
+        hidden="false"
+        id="8"
+        name="_Fullscreen"
+        order="9"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="What to do after the video has finished playing:&lt;br/&gt;&#10;&lt;var&gt;Stop&lt;/var&gt; will stop the video and leave the last frame of the video visible.&lt;br/&gt;&#10;&lt;var&gt;Loop&lt;/var&gt; will start the video from the beginning after it has finished.&lt;br/&gt;&#10;&lt;var&gt;Hide&lt;/var&gt; will stop the video and hide it from the screen."
+        dropdown="Stop=Stop&#10;Loop=Loop&#10;Hide=Hide&#10;"
+        fullname="When Finished"
+        hidden="false"
+        id="12"
+        name="_WhenFinished"
+        order="10"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Enter Scene"
+        hidden="true"
+        id="13"
+        name="_EnterScene"
+        order="1"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Leave Scene"
+        hidden="true"
+        id="14"
+        name="_LeaveScene"
+        order="2"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Hidden"
+        hidden="true"
+        id="15"
+        name="_Hidden"
+        order="0"/>
+    <blocks>
+        <receiver blockID="9" id="1"/>
+        <receiver blockID="10" id="2"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Code"
+            enabled="true"
+            id="4"
+            name="event-custom-code"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Import"
+            enabled="true"
+            id="6"
+            name="event-custom-import"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="7"
+            name="init"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="ShowVideo"
+            enabled="true"
+            id="8"
+            name="event-custom"
+            order="11"
+            repeats="true"/>
+        <event
+            displayName="HideVideo"
+            enabled="true"
+            id="9"
+            name="event-custom"
+            order="12"
+            repeats="true"/>
+        <event
+            displayName="PlayVideo"
+            enabled="true"
+            id="10"
+            name="event-custom"
+            order="13"
+            repeats="true"/>
+        <event
+            displayName="PauseVideo"
+            enabled="true"
+            id="12"
+            name="event-custom"
+            order="14"
+            repeats="true"/>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="13"
+            name="step"
+            order="10"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<section if="ios">
+		<source path="src" />
+		<dependency name="GameKit.framework" />
+		<template path="templates" />
+	</section>
+	
+</project>

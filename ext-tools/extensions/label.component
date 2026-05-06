@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-label
+version: 82ba0de0b9fbeb02cbdceaac06c0785642cd2ac4
+tags: base_bundle

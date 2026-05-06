@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FireBulletWave"
+    classname="scripts.Design_0_0_FireBulletWave"
+    desc="Spawn a wave of bullets from the actor&apos;s position."
+    description="Spawn a wave of bullets from the actor&apos;s position."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Fire Bullet Wave"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="50.0"
+        defaultValue="50.0"
+        desc="The speed at which the bullets will move."
+        dropdown=""
+        fullname="Bullet Speed"
+        hidden="false"
+        id="2"
+        name="_BulletSpeed"
+        order="12"/>
+    <actortype
+        default=""
+        defaultValue=""
+        desc="The bullet actor type to create.&lt;br/&gt;&#10;"
+        dropdown=""
+        fullname="Bullet Type"
+        hidden="false"
+        id="4"
+        name="_BulletType"
+        order="9"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The mean direction in which the bullet will move. The bullets will spread to the left and the right.&lt;br/&gt;&#10;Only used if &lt;em&gt;Direction Mode&lt;/em&gt; is &lt;em&gt;Relative&lt;/em&gt; or &lt;em&gt;Absolute&lt;/em&gt;. If &lt;em&gt;Direction Mode&lt;/em&gt; is &lt;em&gt;Based on Animations&lt;/em&gt; the following four attributes determine the direction instead."
+        dropdown="North=-90&#10;North East=-45&#10;East=0&#10;South East=45&#10;South=90&#10;South West=135&#10;West=180&#10;North West=-135"
+        fullname="Direction"
+        hidden="false"
+        id="5"
+        name="_Direction"
+        order="14"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The offset in the direction of movement at which the bullets will be created."
+        dropdown=""
+        fullname="Offset"
+        hidden="false"
+        id="9"
+        name="_Offset"
+        order="20"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Fire Control"
+        hidden="false"
+        id="13"
+        name="_FireControl"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Fire Direction"
+        hidden="true"
+        id="15"
+        name="_FireDirection"
+        order="2"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, holding down the &lt;var&gt;Fire Control&lt;/var&gt; will fire bullets.&lt;br /&gt;&#10;&lt;br /&gt;&#10;You can also trigger the &lt;var&gt;FireBullet&lt;/var&gt; event to fire a bullet."
+        dropdown=""
+        fullname="Use Controls"
+        hidden="false"
+        id="16"
+        name="_UseControls"
+        order="7"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, holding down the mouse will fire bullets."
+        dropdown=""
+        fullname="Use the Mouse"
+        hidden="false"
+        id="17"
+        name="_UsetheMouse"
+        order="6"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, no more than &lt;var&gt;Maximum Bullets Alive&lt;/var&gt; can be alive at the same time."
+        dropdown=""
+        fullname="Limit Bullets Alive"
+        hidden="false"
+        id="18"
+        name="_LimitBulletsAlive"
+        order="22"/>
+    <number
+        default="3.0"
+        defaultValue="3.0"
+        desc="The maximum number of bullets to be alive at the same time. Only used if &lt;var&gt;Limit Bullets Alive&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Maximum Bullets Alive"
+        hidden="false"
+        id="19"
+        name="_MaximumBulletsAlive"
+        order="23"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Bullets Alive"
+        hidden="true"
+        id="20"
+        name="_BulletsAlive"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Fire"
+        hidden="true"
+        id="21"
+        name="_Fire"
+        order="1"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Wait"
+        hidden="true"
+        id="22"
+        name="_Wait"
+        order="4"/>
+    <number
+        default="3.0"
+        defaultValue="3.0"
+        desc="The maximum number of bullets created per second."
+        dropdown=""
+        fullname="Rate Of Fire"
+        hidden="false"
+        id="23"
+        name="_RateOfFire"
+        order="21"/>
+    <number
+        default="5.0"
+        defaultValue="5.0"
+        desc="The maximum ammunition the actor can have.&lt;br /&gt;&#10;Only used if &lt;var&gt;Use Ammunition&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Maximum Ammunition"
+        hidden="false"
+        id="24"
+        name="_MaximumAmmunition"
+        order="25"/>
+    <number
+        default="5.0"
+        defaultValue="5.0"
+        desc="The current ammunition the actor has when created.&lt;br /&gt;&#10;Only used if &lt;var&gt;Use Ammunition&lt;/var&gt; is selected.&lt;br/&gt;Trigger the &lt;var&gt;Reload&lt;/var&gt; event to set the current ammunition to the maximum ammunition."
+        dropdown=""
+        fullname="Current Ammunition"
+        hidden="false"
+        id="25"
+        name="_CurrentAmmunition"
+        order="26"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the current ammunition will be reduced by one on every shot."
+        dropdown=""
+        fullname="Use Ammunition"
+        hidden="false"
+        id="26"
+        name="_UseAmmunition"
+        order="24"/>
+    <number
+        default="3.0"
+        defaultValue="3.0"
+        desc="The number of bullets in a wave."
+        dropdown=""
+        fullname="Number of Bullets"
+        hidden="false"
+        id="27"
+        name="_NumberofBullets"
+        order="10"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="First Direction"
+        hidden="true"
+        id="28"
+        name="_FirstDirection"
+        order="5"/>
+    <number
+        default="30.0"
+        defaultValue="30.0"
+        desc="The angle between the bullets in a wave."
+        dropdown=""
+        fullname="Bullet Spread"
+        hidden="false"
+        id="30"
+        name="_BulletSpread"
+        order="11"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Shoot up if the current animation name contains this text."
+        dropdown=""
+        fullname="Up Animations"
+        hidden="false"
+        id="31"
+        name="_UpAnimations"
+        order="15"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Shoot down if the current animation name contains this text."
+        dropdown=""
+        fullname="Down Animations"
+        hidden="false"
+        id="32"
+        name="_DownAnimations"
+        order="16"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Shoot left if the current animation name contains this text."
+        dropdown=""
+        fullname="Left Animations"
+        hidden="false"
+        id="33"
+        name="_LeftAnimations"
+        order="17"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Shoot right if the current animation name contains this text."
+        dropdown=""
+        fullname="Right Animations"
+        hidden="false"
+        id="34"
+        name="_RightAnimations"
+        order="18"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="How to determine the direction of the bullets:&lt;br/&gt;&#10;&lt;br/&gt;&#10;&lt;em&gt;Relative&lt;/em&gt; - Treat &lt;em&gt;Direction&lt;/em&gt; relative to the actor&apos;s orientation.&lt;br/&gt;&#10;&lt;em&gt;Absolute&lt;/em&gt; - Treat &lt;em&gt;Direction &lt;/em&gt; as absolute.&lt;br/&gt;&#10;&lt;em&gt;Based on Animations&lt;/em&gt; - Determine the direction based on the current animation."
+        dropdown="Relative=Relative&#10;Absolute=Absolute&#10;Based on Animations=Based on Animations"
+        fullname="Direction Mode"
+        hidden="false"
+        id="35"
+        name="_DirectionMode"
+        order="13"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="FireBullet"
+            enabled="true"
+            id="6"
+            name="event-custom"
+            order="10"
+            repeats="true"/>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="9"
+            name="step"
+            order="9"
+            repeats="true"/>
+        <event
+            displayName="Reload"
+            enabled="true"
+            id="10"
+            name="event-custom"
+            order="11"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_SwitchSceneonClickorTouch"
+    classname="scripts.Design_0_0_SwitchSceneonClickorTouch"
+    desc="Switch scene when the user clicks or touches the screen."
+    description="Switch scene when the user clicks or touches the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Switch Scene on Click or Touch"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <scene
+        default=""
+        defaultValue=""
+        desc="The scene to switch to."
+        dropdown=""
+        fullname="Next Scene"
+        hidden="false"
+        id="2"
+        name="_NextScene"
+        order="0"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition out, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise the time to transition out and in."
+        dropdown=""
+        fullname="Out Time"
+        hidden="false"
+        id="7"
+        name="_OutTime"
+        order="4"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition in, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise it is ignored."
+        dropdown=""
+        fullname="In Time"
+        hidden="false"
+        id="8"
+        name="_InTime"
+        order="5"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The style to use for the switch scene transition."
+        dropdown="Fade=Fade&#10;Blinds=Blinds&#10;Bubbles=Bubbles&#10;Spotlight=Spotlight&#10;Blur=Blur&#10;Box=Box&#10;Crossfade=Crossfade&#10;Slide Up=Slide Up&#10;Slide Down=Slide Down&#10;Slide Left=Slide Left&#10;Slide Right=Slide Right"
+        fullname="Transition Style"
+        hidden="false"
+        id="9"
+        name="_TransitionStyle"
+        order="3"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Click"
+            enabled="true"
+            id="2"
+            name="event-mouse-press-release"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="SwitchScene"
+            enabled="true"
+            id="3"
+            name="event-custom"
+            order="3"
+            repeats="true"/>
+    </events>
+</snippet>

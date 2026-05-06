@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-2"
+    blocktype="ACTION"
+    code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetHealth&quot;, []);"
+    desc=""
+    global="false"
+    gui="Set Health For %0 To %1"
+    id="2"
+    message="SetHealth"
+    name="SetHealth"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+    <blank name="Amount" order="1" type="number"/>
+</custom-block>

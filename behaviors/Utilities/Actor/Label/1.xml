@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="ACTION"
+    code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentCenter&quot;);"
+    desc=""
+    global="false"
+    gui="center label for %0"
+    id="1"
+    message="SetLabelAlignmentCenter"
+    name="SetLabelAlignmentCenter"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

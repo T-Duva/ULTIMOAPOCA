@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-2"
+    blocktype="ACTION"
+    code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentRight&quot;);"
+    desc=""
+    global="false"
+    gui="right-align label for %0"
+    id="2"
+    message="SetLabelAlignmentRight"
+    name="SetLabelAlignmentRight"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

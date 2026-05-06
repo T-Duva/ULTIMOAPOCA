@@ -1,0 +1,8 @@
+Other licensed works may be bundled with Stencyl, or downloaded by Stencyl as needed.
+These can be found alongside their accompanying licenses.
+
+- Bundled components in [Stencyl]/bundled
+- The Java Runtime Environment, in [Stencyl]/runtimes
+- Fonts, found at [Stencyl]/data/fonts
+- Tools, runtimes, libraries, and applications may be downloaded to an OS-specific
+  location (in Stencyl, "Tools > View Folder > View Downloaded Components" to see it)

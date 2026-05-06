@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <mousedisp comment="false" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </mousedisp>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Default"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <mousedisp comment="false" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </mousedisp>
+                            </group>
+                        </else>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="0" y="0">
+                                    <ACTORTYPE eid="var" id="0" vid="3"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-val-0-9 comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                </set-val-0-9>
+                                <toggle-image comment="false" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                </toggle-image>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Custom"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <is-platform comment="false" id="0" x="0" y="0">
+                            <int id="0" val="6"/>
+                        </is-platform>
+                    </not>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="5" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <draw-transtoby comment="false" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="0"/>
+                                </mousexy>
+                                <get-val-0-4 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <mousexy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="1"/>
+                                </mousexy>
+                                <get-val-0-5 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </draw-transtoby>
+                        <draw-image-actor comment="false" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="9"/>
+                        </draw-image-actor>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <is-platform comment="false" id="0" x="0" y="0">
+                                <int id="0" val="6"/>
+                            </is-platform>
+                        </not>
+                        <and comment="false" id="1" x="0" y="0">
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Custom"/>
+                            </eq>
+                            <isalive comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="9"/>
+                            </isalive>
+                        </and>
+                    </and>
+                </if>
+            </group>
+        </draw>
+    </group>
+</groups>

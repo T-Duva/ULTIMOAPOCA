@@ -1,0 +1,7 @@
+id=com.stencyl.gestures
+name=Roxlib Gestures
+description=Support the use of gestures, such as tap, long press, pan, swipe, pinch, and rotation
+author=roxstudio / rockswang
+website=https://github.com/rockswang/roxlib
+version=1.0.0
+compatibility=all

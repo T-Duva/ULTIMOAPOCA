@@ -1,0 +1,34 @@
+
+# PRELOADER
+loader.cat.main=Général
+loader.cat.style=Apparence
+loader.cat.bar=Style de la Barre
+loader.cat.color=Couleur de la Barre
+loader.bar.title=Barre de Chargement
+loader.bar.loc=Location de la Barre
+loader.bar.width=Largeur de la Barre
+loader.bar.height=Hauteur de la Barre
+loader.bar.thickness=Epaisseur de la Barre
+loader.bar.offset.x=Décalage X de la Barre
+loader.bar.offset.y=Décalage Y de la Barre
+loader.bar.scale=Echelle de la Barre
+loader.color.title=Couleurs de la Barre de Chargement
+loader.color.color=Couleur de la Barre
+loader.color.border=Couleur de la Bordure de la Barre
+loader.color.bg=Couleur du Fond de la Barre
+loader.url=Votre Page d'Accueil
+loader.lock=Verrouillages au Sites
+loader.lock.info=Empêche le piratage du jeu.<br><br>Format (séparé par des virgules):<br> siteweb.com, siteweb2.com
+loader.splash=Attribution Stencyl 
+loader.splash1=Ecran de Lancement
+loader.splash2=Préchargeur (Clair)
+loader.splash3=Préchargeur (Foncé)
+loader.splash4=Préchargeur (Bleu)
+loader.splash.info=S'applique aux Jeux Web. Surclassez votre version de Stencyl pour l'enlever.
+loader.splash.thanks=Merci pour votre souscription. Aucun écran de lancement  n'apparaîtra.
+loader.upgrade=Surclasser Stencyl
+loader.style=Apparence
+loader.bg=Arrière-Plan
+loader.bg.clear=Effacer Arière-Plan
+loader.bg.info=Le faire de la même dimension que le jeu.
+loader.bg.info2=Pour la version Web du jeu<br>Les versions mobiles utilisent un écran de lancement mobile.

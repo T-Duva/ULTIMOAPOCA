@@ -1,0 +1,7 @@
+id=com.stencyl.joystick
+name=Joystick Extension
+description=Onscreen joysticks for touch input on mobile devices
+author=Jon
+website=http://www.stencyl.com
+version=1.0.0
+compatibility=all

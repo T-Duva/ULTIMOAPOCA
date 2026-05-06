@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-3"
+    blocktype="ACTION"
+    code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);"
+    desc=""
+    global="false"
+    gui="Restore %0 To Full Health"
+    id="3"
+    message="FullRestore"
+    name="FullRestore"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

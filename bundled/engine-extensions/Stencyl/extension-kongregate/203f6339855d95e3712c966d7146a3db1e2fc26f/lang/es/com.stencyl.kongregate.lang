@@ -1,0 +1,10 @@
+kong-guest=el jugador [c:kongregate] es un invitado
+kong-guest.help=¿Es el jugador actual un invitado?
+kong-init=activar API de Kongregate [c:kongregate]
+kong-init.help=Ejecuta esto antes de usar cualquier bloque de Kongregate.
+kong-name=nombre del jugador [c:kongregate]
+kong-name.help=Nombre del jugador actual, o Invitado.
+kong-submit=enviar puntuación a [c:kongregate] con ( nombre: %0 , valor: %1 )
+kong-submit.help=Envía una puntuación a Kongregate. ¡Recuerda activarlo primero!
+kong-userid=id del jugador [c:kongregate]
+kong-userid.help=ID de usuario del jugador actual, o 0 para invitados.

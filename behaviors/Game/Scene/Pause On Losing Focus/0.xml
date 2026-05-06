@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_PauseOnLosingFocus"
+    classname="scripts.Design_0_0_PauseOnLosingFocus"
+    desc="Pause when the game loses focus and optionally dim the screen while the game is paused."
+    description="Pause when the game loses focus and optionally dim the screen while the game is paused."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Pause On Losing Focus"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <control
+        default=""
+        defaultValue=""
+        desc="A key to pause/unpause the game."
+        dropdown=""
+        fullname="Pause Control"
+        hidden="false"
+        id="2"
+        name="_PauseControl"
+        order="6"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="Dim the screen when the game is paused."
+        dropdown=""
+        fullname="Dim Screen"
+        hidden="false"
+        id="6"
+        name="_DimScreen"
+        order="3"/>
+    <number
+        default="50.0"
+        defaultValue="50.0"
+        desc="The opacity used for dimming the screen."
+        dropdown=""
+        fullname="Dimming Opacity"
+        hidden="false"
+        id="7"
+        name="_DimmingOpacity"
+        order="5"/>
+    <color
+        default="0,0,0,255"
+        defaultValue="0,0,0,255"
+        desc="The color used for dimming the screen."
+        dropdown=""
+        fullname="Dimming Color"
+        hidden="false"
+        id="8"
+        name="_DimmingColor"
+        order="4"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Focus Lost"
+        hidden="true"
+        id="9"
+        name="_FocusLost"
+        order="0"/>
+    <text
+        default="Paused"
+        defaultValue="Paused"
+        desc="This text is drawn at the center of the screen while the game is paused. Leave empty if no text should be drawn."
+        dropdown=""
+        fullname="Paused Text"
+        hidden="false"
+        id="10"
+        name="_PausedText"
+        order="1"/>
+    <font
+        default=""
+        defaultValue=""
+        desc="The font used for the drawing the &lt;var&gt;Paused Text&lt;/var&gt;."
+        dropdown=""
+        fullname="Font"
+        hidden="false"
+        id="11"
+        name="_Font"
+        order="2"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Focus"
+            enabled="true"
+            id="1"
+            name="event-focus-changed"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Click"
+            enabled="true"
+            id="2"
+            name="event-mouse-press-release"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Keyboard"
+            enabled="true"
+            id="6"
+            name="event-key-press-release"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="7"
+            name="draw"
+            order="13"
+            repeats="true"/>
+    </events>
+</snippet>

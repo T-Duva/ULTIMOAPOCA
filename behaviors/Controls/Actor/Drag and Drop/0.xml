@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DragandDrop"
+    classname="scripts.Design_0_0_DragandDrop"
+    desc="Allows the actor to be dragged and dropped by the mouse."
+    description="Allows the actor to be dragged and dropped by the mouse."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Drag and Drop"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Grabbed"
+        hidden="true"
+        id="1"
+        name="_Grabbed"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X Offset"
+        hidden="true"
+        id="2"
+        name="_XOffset"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y Offset"
+        hidden="true"
+        id="3"
+        name="_YOffset"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Old X"
+        hidden="true"
+        id="4"
+        name="_OldX"
+        order="4"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Old Y"
+        hidden="true"
+        id="5"
+        name="_OldY"
+        order="5"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected the actor cannot be dragged off screen."
+        dropdown=""
+        fullname="Cannot Exit Screen"
+        hidden="false"
+        id="6"
+        name="_CannotExitScreen"
+        order="6"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="3"
+            name="draw"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="4"
+            name="init"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

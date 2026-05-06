@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_StartingVelocity"
+    classname="scripts.Design_0_0_StartingVelocity"
+    desc="Set the velocity and the turning speed for this actor."
+    description="Set the velocity and the turning speed for this actor."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Starting Velocity"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The starting speed."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="7"
+        name="_Speed"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The angle of the starting direction."
+        dropdown=""
+        fullname="Direction"
+        hidden="false"
+        id="8"
+        name="_Direction"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The starting turning speed."
+        dropdown=""
+        fullname="Turning Speed"
+        hidden="false"
+        id="9"
+        name="_TurningSpeed"
+        order="3"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

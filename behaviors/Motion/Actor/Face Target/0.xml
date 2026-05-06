@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FaceTarget"
+    classname="scripts.Design_0_0_FaceTarget"
+    desc="Makes the actor always face a given target actor."
+    description="Makes the actor always face a given target actor."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Face Target"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="2"
+        name="_DistanceX"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="3"
+        name="_DistanceY"
+        order="2"/>
+    <number
+        default="-90.0"
+        defaultValue="-90.0"
+        desc="The facing of the actor&apos;s sprite."
+        dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;"
+        fullname="Facing"
+        hidden="false"
+        id="4"
+        name="_Facing"
+        order="4"/>
+    <actor
+        default=""
+        defaultValue=""
+        desc="The target actor this actor will be facing. &lt;br /&gt;&#10;If the target actor is unset or dead this behavior will do nothing."
+        dropdown=""
+        fullname="Target Actor"
+        hidden="false"
+        id="5"
+        name="_TargetActor"
+        order="3"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

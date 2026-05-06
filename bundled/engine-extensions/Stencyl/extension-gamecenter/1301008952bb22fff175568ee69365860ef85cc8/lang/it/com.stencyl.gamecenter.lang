@@ -1,0 +1,25 @@
+gamecenter-achievement-show-reset=%0 risultati [c:gamecenter]
+gamecenter-achievement-show-reset.help=Mostra il tabellone risultati o cancella i risultati del giocatore per questo gioco
+
+gamecenter-achievement-submit=riporta risultati %0 come %1 [pct] completi [c:gamecenter]
+gamecenter-achievement-submit.help=Invia un risultato al Game Center
+
+gamecenter-board-show=mostra classifica per %0 [c:gamecenter]
+gamecenter-board-show.help=Apri la classifica principale in Game Center
+
+gamecenter-board-submit=invia punteggio a [c:gamecenter] con ( ID: %1 , value: %0 )
+gamecenter-board-submit.help=Invia un punteggio a Game Center
+
+gamecenter-enabled=Game Center inizializzato [c:gamecenter]
+gamecenter-enabled.help=Torna vero se Game Center è stato inizializzato
+
+gamecenter-id-name=%0 di [c:gamecenter] giocatore
+gamecenter-id-name.help=Mostra il nome o l'ID interno
+
+gamecenter-init=inizializza Game Center [c:gamecenter]
+gamecenter-init.help=Inizializza le API Game Center
+
+show=Mostra
+reset=Resetta
+name=nome
+ID=ID

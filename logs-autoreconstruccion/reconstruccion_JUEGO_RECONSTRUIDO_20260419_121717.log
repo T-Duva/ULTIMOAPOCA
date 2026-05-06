@@ -1,0 +1,71 @@
+========================================================= 
+Reconstruccion Stencyl - 19/04/2026 12:17:17,87 
+SOURCE_BASE=ULTRA 
+TARGET_GAME=JUEGO_RECONSTRUIDO 
+ASSETS_SOURCE=JUEGO NUEVO 
+========================================================= 
+[OK] Entorno validado. 
+[BACKUP] "F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO" > "F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\_AUTOBACKUPS\JUEGO_RECONSTRUIDO_20260419_121717" 
+
+
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\
+	  *Archivo EXTRA		    3415	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\behaviors.mbs
+	  *Archivo EXTRA		    1399	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\game.mbs
+	  *Archivo EXTRA		    1002	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\inner-joystick.png
+	  *Archivo EXTRA		    2194	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\outer-joystick.png
+	  *Archivo EXTRA		    1698	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\resources.mbs
+	  *Archivo EXTRA		     479	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-0.mbs
+	  *Archivo EXTRA		      13	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-0.scn
+	  *Archivo EXTRA		     422	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-1.mbs
+	  *Archivo EXTRA		      13	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-1.scn
+	  *Archivo EXTRA		     402	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-2.mbs
+	  *Archivo EXTRA		      13	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scene-2.scn
+	  *Archivo EXTRA		     159	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\data\scenes.mbs
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\
+	  *Archivo EXTRA		   10791	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\default-font.fnt
+	  *Archivo EXTRA		    1736	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\default-font.png
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\
+	  *Archivo EXTRA		   4.3 m	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\background-2-0.png
+	  *Archivo EXTRA		   4.6 m	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\background-3-0.png
+	  *Archivo EXTRA		   3.7 m	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\background-4-0.png
+	  *Archivo EXTRA		  105814	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\sprite-6-0.png
+	  *Archivo EXTRA		  104542	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\sprite-6-1.png
+	  *Archivo EXTRA		  108569	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\sprite-6-2.png
+	  *Archivo EXTRA		  112693	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\graphics\1x\sprite-6-3.png
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\music\
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Assets\sfx\
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\
+	  *Archivo EXTRA		    8237	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-1024.png
+	  *Archivo EXTRA		    1473	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-120.png
+	  *Archivo EXTRA		    1584	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-128.png
+	  *Archivo EXTRA		    1855	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-152.png
+	  *Archivo EXTRA		     342	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-16.png
+	  *Archivo EXTRA		     482	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-24.png
+	  *Archivo EXTRA		    2997	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-256.png
+	  *Archivo EXTRA		     573	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-32.png
+	  *Archivo EXTRA		     943	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-48.png
+	  *Archivo EXTRA		    4142	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-512.png
+	  *Archivo EXTRA		    1537	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-72.png
+	  *Archivo EXTRA		    2770	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-72@2x.png
+	  *Archivo EXTRA		    1398	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-76.png
+	  *Archivo EXTRA		    1199	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon-96.png
+	  *Archivo EXTRA		    1295	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon.png
+	  *Archivo EXTRA		    2242	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\icon\Icon@2x.png
+	*Directorio EXTRA      -1	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\
+	  *Archivo EXTRA		    5215	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\ipad-splash-sb.png
+	  *Archivo EXTRA		   14500	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\ipad-splash-sb@2x.png
+	  *Archivo EXTRA		    3049	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\iphone-splash-sb.png
+	  *Archivo EXTRA		    8076	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\iphone-splash-sb@2x.png
+	  *Archivo EXTRA		   14500	F:\PROGRAMACION\juego8b\Stencyl-4.1.4\Juegos\stencylworks\games\JUEGO_RECONSTRUIDO\Images\splash\iphone-splash-sb@3x.png
+
+
+[COPY] master-icon.png 
+[COPY] ipad-splash-sb.png 
+[COPY] iphone-splash-sb.png 
+[COPY] inner-joystick.png 
+[COPY] inner-joystick@4x.png 
+[COPY] outer-joystick.png 
+[COPY] outer-joystick@4x.png 
+[OK] Reconstruccion completada. 

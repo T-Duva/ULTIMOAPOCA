@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+	<section if="flash">
+		<haxeflag name="-swf-lib" value="${haxelib:com.stencyl.newgrounds}/flashlib/newgrounds.swf" />
+		<source path="src" />
+	</section>
+</extension>

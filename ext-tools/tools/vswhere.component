@@ -1,0 +1,4 @@
+type: vswhere
+version: 2.5.2+gebb9f26a3d
+platform: windows
+tags: target_windows

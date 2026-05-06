@@ -1,0 +1,89 @@
+joystick-add-static=create static joystick %0 at (x: %1 y: %2 )
+joystick-add-static.help=Adds a new joystick to the screen at the given coordinates.
+
+joystick-add-relative=create relative joystick %0 at (x: %1 y: %2 ) with touch region (x: %3 y: %4 w: %5 h: %6 )
+joystick-add-relative.help=Adds a new joystick to the screen, positioned relatively to the coordinates of mouse or touch presses.
+
+joystick-remove=remove joystick %0
+joystick-remove.help=Removes a joystick from the screen.
+
+joystick-set-default-direction=set default direction to %1 in degrees for joystick %0
+joystick-set-default-direction.help=The direction of the joystick will be set to this default direction when the joystick is idle.
+
+joystick-set-center=set center to (x: %1 y: %2 ) for joystick %0
+joystick-set-center.help=Sets the center position of a joystick.
+
+joystick-set-radius=set %1 radius to %2 for joystick %0
+joystick-set-radius.help=Sets the inner or the outer radius to a given value for a joystick.
+
+joystick-set-region=set touch region to (x: %1 y: %2 w: %3 h: %4 ) for relative joystick %0
+joystick-set-region.help=Sets the x position, y position, the width and the height of the touch region of a joystick.
+
+joystick-set-image=set image to %2 for %1 joystick %0
+joystick-set-image.help=Sets the image of the outer or inner part of a joystick.
+
+joystick-set-alpha=set opacity to %2 for %3 %1 joystick %0
+joystick-set-alpha.help=Sets the joystick image opacity for a joystick.
+
+joystick-set-always-hide=always hide joystick %0 when touch or mouse is released
+joystick-set-always-hide.help=Makes a relative joystick to be always hidden when it is idle.
+
+joystick-is-pressed=joystick %0 is pressed
+joystick-is-pressed.help=Returns 'true' if the joystick is being pressed, 'false' otherwise.
+
+joystick-get-distance-direction=%1 of joystick %0
+joystick-get-distance-direction.help=Returns the distance or the direction of a joystick.
+
+joystick-get-center=%1 of joystick %0
+joystick-get-center.help=Returns the x or the y coordinate of the center of a joystick.
+
+joystick-get-radius=%1 radius of joystick %0
+joystick-get-radius.help=Returns the outer or inner radius value for a joystick.
+
+joystick-get-touch-region-property=touch region %1 for relative joystick %0
+joystick-get-touch-region-property.help=Returns the position or size of the touch region for a relative joystick.
+
+inner=inner
+outer=outer
+pressed=pressed
+released=released
+x=x
+y=y
+width=width
+height=height
+direction=direction
+distance=distance
+x-center=x-center
+y-center=y-center
+
+# Palette
+
+cat.controls.joystick=Joystick
+cat.controls.joystick.act=Configure Joystick
+
+# Deprecated
+joystick-direction=(DEPRECATED)
+joystick-direction.help=(DEPRECATED)
+
+joystick-info=(DEPRECATED) %0 for %1 [c:mobile]
+joystick-info.help=(DEPRECATED) Joystick direction in degrees (0 - 360) or distance (magnitude) between 0 and 1 inclusive
+
+joystick-magnitude=(DEPRECATED)
+joystick-magnitude.help=(DEPRECATED)
+
+joystick-set-style=(DEPRECATED) set style to %1 for %0 [c:mobile]
+joystick-set-style.help=(DEPRECATED) Fixed in place or show where finger's pressed
+
+joystick-set-xy=(DEPRECATED) set %0 for %1 to %2 [c:mobile]
+joystick-set-xy.help=(DEPRECATED) Set position for joystick (Only works in Fixed mode)
+
+joystick-show-hide=(DEPRECATED) %0 %1 [c:mobile]
+joystick-show-hide.help=(DEPRECATED) Enable/Disable the joystick
+
+fixed=fixed
+show.pressed=show where pressed
+block.enable=enable
+block.disable=disable
+joystick1=joystick 1
+joystick2=joystick 2
+both=both

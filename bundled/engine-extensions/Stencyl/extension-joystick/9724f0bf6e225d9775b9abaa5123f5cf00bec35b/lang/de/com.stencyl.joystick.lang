@@ -1,0 +1,12 @@
+joystick-direction=joystick direction [c:mobile]
+joystick-direction.help=Joystick direction in degrees (0 - 360)
+joystick-magnitude=joystick distance [c:mobile]
+joystick-magnitude.help=Joystick distance (magnitude) between 0 and 1 inclusive
+x=x
+y=y
+joystick-set-xy=set %0 for joystick to %1 [c:mobile]
+joystick-set-xy.help=Set position for joystick (Only works in Fixed mode. Configure in Mobile Game Settings)
+block.enable=Enable
+block.disable=Disable
+joystick-show-hide=%0 joystick [c:mobile]
+joystick-show-hide.help=Enable/Disable the joystick

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_AsteroidsMovement"
+    classname="scripts.Design_0_0_AsteroidsMovement"
+    desc="Allows the actor to move like the spaceship in the Asteroids game. The actor will be able to turn and accelerate forward or backward."
+    description="Allows the actor to move like the spaceship in the Asteroids game. The actor will be able to turn and accelerate forward or backward."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Asteroids Movement"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Push Forward Control"
+        hidden="false"
+        id="31"
+        name="_PushForwardControl"
+        order="11"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Push Backward Control"
+        hidden="false"
+        id="32"
+        name="_PushBackwardControl"
+        order="12"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Turn Left Control"
+        hidden="false"
+        id="33"
+        name="_TurnLeftControl"
+        order="13"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Turn Right Control"
+        hidden="false"
+        id="34"
+        name="_TurnRightControl"
+        order="14"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The force used for forward acceleration."
+        dropdown=""
+        fullname="Forward Force"
+        hidden="false"
+        id="42"
+        name="_ForwardForce"
+        order="15"/>
+    <number
+        default="100.0"
+        defaultValue="100.0"
+        desc="The force used to turn."
+        dropdown=""
+        fullname="Torque"
+        hidden="false"
+        id="45"
+        name="_Torque"
+        order="17"/>
+    <number
+        default="-90.0"
+        defaultValue="-90.0"
+        desc="The facing of the actor&apos;s sprite."
+        dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;"
+        fullname="Facing"
+        hidden="false"
+        id="46"
+        name="_Facing"
+        order="20"/>
+    <number
+        default="5.0"
+        defaultValue="5.0"
+        desc="The force used for backward acceleration, or slowdown."
+        dropdown=""
+        fullname="Backward Force"
+        hidden="false"
+        id="49"
+        name="_BackwardForce"
+        order="16"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Front"
+        hidden="true"
+        id="50"
+        name="_Front"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Turn"
+        hidden="true"
+        id="53"
+        name="_Turn"
+        order="4"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Front X"
+        hidden="true"
+        id="54"
+        name="_FrontX"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Front Y"
+        hidden="true"
+        id="55"
+        name="_FrontY"
+        order="9"/>
+    <number
+        default="50.0"
+        defaultValue="50.0"
+        desc="The maximum movement speed."
+        dropdown=""
+        fullname="Maximum Speed"
+        hidden="false"
+        id="57"
+        name="_MaximumSpeed"
+        order="18"/>
+    <number
+        default="100.0"
+        defaultValue="100.0"
+        desc="The maximum turning speed."
+        dropdown=""
+        fullname="Maximum Turning Speed"
+        hidden="false"
+        id="58"
+        name="_MaximumTurningSpeed"
+        order="19"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Speed"
+        hidden="true"
+        id="59"
+        name="_Speed"
+        order="5"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, pressing the &lt;var&gt;Backwards Control&lt;/var&gt; will make the actor slowdown and stop turning.&#10;If unselected, pressing the &lt;var&gt;Backwards Control&lt;/var&gt; will push the actor back, regardless of the current motion."
+        dropdown=""
+        fullname="Coaster Break"
+        hidden="false"
+        id="60"
+        name="_CoasterBreak"
+        order="21"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Direction of Motion"
+        hidden="true"
+        id="61"
+        name="_DirectionofMotion"
+        order="6"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Turning Sign"
+        hidden="true"
+        id="62"
+        name="_TurningSign"
+        order="7"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the animation attributes will be used, otherwise they will be ignored."
+        dropdown=""
+        fullname="Use Animations"
+        hidden="false"
+        id="71"
+        name="_UseAnimations"
+        order="22"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Idle Animation"
+        hidden="false"
+        id="72"
+        name="_IdleAnimation"
+        order="23"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Push Forward Animation"
+        hidden="false"
+        id="73"
+        name="_PushForwardAnimation"
+        order="24"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Push Backward Animation"
+        hidden="false"
+        id="75"
+        name="_PushBackwardAnimation"
+        order="25"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Turn Left Animation"
+        hidden="false"
+        id="77"
+        name="_TurnLeftAnimation"
+        order="26"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Turn Right Animation"
+        hidden="false"
+        id="79"
+        name="_TurnRightAnimation"
+        order="27"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events.&lt;br /&gt;&#10;Trigger the events  &lt;var&gt;PushForward&lt;/var&gt;, &lt;var&gt;PushBackward&lt;/var&gt;, &lt;var&gt;TurnLeft&lt;/var&gt; or &lt;var&gt;TurnRight&lt;/var&gt; to make the actor move as if the keys were pressed."
+        dropdown=""
+        fullname="Use Controls"
+        hidden="false"
+        id="81"
+        name="_UseControls"
+        order="10"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Forward"
+        hidden="true"
+        id="82"
+        name="_Forward"
+        order="2"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Backward"
+        hidden="true"
+        id="83"
+        name="_Backward"
+        order="3"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="3"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="5"
+            name="draw"
+            order="9"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="6"
+            name="event-custom"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="7"
+            name="event-custom"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="8"
+            name="event-custom"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="9"
+            name="event-custom"
+            order="8"
+            repeats="true"/>
+    </events>
+</snippet>

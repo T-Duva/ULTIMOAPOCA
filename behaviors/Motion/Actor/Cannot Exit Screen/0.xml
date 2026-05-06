@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_CannotExitScreen"
+    classname="scripts.Design_0_0_CannotExitScreen"
+    desc="Prevent the actor from leaving the screen."
+    description="Prevent the actor from leaving the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Cannot Exit Screen"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

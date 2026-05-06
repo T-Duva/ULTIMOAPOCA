@@ -1,0 +1,21 @@
+# blocks
+
+newgrounds-ad-show=show [c:ng] ad
+newgrounds-ad-show.help=Show a Newgrounds inter-level ad
+newgrounds-medal-achieved=unlock [c:ng] medal for %0 
+newgrounds-medal-achieved.help=Unlock a medal on Newgrounds
+newgrounds-medal-move=move [c:ng] medal to ( x: %0 y: %1 )
+newgrounds-medal-move.help=Move the Newgrounds medal position
+newgrounds-score-show=show [c:ng] scoreboard for board %0 
+newgrounds-score-show.help=Show a Newgrounds score board
+newgrounds-score-submit=submit score %1 to [c:ng] for board %0
+newgrounds-score-submit.help=Submit a score to Newgrounds
+
+# gui
+
+newgrounds=Newgrounds
+
+fields.newgroundsID.label=Newgrounds Game API ID
+fields.newgroundsKey.label=Newgrounds Game Key
+
+newgroundsAdPreloader=Newgrounds Ad

@@ -1,0 +1,21 @@
+gamecenter-achievement-submit=αναφορά κατορθώματος %0 ως %1 [pct] ολόκληρο [c:gamecenter]
+gamecenter-achievement-submit.help=Υποβολή κατορθώματος στο Game Center
+
+gamecenter-board-show=προβολή πίνακα σκορ για %0 [c:gamecenter]
+gamecenter-board-show.help=Ανοίγει των κεντρικό πίνακα σκορ στο Game Center
+
+gamecenter-board-submit=υποβολή σκορ στο [c:gamecenter] με ( ID: %1 , τιμή: %0 )
+gamecenter-board-submit.help=Υποβάλει σκορ στο Game Center
+
+gamecenter-enabled=Το Game Center εκκινήθει [c:gamecenter]
+gamecenter-enabled.help=Επιστρέφει αληθώς αν το Κέντρο Παιχνιδιού εκκινηθεί
+
+gamecenter-id-name=%0 από [c:gamecenter] παίκτη
+gamecenter-id-name.help=Προβολή Ονομασίας η Εσωτερικό ID
+
+gamecenter-init=ρύθμιση Game Center [c:gamecenter]
+gamecenter-init.help=Εκκινεί το API του Game Center
+
+show=Δείξε
+name=ονομασία
+ID=ID

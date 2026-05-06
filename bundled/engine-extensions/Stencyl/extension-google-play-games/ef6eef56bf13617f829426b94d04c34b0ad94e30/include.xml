@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+
+    <source path="src" />
+    <dependency name="google" path="dependencies/google" />
+    <android extension="com.stencyl.GoogleServices.GooglePlayGames" />
+    <setenv name="GOOGLE_APP_ID" value="${googleAppID}" />
+
+</extension>

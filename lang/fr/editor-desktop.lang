@@ -1,0 +1,62 @@
+
+# DESKTOP PAGE
+desktop.pages.mac=App Store Mac
+desktop.pages.windows=Windows Store
+# WEB PAGE
+web.services.title=Services Externes
+web.style.title=Style d'Écran de Chargement
+web.ad.cpm=Pub CPMStar
+web.ad.ng=Pub Newgrounds
+web.ng.id=id API Newgrounds Game
+web.ng.key=clef Newgrounds Game
+web.cpm.id=id CPMStar
+web.pages.main=Paramètres
+web.pages.services=Services
+web.pages.splash=Préchargeurs
+web.swf=Custom SWF
+web.swf.title=Écran de chargement SWF Personnalisé
+web.swf.title.info=Un SWF (vidéo) personnalisé comme écran de chargement. Doit sélectionnier "SWF Personnalisé" dans la liste selection ci-dessus.
+web.custom.haxe=Haxe Personnalisé
+# SETTINGS PAGE
+general.pages.main=Principal
+general.pages.screen=Affichage
+general.pages.other=Avancé
+general.info.appname=Nom App
+general.info.appid=Id App
+general.info.author=Auteur
+# WINDOWS
+windows.bgcolor=Couleur Écran de Démarrage
+windows.tile=Image Tuile
+windows.tile.info=Doit être de 150 x 150 px. Est affiché sur le store et l'écran d'accueil de Windows 8.
+windows.splash=Image Splash
+windows.splash.info=Pas de taille spécifique nécessaire. Ceci est affiché au centre de l'écran.
+# HAXE - WIN8
+build.hx.error.win.name=Vous devez fournir un nom pour l'application Windows.
+build.hx.error.win.id=Vous devez fournir un ID pour l'application Windows.
+build.hx.error.win.author=Vous devez fournir un auteur pour l'application Windows.
+build.hx.win.pass=Windows va vous démander plusieurs (d'habitude 3) fois les mots de passe après cela.
+build.hx.win.pass2=Enter in 'password' into all fields.
+build.hx.win.success=Succès: Générations des certificats Windows Réussies/
+build.hx.win.success2=Cliquer sur OK pour continuer la procédure d'export. 
+build.hx.win.failure=N'a pas pu générer les certificats Windows.
+build.hx.win.install=Installer le SDK de Windows
+build.hx.win.install2=Le SDK de Windows est nécessaire pour publier des applications sur le store Windows.
+build.hx.error.win.install=Impossible de trouver la location du Windows SDK.
+build.hx.error.win.install2=
+Fournissez la location. Dans les installations typiques c'est : C:\Program Files (x86)\Windows Kits\8.0\ ou C:\Program Files\Windows Kits\8.0\
+build.hx.error.win.install3=Ce n'est pas le répertoire du SDK Windows.
+build.hx.error.win.install4=Consulter notre article d'aide, ou demander de l'aide sur nos forums.
+build.hx.error.win.locate=Localiser le répertoire du SDK Windows.
+build.hx.win.vs.install=Cette fonction nécessite Visual Studio 2013 ou plus.
+build.hx.win.vs.install2=Cliquer OK pour télécharger et installer Visual Studio. Faîtes bien attention de sélectionner à l'installation l'option "Language C++" . Après la fin de l'installation, redémarrez Stencyl.
+build.hx.win.vs.install3=-
+build.hx.win.vs.install4=-
+build.hx.win.vs.title=Visual Studio
+build.hx.win.vs.title2=L'installation de Visual Studio n'a pas réussi à cause des permissions de fichier.
+# HAXE - MAC
+build.hx.error.mac.xc=Cette fonctionnalité nécessite Xcode.
+build.hx.error.mac.xc2=Installer Xcode, ou utiliser xcode-select pour régler le répertoire du développeur actif, et tester de nouveau.
+build.hx.error.mac.sign=Échec lors de la signature de l'application pour le Mac App Store.
+build.hx.error.mac.sign2=Échec lors de la signature de l'installateur de l'application  Mac App Store.
+build.hx.error.mac.bundle=Il manque l'id du Mac Bundle.
+build.hx.error.mac.bundle2=Vous devez indiquer un id pur Mac Bundle.

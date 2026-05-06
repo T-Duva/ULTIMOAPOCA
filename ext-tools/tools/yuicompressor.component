@@ -1,0 +1,5 @@
+type: jartool
+group: com.yahoo.platform.yui
+name: yuicompressor
+version: 2.4.7
+tags: _target_html5

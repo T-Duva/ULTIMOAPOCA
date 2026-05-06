@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stencyl-addons>
+
+	<palette-addon target="stencyl-behavior-palette">
+		<merge-category id="user-input">
+			<!-- Joystick -->
+			<section title="@cat.controls.joystick">
+				<header title="@cat.controls.joystick" icon="gear" action="settings:Joystick" />
+				<block tag="joystick-add-static" />
+				<block tag="joystick-add-relative" />
+				<block tag="joystick-remove" />
+				<block tag="joystick-set-default-direction" />
+				<block tag="joystick-set-radius" />
+				<block tag="joystick-set-region" />
+				<block tag="joystick-set-center" />
+				<block tag="joystick-set-image" />
+				<block tag="joystick-set-alpha" />
+				<block tag="joystick-set-always-hide" />
+				<block tag="joystick-is-pressed" />
+				<block tag="joystick-get-distance-direction" />
+				<block tag="joystick-get-center" />
+				<block tag="joystick-get-radius" />
+				<block tag="joystick-get-touch-region-property" />
+			</section>
+		</merge-category>
+	</palette-addon>
+
+</stencyl-addons>

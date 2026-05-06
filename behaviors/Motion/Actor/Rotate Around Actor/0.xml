@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_RotateAroundActor"
+    classname="scripts.Design_0_0_RotateAroundActor"
+    desc="Make the actor rotate around another actor."
+    description="Make the actor rotate around another actor."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Rotate Around Actor"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="5"
+        name="_DistanceX"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="6"
+        name="_DistanceY"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Direction"
+        hidden="true"
+        id="7"
+        name="_Direction"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance"
+        hidden="true"
+        id="8"
+        name="_Distance"
+        order="4"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The speed of the rotation around the origin actor.&lt;br /&gt;&#10;If positive, the rotation is clockwise.&lt;br /&gt;&#10;If negative, the rotation is counter-clockwise."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="9"
+        name="_Speed"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="Only used if &lt;var&gt;Point Away&lt;/var&gt; is selected.&lt;br /&gt;&#10;The facing of the actor&apos;s sprite."
+        dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;"
+        fullname="Facing"
+        hidden="false"
+        id="10"
+        name="_Facing"
+        order="10"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, point the actor away from the origin actor.&lt;br /&gt;&#10;If unselected, don&apos;t change the facing of the actor while rotating."
+        dropdown=""
+        fullname="Point Away"
+        hidden="false"
+        id="11"
+        name="_PointAway"
+        order="9"/>
+    <actor
+        default=""
+        defaultValue=""
+        desc="The actor that will be the center of rotation."
+        dropdown=""
+        fullname="Origin Actor"
+        hidden="false"
+        id="13"
+        name="_OriginActor"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Step Seconds"
+        hidden="true"
+        id="14"
+        name="_StepSeconds"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="New Distance"
+        hidden="true"
+        id="17"
+        name="_NewDistance"
+        order="6"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="If the distance between the actor and the origin actor changes be more than this, the radius of the rotation will be adjusted. &lt;br /&gt;&#10;Can be changed for fine tuning, should not be too small."
+        dropdown=""
+        fullname="Distance Threshold"
+        hidden="false"
+        id="18"
+        name="_DistanceThreshold"
+        order="12"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected the radius will not be adjusted dynamically."
+        dropdown=""
+        fullname="Fixed Radius"
+        hidden="false"
+        id="19"
+        name="_FixedRadius"
+        order="11"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="1"
+            name="draw"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Actor - Any"
+            enabled="true"
+            id="4"
+            name="collide"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Initialize"
+            enabled="true"
+            id="5"
+            name="event-custom"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

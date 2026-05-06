@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: haxe-mbs
+version: 0.2.2
+tags: stencyl_engine

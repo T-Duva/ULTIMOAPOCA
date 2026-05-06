@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: ds
+version: 1d23c8a6f89f0f3a80158b94ca285e4e61cf982d
+tags: stencyl_engine

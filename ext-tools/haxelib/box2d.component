@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: box2d
+version: 345b9a26e2614bec42b120e5239d9cefdd3f7522
+tags: stencyl_engine

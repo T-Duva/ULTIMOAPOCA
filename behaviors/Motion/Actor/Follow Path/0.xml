@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FollowPath"
+    classname="scripts.Design_0_0_FollowPath"
+    desc="Make the actor follow a given path."
+    description="Make the actor follow a given path."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Follow Path"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc="The list of coordinates for the nodes of the path. &lt;br /&gt;&lt;br /&gt;&#10;Each entry must be of type Text and must be one of the following formats:&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;or&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y,Speed&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;&lt;var&gt;X&lt;/var&gt; and &lt;var&gt;Y&lt;/var&gt; are the scene coordinates of the node.&lt;br /&gt;&#10;&lt;var&gt;Speed&lt;/var&gt; is optional and is the speed to reach this node. If no &lt;var&gt;Speed&lt;/var&gt; is specified the &lt;var&gt;Default Speed&lt;/var&gt; will be used.&lt;br /&gt;&#10;You can use the custom blocks that come with this behavior to add nodes or clear the path.&#10;"
+        dropdown=""
+        fullname="Coordinates"
+        hidden="false"
+        id="1"
+        name="_Coordinates"
+        order="20"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X"
+        hidden="true"
+        id="2"
+        name="_XVar"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y"
+        hidden="true"
+        id="3"
+        name="_YVar"
+        order="2"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="XY"
+        hidden="true"
+        id="4"
+        name="_XY"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Previous X"
+        hidden="true"
+        id="5"
+        name="_PreviousX"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Previous Y"
+        hidden="true"
+        id="6"
+        name="_PreviousY"
+        order="4"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="First"
+        hidden="true"
+        id="7"
+        name="_First"
+        order="6"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will continue to move to the first node after reaching the last node.&lt;br /&gt;&#10;If unselected, the actor will stop after reaching the last node."
+        dropdown=""
+        fullname="Loop"
+        hidden="false"
+        id="8"
+        name="_Loop"
+        order="22"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="First X"
+        hidden="true"
+        id="9"
+        name="_FirstX"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="First Y"
+        hidden="true"
+        id="10"
+        name="_FirstY"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="12"
+        name="_DistanceX"
+        order="9"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="13"
+        name="_DistanceY"
+        order="10"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance"
+        hidden="true"
+        id="14"
+        name="_Distance"
+        order="11"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Direction"
+        hidden="true"
+        id="15"
+        name="_Direction"
+        order="12"/>
+    <number
+        default="10.0"
+        defaultValue="10.0"
+        desc="The default speed to reach any node."
+        dropdown=""
+        fullname="Default Speed"
+        hidden="false"
+        id="17"
+        name="_DefaultSpeed"
+        order="21"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Current Node"
+        hidden="true"
+        id="18"
+        name="_CurrentNode"
+        order="13"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Current Speed"
+        hidden="true"
+        id="19"
+        name="_CurrentSpeed"
+        order="14"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected and the actor&apos;s position is different from the first node of the path, the actor will jump immediately to the first node.&lt;br /&gt;&#10;If unselected, the actor will instead move at the given speed to the first node."
+        dropdown=""
+        fullname="Jump to Start"
+        hidden="false"
+        id="23"
+        name="_JumptoStart"
+        order="23"/>
+    <blocks>
+        <receiver blockID="15" id="1"/>
+        <receiver blockID="15" id="2"/>
+        <receiver blockID="16" id="3"/>
+        <receiver blockID="17" id="4"/>
+        <receiver blockID="2" id="5"/>
+        <receiver blockID="1" id="6"/>
+        <receiver blockID="3" id="7"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="1"
+            name="draw"
+            order="18"
+            repeats="true"/>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="AddNodeWithSpeed"
+            enabled="true"
+            id="16"
+            name="event-custom-block"
+            order="16"
+            repeats="true"/>
+        <event
+            displayName="AddNode"
+            enabled="true"
+            id="17"
+            name="event-custom-block"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="ClearPath"
+            enabled="true"
+            id="18"
+            name="event-custom-block"
+            order="17"
+            repeats="true"/>
+    </events>
+</snippet>

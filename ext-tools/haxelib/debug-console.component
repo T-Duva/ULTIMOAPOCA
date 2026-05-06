@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: debug-console
+version: 7b8d65ae8bed95c5487e9d28e515f6b5ffda8730
+tags: stencyl_engine

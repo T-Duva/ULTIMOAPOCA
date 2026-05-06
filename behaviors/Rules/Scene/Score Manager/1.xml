@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="NORMAL"
+    code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetScore&quot;) : Float)"
+    desc=""
+    global="false"
+    gui="Get Current Score"
+    id="1"
+    message="GetScore"
+    name="GetScore"
+    oid="-1"
+    return="number"
+    shared="false"
+    snippetID="0"/>

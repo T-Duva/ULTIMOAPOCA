@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DieOnCollision"
+    classname="scripts.Design_0_0_DieOnCollision"
+    desc="Attach to an actor to make it die when it collides with something."
+    description="Attach to an actor to make it die when it collides with something."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Die On Collision"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Collision"
+            enabled="true"
+            id="1"
+            name="collide"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

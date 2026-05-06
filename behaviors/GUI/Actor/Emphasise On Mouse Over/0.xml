@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_EmphasiseOnMouseOver"
+    classname="scripts.Design_0_0_EmphasiseOnMouseOver"
+    desc="Emphasises the actor in some way when the cursor is placed over it. Options include fade, grow, shrink, brighten, darken and more."
+    description="Emphasises the actor in some way when the cursor is placed over it. Options include fade, grow, shrink, brighten, darken and more."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Emphasise On Mouse Over"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The type of emphasis applied to the actor on mouse over. Includes fade, grow, shrink, brighten and darken."
+        dropdown="Fade=Fade&#10;Grow=Grow&#10;Shrink=Shrink&#10;Turn Clockwise=Turn Clockwise&#10;Turn Anti-Clockwise=Turn Anti-Clockwise&#10;Brighten=Brighten&#10;Darken=Darken&#10;Tint=Tint&#10;Grayscale=Grayscale&#10;Negative=Negative&#10;Sepia=Sepia&#10;"
+        fullname="Type Of Emphasis"
+        hidden="false"
+        id="1"
+        name="_TypeOfEmphasis"
+        order="1"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The amount of time, in seconds, which it should take for the actor to go from unemphasised to emphasised. Only applies to grow, shrink and fade. "
+        dropdown=""
+        fullname="Emphasis Time"
+        hidden="false"
+        id="2"
+        name="_EmphasisTime"
+        order="2"/>
+    <number
+        default="50.0"
+        defaultValue="50.0"
+        desc="The amount, as a percentage, to emphasise the actor by, relative to it&apos;s normal state (don&apos;t use negative values). Does not apply to grayscale, negative and sepia."
+        dropdown=""
+        fullname="Emphasis Amount"
+        hidden="false"
+        id="3"
+        name="_EmphasisAmount"
+        order="3"/>
+    <color
+        default="255,0,0,255"
+        defaultValue="255,0,0,255"
+        desc="The colour to use, if you are using the tint option."
+        dropdown=""
+        fullname="Tinting Colour"
+        hidden="false"
+        id="4"
+        name="_TintingColour"
+        order="4"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="1"
+            name="event-mouse-enter-exit-actor"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="2"
+            name="event-mouse-enter-exit-actor"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

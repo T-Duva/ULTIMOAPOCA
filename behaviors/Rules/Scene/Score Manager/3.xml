@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-3"
+    blocktype="ACTION"
+    code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_SetDrawOffset&quot;, [, ]);"
+    desc=""
+    global="false"
+    gui="Set Score Drawing Offset to X %0 Y %1"
+    id="3"
+    message="SetDrawOffset"
+    name="SetDrawOffset"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Horizontal" order="0" type="number"/>
+    <blank name="Vertical" order="1" type="number"/>
+</custom-block>

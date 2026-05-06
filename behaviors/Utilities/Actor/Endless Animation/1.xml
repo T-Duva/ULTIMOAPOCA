@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="ACTION"
+    code=".say(&quot;Endless Animation&quot;, &quot;_customBlock_SwitchEndlessAnimation&quot;, []);"
+    desc=""
+    global="false"
+    gui="switch endless animation to %1 for %0"
+    id="1"
+    message="SwitchEndlessAnimation"
+    name="SwitchEndlessAnimation"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+    <blank name="animation" order="1" type="animation"/>
+</custom-block>

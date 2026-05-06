@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-6"
+    blocktype="NORMAL"
+    code="(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetInvincibility&quot;) : Bool)"
+    desc=""
+    global="false"
+    gui="%0 Is Invincible?"
+    id="6"
+    message="GetInvincibility"
+    name="GetInvincibility"
+    oid="-1"
+    return="boolean"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

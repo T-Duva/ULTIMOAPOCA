@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_4WayMovement"
+    classname="scripts.Design_0_0_4WayMovement"
+    desc="Allows the actor to move up, down, left and right."
+    description="Allows the actor to move up, down, left and right."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="4 Way Movement"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="30.0"
+        defaultValue="30.0"
+        desc="The speed of the movement."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="11"
+        name="_Speed"
+        order="11"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Up Control"
+        hidden="false"
+        id="31"
+        name="_UpControl"
+        order="7"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Down Control"
+        hidden="false"
+        id="32"
+        name="_DownControl"
+        order="8"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Control"
+        hidden="false"
+        id="33"
+        name="_LeftControl"
+        order="9"/>
+    <control
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Control"
+        hidden="false"
+        id="34"
+        name="_RightControl"
+        order="10"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Move X"
+        hidden="true"
+        id="38"
+        name="_MoveX"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Move Y"
+        hidden="true"
+        id="39"
+        name="_MoveY"
+        order="2"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will not be able to turn while moving."
+        dropdown=""
+        fullname="Stop Turning"
+        hidden="false"
+        id="40"
+        name="_StopTurning"
+        order="13"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Prefer X"
+        hidden="true"
+        id="44"
+        name="_PreferX"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor will stop moving if diagonal keys are pressed at the same.&lt;br /&gt;&#10;If unselected, the actor will move in the direction of the most recently pressed key."
+        dropdown=""
+        fullname="Diagonal Stop"
+        hidden="false"
+        id="45"
+        name="_DiagonalStop"
+        order="12"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events.&lt;br /&gt;&#10;Trigger the events  &lt;var&gt;MoveUp&lt;/var&gt;, &lt;var&gt;MoveDown&lt;/var&gt;, &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed."
+        dropdown=""
+        fullname="Use Controls"
+        hidden="false"
+        id="46"
+        name="_UseControls"
+        order="6"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="X Idle"
+        hidden="true"
+        id="47"
+        name="_XIdle"
+        order="4"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Y Idle"
+        hidden="true"
+        id="49"
+        name="_YIdle"
+        order="5"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Up Animation (Idle)"
+        hidden="false"
+        id="50"
+        name="_UpAnimationIdle"
+        order="15"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Up Animation"
+        hidden="false"
+        id="51"
+        name="_UpAnimation"
+        order="16"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Down Animation (Idle)"
+        hidden="false"
+        id="52"
+        name="_DownAnimationIdle"
+        order="17"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Down Animation"
+        hidden="false"
+        id="53"
+        name="_DownAnimation"
+        order="18"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Animation (Idle)"
+        hidden="false"
+        id="54"
+        name="_LeftAnimationIdle"
+        order="19"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Left Animation"
+        hidden="false"
+        id="55"
+        name="_LeftAnimation"
+        order="20"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Animation (Idle)"
+        hidden="false"
+        id="56"
+        name="_RightAnimationIdle"
+        order="21"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Right Animation"
+        hidden="false"
+        id="57"
+        name="_RightAnimation"
+        order="22"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the animation attributes will be used, otherwise they will be ignored."
+        dropdown=""
+        fullname="Use Animations"
+        hidden="false"
+        id="58"
+        name="_UseAnimations"
+        order="14"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="3"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="4"
+            name="event-custom"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="5"
+            name="event-custom"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="6"
+            name="event-custom"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="Custom Event"
+            enabled="true"
+            id="7"
+            name="event-custom"
+            order="7"
+            repeats="true"/>
+    </events>
+</snippet>

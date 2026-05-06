@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_Label"
+    classname="scripts.Design_0_0_Label"
+    desc="Attach this to an actor to show text on the screen."
+    description="Attach this to an actor to show text on the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Label"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <font
+        default=""
+        defaultValue=""
+        desc="The font used to display the text."
+        dropdown=""
+        fullname="Font"
+        hidden="false"
+        id="1"
+        name="_Font"
+        order="13"/>
+    <text
+        default="Replace Me"
+        defaultValue="Replace Me"
+        desc="The text to display. &lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to change the text at runtime."
+        dropdown=""
+        fullname="Text"
+        hidden="false"
+        id="4"
+        name="_Text"
+        order="12"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X"
+        hidden="true"
+        id="11"
+        name="_XVar"
+        order="1"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor will be anchored to the screen."
+        dropdown=""
+        fullname="Anchor to Screen"
+        hidden="false"
+        id="14"
+        name="_AnchortoScreen"
+        order="19"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The horizontal alignment of the text."
+        dropdown="Left=Left&#10;Center=Center&#10;Right=Right"
+        fullname="Horizontal Alignment"
+        hidden="false"
+        id="17"
+        name="_HorizontalAlignment"
+        order="14"/>
+    <number
+        default="128.0"
+        defaultValue="128.0"
+        desc="The width of the label. The text will be aligned accordingly based on the &lt;var&gt;Label Width&lt;/var&gt; and the &lt;var&gt;Alighnment&lt;/var&gt; attribute."
+        dropdown=""
+        fullname="Label Width"
+        hidden="false"
+        id="18"
+        name="_LabelWidth"
+        order="16"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Text Width"
+        hidden="true"
+        id="21"
+        name="_TextWidth"
+        order="7"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The vertical alignment of the text.&#10;"
+        dropdown="Top=Top&#10;Middle=Middle&#10;Bottom=Bottom"
+        fullname="Vertical Alignment"
+        hidden="false"
+        id="24"
+        name="_VerticalAlignment"
+        order="15"/>
+    <number
+        default="32.0"
+        defaultValue="32.0"
+        desc="The height of the label."
+        dropdown=""
+        fullname="Label Height"
+        hidden="false"
+        id="25"
+        name="_LabelHeight"
+        order="17"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y"
+        hidden="true"
+        id="26"
+        name="_YVar"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Text Height"
+        hidden="true"
+        id="27"
+        name="_TextHeight"
+        order="8"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Lines"
+        hidden="true"
+        id="28"
+        name="_Lines"
+        order="3"/>
+    <text
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Line"
+        hidden="true"
+        id="29"
+        name="_Line"
+        order="4"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the behavior will treat \n as a newline character."
+        dropdown=""
+        fullname="Use Newline Characters"
+        hidden="false"
+        id="30"
+        name="_UseNewlineCharacters"
+        order="20"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Visible"
+        hidden="true"
+        id="31"
+        name="_Visible"
+        order="9"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the sprite of the actor will be hidden."
+        dropdown=""
+        fullname="Hide Sprite"
+        hidden="false"
+        id="32"
+        name="_HideSprite"
+        order="18"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Line Width"
+        hidden="true"
+        id="33"
+        name="_LineWidth"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Line Height"
+        hidden="true"
+        id="34"
+        name="_LineHeight"
+        order="6"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Wrapped Lines"
+        hidden="true"
+        id="37"
+        name="_WrappedLines"
+        order="10"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc=""
+        dropdown=""
+        fullname="Wrap Long Lines"
+        hidden="false"
+        id="39"
+        name="_WrapLongLines"
+        order="21"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Current Line"
+        hidden="true"
+        id="41"
+        name="_CurrentLine"
+        order="11"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Update"
+        hidden="true"
+        id="42"
+        name="_Update"
+        order="22"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Mouse Over"
+        hidden="true"
+        id="43"
+        name="_MouseOver"
+        order="23"/>
+    <blocks>
+        <receiver blockID="4" id="1"/>
+        <receiver blockID="5" id="2"/>
+        <receiver blockID="6" id="3"/>
+        <receiver blockID="1" id="4"/>
+        <receiver blockID="2" id="5"/>
+        <receiver blockID="3" id="6"/>
+        <receiver blockID="7" id="7"/>
+        <receiver blockID="8" id="8"/>
+        <receiver blockID="9" id="9"/>
+        <receiver blockID="10" id="10"/>
+        <receiver blockID="127" id="11"/>
+        <receiver blockID="11" id="12"/>
+        <receiver blockID="12" id="13"/>
+        <receiver blockID="175" id="14"/>
+        <receiver blockID="13" id="15"/>
+        <receiver blockID="14" id="16"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="3"
+            name="draw"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="5"
+            name="init"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="SetLabelText"
+            enabled="true"
+            id="6"
+            name="event-custom-block"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="SetLabelFont"
+            enabled="true"
+            id="7"
+            name="event-custom-block"
+            order="8"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentLeft"
+            enabled="true"
+            id="8"
+            name="event-custom-block"
+            order="9"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentCenter"
+            enabled="true"
+            id="9"
+            name="event-custom-block"
+            order="10"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentRight"
+            enabled="true"
+            id="10"
+            name="event-custom-block"
+            order="11"
+            repeats="true"/>
+        <event
+            displayName="SetLabelWidth"
+            enabled="true"
+            id="11"
+            name="event-custom-block"
+            order="15"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentTop"
+            enabled="true"
+            id="13"
+            name="event-custom-block"
+            order="12"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentMiddle"
+            enabled="true"
+            id="14"
+            name="event-custom-block"
+            order="13"
+            repeats="true"/>
+        <event
+            displayName="SetLabelAlignmentBottom"
+            enabled="true"
+            id="15"
+            name="event-custom-block"
+            order="14"
+            repeats="true"/>
+        <event
+            displayName="SetLabelHeight"
+            enabled="true"
+            id="16"
+            name="event-custom-block"
+            order="16"
+            repeats="true"/>
+        <event
+            displayName="HideLabel"
+            enabled="true"
+            id="17"
+            name="event-custom-block"
+            order="17"
+            repeats="true"/>
+        <event
+            displayName="ShowLabel"
+            enabled="true"
+            id="18"
+            name="event-custom-block"
+            order="18"
+            repeats="true"/>
+        <event
+            displayName="MouseOverText"
+            enabled="true"
+            id="19"
+            name="event-custom-block"
+            order="19"
+            repeats="true"/>
+        <event
+            displayName="MouseOverLabel"
+            enabled="true"
+            id="20"
+            name="event-custom-block"
+            order="20"
+            repeats="true"/>
+    </events>
+</snippet>

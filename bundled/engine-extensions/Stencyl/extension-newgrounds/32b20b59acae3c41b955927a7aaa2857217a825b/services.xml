@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service
+		classname="com.stencyl.newgrounds.Newgrounds"
+		label="Newgrounds API"
+		provides="com.stencyl.Extension" />
+	<service
+		classname="com.stencyl.newgrounds.NewgroundsPreloader"
+		label="@newgroundsAdPreloader"
+		provides="com.stencyl.loader.StencylPreloader" />
+</services>

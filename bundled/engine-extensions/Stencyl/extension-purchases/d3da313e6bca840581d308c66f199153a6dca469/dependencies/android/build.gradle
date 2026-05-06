@@ -1,0 +1,37 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		google()
+	}
+	
+	dependencies {
+		classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+android {
+	compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+	buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+	
+	namespace 'com.stencyl.extension.purchases'
+
+	sourceSets {
+		main {
+			manifest.srcFile 'AndroidManifest.xml'
+			java.srcDirs = ['src']
+		}
+	}
+
+	defaultConfig {
+		minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+		targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+	}
+}
+
+dependencies {
+	api project(':deps:extension-api')
+	implementation "com.android.billingclient:billing:6.0.1"
+	implementation 'androidx.annotation:annotation:1.2.0'
+}

@@ -1,0 +1,24 @@
+
+# ATTRIBUTES
+att.type.number=Nombre
+att.type.text=Texte
+att.type.bool=Booléen (Oui ou Non)
+att.type.boolean=Booléen
+att.type.list=Liste
+att.type.map=Dictionnaire
+att.name=Nom
+att.type=Type
+att.value=Valeur Initiale
+att.cat=Catégorie
+att.about=Que sont les Attribut de Jeu?
+att.none=Cliquez ici pour créer un Attributs de Jeu.
+att.new=Créer un nouvel Attribut de Jeu
+att.cat.refresh=Appliquer Nouvelle Catégorie
+att.cat.new=Ajouter Catégorie
+att.cat.new.placeholder=Entrer le Nom de Catégorie...
+att.cat.rename=Renommer Catégorie
+att.cat.inst=Choisir une Catégorie existante ou entrez en une nouvelle, puis cliquez sur Appliquer.
+att.cat.new.inst=Choisir une Catégorie existante ou entrez en une nouvelle.
+att.show=Afficher les Attributs de Jeu
+att.getset=Attributs de Jeu Dynamiques
+att.ops=Opérations

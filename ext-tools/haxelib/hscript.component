@@ -1,0 +1,5 @@
+type: haxelib-github
+group: HaxeFoundation
+name: hscript
+version: f9cccfeb217eaf7b2d34a24009782816492ab9ca
+tags: stencyl_engine

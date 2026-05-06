@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: hxcpp
+version: df2420fb96443ac56719bafccd39d95edb085411
+tags: stencyl_engine

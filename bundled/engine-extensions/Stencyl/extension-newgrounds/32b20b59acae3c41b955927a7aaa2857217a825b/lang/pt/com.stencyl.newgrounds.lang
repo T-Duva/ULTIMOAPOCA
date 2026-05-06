@@ -1,0 +1,10 @@
+newgrounds-ad-show=mostrar anúncio do Newgrounds [c:ng]
+newgrounds-ad-show.help=Mostra um anuncio do Newgrounds entre os n�veis
+newgrounds-medal-achieved=desbloquiar medalha do Newgrounds [c:ng] para: %0
+newgrounds-medal-achieved.help=Desbloqueia uma medalha no Newgrounds
+newgrounds-medal-move=mover medalha do Newgrounds [c:ng] para( x: %0 , y: %1 )
+newgrounds-medal-move.help=Move a posição da medalha do Newgrounds
+newgrounds-score-show=mostrar tabela de pontuações do Newgrounds [c:ng] para tabela: %0
+newgrounds-score-show.help=Mostra uma tabela de pontuações do Newgrounds
+newgrounds-score-submit=submeter pontuação ao Newgrounds [c:ng] com ( boardID: %0 , valor: %1 )
+newgrounds-score-submit.help=Submete uma pontuação ao Newgrounds

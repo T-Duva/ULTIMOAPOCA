@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-6 comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                </set-val-0-6>
+                <set-val-0-7 comment="false" x="0" y="0">
+                    <int id="0" val="INTERNALGLOBALSCORE"/>
+                </set-val-0-7>
+                <if comment="false" x="0" y="0">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <set-game-att comment="false" x="0" y="0">
+                                    <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-0-6 comment="false" id="1" x="0" y="0"/>
+                                </set-game-att>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <or comment="false" id="0" x="0" y="0">
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </lesseq>
+                                    <moreeq comment="false" id="1" x="0" y="0">
+                                        <as-number comment="false" id="0" x="0" y="0">
+                                            <get-game-att comment="false" id="0" x="0" y="0">
+                                                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                                            </get-game-att>
+                                        </as-number>
+                                        <int id="1" val="0"/>
+                                    </moreeq>
+                                </or>
+                            </not>
+                        </if>
+                        <else comment="false" x="0" y="0">
+                            <group eventID="1" id="-1">
+                                <set-val-0-6 comment="false" x="0" y="0">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-game-att comment="false" id="0" x="0" y="0">
+                                            <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                                        </get-game-att>
+                                    </as-number>
+                                </set-val-0-6>
+                            </group>
+                        </else>
+                    </group>
+                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <say-this comment="false" x="0" y="0">
+                    <int id="0" val="FormatScore"/>
+                </say-this>
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-font-new comment="false" x="0" y="0">
+                            <font eid="var" id="0" vid="1"/>
+                        </set-font-new>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <draw-text comment="false" x="0" y="0">
+                    <get-val-0-8 comment="false" id="0" x="0" y="0"/>
+                    <get-val-0-2 comment="false" id="1" x="0" y="0"/>
+                    <get-val-0-3 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="4" id="0">
+        <receiver-1-6 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <incdec comment="false" x="0" y="0">
+                    <int id="0" val="6"/>
+                    <int id="1" val="0"/>
+                    <get-byobval-0-6-0 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <say-this comment="false" x="0" y="0">
+                    <int id="0" val="UpdateGlobalScore"/>
+                </say-this>
+            </group>
+        </receiver-1-6>
+    </group>
+    <group eventID="5" id="0">
+        <receiver-2-7 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <incdec comment="false" x="0" y="0">
+                    <int id="0" val="6"/>
+                    <int id="1" val="1"/>
+                    <get-byobval-0-7-0 comment="false" id="2" x="0" y="0"/>
+                </incdec>
+                <say-this comment="false" x="0" y="0">
+                    <int id="0" val="UpdateGlobalScore"/>
+                </say-this>
+            </group>
+        </receiver-2-7>
+    </group>
+    <group eventID="7" id="0">
+        <receiver-3-8 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-0-1 comment="false" x="0" y="0">
+                    <get-byobval-0-8-0 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-1>
+            </group>
+        </receiver-3-8>
+    </group>
+    <group eventID="8" id="0">
+        <receiver-5-3 comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-val-0-2 comment="false" x="0" y="0">
+                    <get-byobval-0-3-0 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-2>
+                <set-val-0-3 comment="false" x="0" y="0">
+                    <get-byobval-0-3-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-3>
+            </group>
+        </receiver-5-3>
+    </group>
+    <group eventID="9" id="0">
+        <receiver-6-4 comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-6-4>
+    </group>
+    <group eventID="10" id="0">
+        <receiver-7-5 comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-7-5>
+    </group>
+    <group eventID="12" id="0">
+        <receiver-8-1 comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-8-1>
+    </group>
+    <group eventID="13" id="0">
+        <receiver-9-2 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <set-val-0-6 comment="false" x="0" y="0">
+                    <get-byobval-0-2-0 comment="false" id="0" x="0" y="0"/>
+                </set-val-0-6>
+                <say-this comment="false" x="0" y="0">
+                    <int id="0" val="UpdateGlobalScore"/>
+                </say-this>
+            </group>
+        </receiver-9-2>
+    </group>
+    <group eventID="14" id="0">
+        <receiver-10-9 comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-10-9>
+    </group>
+    <group eventID="15" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="15" id="-1">
+                        <set-game-att comment="false" x="0" y="0">
+                            <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                            <get-val-0-6 comment="false" id="1" x="0" y="0"/>
+                        </set-game-att>
+                    </group>
+                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="UpdateGlobalScore"/>
+        </event-custom>
+    </group>
+    <group eventID="16" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <set-val-0-8 comment="false" x="0" y="0">
+                    <tostring comment="false" id="0" x="0" y="0">
+                        <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                    </tostring>
+                </set-val-0-8>
+                <set-val-0-9 comment="false" x="0" y="0">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                        <str-length comment="false" id="1" x="0" y="0">
+                            <get-val-0-8 comment="false" id="0" x="0" y="0"/>
+                        </str-length>
+                    </minus>
+                </set-val-0-9>
+                <repeat comment="false" x="0" y="0">
+                    <group eventID="16" id="-1">
+                        <set-val-0-8 comment="false" x="0" y="0">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-0-8 comment="false" id="1" x="0" y="0"/>
+                            </str-combine>
+                        </set-val-0-8>
+                    </group>
+                    <get-val-0-9 comment="false" id="0" x="0" y="0"/>
+                </repeat>
+            </group>
+            <int id="0" val="FormatScore"/>
+        </event-custom>
+    </group>
+</groups>

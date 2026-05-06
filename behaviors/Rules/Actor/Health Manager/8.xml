@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-8"
+    blocktype="NORMAL"
+    code="(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetCurrentHealth&quot;) : Float)"
+    desc=""
+    global="false"
+    gui="Current Health for %0"
+    id="8"
+    message="GetCurrentHealth"
+    name="GetCurrentHealth"
+    oid="-1"
+    return="number"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+</custom-block>

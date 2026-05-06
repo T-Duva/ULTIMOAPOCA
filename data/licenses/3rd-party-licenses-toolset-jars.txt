@@ -1,0 +1,488 @@
+
+Project: Stencyl
+Dependency License Report
+Generated: 2024-07-01 22:31:08 PDT
+
+
+Apache License, Version 2.0
+===========================
+
+1 Group: ch.qos.reload4j  Name: reload4j Version: 1.2.25 
+  - Manifest Project URL:
+    - https://reload4j.qos.ch/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM Project URL:
+    - https://reload4j.qos.ch
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - reload4j-1.2.25.jar/META-INF/LICENSE 
+    - reload4j-1.2.25.jar/META-INF/NOTICE
+
+
+2 Group: com.formdev  Name: flatlaf Version: 3.1.1 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/FlatLaf
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - flatlaf-3.1.1.jar/META-INF/LICENSE
+
+
+3 Group: com.formdev  Name: flatlaf-extras Version: 3.1.1 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/FlatLaf
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - flatlaf-extras-3.1.1.jar/META-INF/LICENSE
+
+
+4 Group: com.github.vatbub  Name: mslinks Version: 1.0.6.2 
+  - POM Project URL:
+    - https://github.com/vatbub/mslinks
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+
+
+
+5 Group: com.googlecode.javaewah  Name: JavaEWAH Version: 1.2.3 
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM Project URL:
+    - https://github.com/lemire/javaewah
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+
+
+
+6 Group: commons-codec  Name: commons-codec Version: 1.16.0 
+  - Project URL:
+    - https://commons.apache.org/proper/commons-codec/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - commons-codec-1.16.0.jar/META-INF/LICENSE.txt 
+    - commons-codec-1.16.0.jar/META-INF/NOTICE.txt
+
+
+7 Group: commons-io  Name: commons-io Version: 2.11.0 
+  - Project URL:
+    - https://commons.apache.org/proper/commons-io/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - commons-io-2.11.0.jar/META-INF/LICENSE.txt 
+    - commons-io-2.11.0.jar/META-INF/NOTICE.txt
+
+
+8 Group: io.methvin  Name: directory-watcher Version: 0.18.0 
+  - POM Project URL:
+    - https://github.com/gmethvin/directory-watcher
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+
+
+
+9 Group: log4j  Name: log4j Version: 1.2.17 
+  - Manifest Project URL:
+    - http://logging.apache.org/log4j/1.2
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM Project URL:
+    - http://logging.apache.org/log4j/1.2/
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - log4j-1.2.17.jar/META-INF/LICENSE 
+    - log4j-1.2.17.jar/META-INF/NOTICE
+
+
+10 Group: net.java.dev.jna  Name: jna Version: 5.12.1 
+  - POM Project URL:
+    - https://github.com/java-native-access/jna
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+      - https://www.gnu.org/licenses/lgpl-2.1
+  - Embedded license files: 
+    - jna-5.12.1.jar/META-INF/LICENSE
+
+
+11 Group: net.java.dev.jna  Name: jna-platform Version: 5.1.0 
+  - POM Project URL:
+    - https://github.com/java-native-access/jna
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+      - https://www.gnu.org/licenses/lgpl-2.1
+
+
+
+12 Group: org.apache.commons  Name: commons-compress Version: 1.22 
+  - Project URL:
+    - https://commons.apache.org/proper/commons-compress/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - commons-compress-1.22.jar/META-INF/LICENSE.txt 
+    - commons-compress-1.22.jar/META-INF/NOTICE.txt
+
+
+13 Group: org.apache.commons  Name: commons-lang3 Version: 3.12.0 
+  - Project URL:
+    - https://commons.apache.org/proper/commons-lang/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - commons-lang3-3.12.0.jar/META-INF/LICENSE.txt 
+    - commons-lang3-3.12.0.jar/META-INF/NOTICE.txt
+
+
+14 Group: org.apache.commons  Name: commons-lang3 Version: 3.3.2 
+  - Project URL:
+    - http://commons.apache.org/proper/commons-lang/
+  - Manifest License:
+    - Apache License, Version 2.0 (Not Packaged)
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - Embedded license files: 
+    - commons-lang3-3.3.2.jar/META-INF/LICENSE.txt 
+    - commons-lang3-3.3.2.jar/META-INF/NOTICE.txt
+
+BSD Zero Clause License
+=======================
+
+15 Group: com.formdev  Name: svgSalamander Version: 1.1.2.4 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/svgSalamander
+  - POM License:
+    - BSD Zero Clause License
+      - https://opensource.org/licenses/0BSD
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+
+16 Group: com.formdev  Name: svgSalamander Version: 1.1.3 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/svgSalamander
+  - POM License:
+    - BSD Zero Clause License
+      - https://opensource.org/licenses/0BSD
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+Eclipse Distribution License (New BSD License)
+==============================================
+
+17 Group: org.eclipse.jgit  Name: org.eclipse.jgit Version: 6.7.0.202309050840-r 
+  - POM License:
+    - Eclipse Distribution License (New BSD License)
+
+
+
+18 Group: org.eclipse.jgit  Name: org.eclipse.jgit.ui Version: 6.7.0.202309050840-r 
+  - POM License:
+    - Eclipse Distribution License (New BSD License)
+
+
+GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+==============================================
+
+19 Group: com.glazedlists  Name: glazedlists Version: 1.11.0 
+  - Project URL:
+    - http://www.glazedlists.com
+  - License URL:
+    - https://www.gnu.org/licenses/lgpl-2.1
+
+
+
+20 Group: javazoom  Name: jlayer Version: 1.0.1 
+  - POM Project URL:
+    - http://www.javazoom.net/javalayer/javalayer.html
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+      - https://www.gnu.org/licenses/lgpl-2.1
+
+
+
+21 Group: net.java.dev.jna  Name: jna Version: 5.12.1 
+  - POM Project URL:
+    - https://github.com/java-native-access/jna
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+      - https://www.gnu.org/licenses/lgpl-2.1
+  - Embedded license files: 
+    - jna-5.12.1.jar/META-INF/LICENSE
+
+
+22 Group: net.java.dev.jna  Name: jna-platform Version: 5.1.0 
+  - POM Project URL:
+    - https://github.com/java-native-access/jna
+  - POM License:
+    - Apache License, Version 2.0
+      - https://www.apache.org/licenses/LICENSE-2.0
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1
+      - https://www.gnu.org/licenses/lgpl-2.1
+
+
+GNU LESSER GENERAL PUBLIC LICENSE, Version 3
+============================================
+
+23 Group: com.stencyl  Name: macwidgets Version: 0.9.6 
+  - Project URL:
+    - https://code.google.com/archive/p/macwidgets/
+  - License URL:
+    - https://www.gnu.org/licenses/lgpl-3.0
+
+
+
+24 Group: com.stencyl  Name: mp3vorbis-support Version: 1.1.1 
+  - POM Project URL:
+    - https://github.com/Stencyl/java-mp3-vorbis-support
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 3
+      - https://www.gnu.org/licenses/lgpl-3.0
+  - Embedded license files: 
+    - mp3vorbis-support-1.1.1.jar/META-INF/license.txt
+
+
+25 Group: org.xhtmlrenderer  Name: flying-saucer-core Version: 9.1.20 
+  - Manifest License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 3 (Not Packaged)
+  - POM License:
+    - GNU LESSER GENERAL PUBLIC LICENSE, Version 3
+      - https://www.gnu.org/licenses/lgpl-3.0
+  - Embedded license files: 
+    - flying-saucer-core-9.1.20.jar/META-INF/LICENSE 
+    - flying-saucer-core-9.1.20.jar/resources/schema/docbook/README
+
+Jide Software License Agreement
+===============================
+
+26 Group: com.stencyl  Name: jide-common Version: 2.2.12.1 
+  - Project URL:
+    - http://www.jidesoft.com/
+  - License URL:
+    - http://www.jidesoft.com/purchase/SLA.htm
+
+
+
+27 Group: com.stencyl  Name: jide-components Version: 2.2.12.1 
+  - Project URL:
+    - http://www.jidesoft.com/
+  - License URL:
+    - http://www.jidesoft.com/purchase/SLA.htm
+
+
+
+28 Group: com.stencyl  Name: jide-dock Version: 2.2.12.1 
+  - Project URL:
+    - http://www.jidesoft.com/
+  - License URL:
+    - http://www.jidesoft.com/purchase/SLA.htm
+
+
+
+29 Group: com.stencyl  Name: jide-grids Version: 2.2.12.1 
+  - Project URL:
+    - http://www.jidesoft.com/
+  - License URL:
+    - http://www.jidesoft.com/purchase/SLA.htm
+
+
+
+30 Group: com.stencyl  Name: jide-oss Version: 3.7.11.1 
+  - Project URL:
+    - http://www.jidesoft.com/
+  - License URL:
+    - http://www.jidesoft.com/purchase/SLA.htm
+
+
+MIT License
+===========
+
+31 Group: com.github.mizosoft.methanol  Name: methanol Version: 1.6.0 
+  - POM Project URL:
+    - https://github.com/mizosoft/methanol
+  - POM License:
+    - MIT License
+      - https://opensource.org/licenses/MIT
+
+
+
+32 Group: com.googlecode.plist  Name: dd-plist Version: 1.27 
+  - Project URL:
+    - http://www.github.com/3breadt/dd-plist
+  - Manifest License:
+    - MIT License (Not Packaged)
+  - POM License:
+    - MIT License
+      - https://opensource.org/licenses/MIT
+
+
+
+33 Group: org.slf4j  Name: slf4j-api Version: 1.7.36 
+  - POM Project URL:
+    - http://www.slf4j.org
+  - POM License:
+    - MIT License
+      - https://opensource.org/licenses/MIT
+
+
+
+34 Group: org.slf4j  Name: slf4j-api Version: 2.0.9 
+  - Project URL:
+    - http://www.slf4j.org
+  - POM License:
+    - MIT License
+      - https://opensource.org/licenses/MIT
+  - Embedded license files: 
+    - slf4j-api-2.0.9.jar/META-INF/LICENSE.txt
+
+
+35 Group: org.slf4j  Name: slf4j-reload4j Version: 2.0.9 
+  - Project URL:
+    - http://reload4j.qos.ch
+  - POM License:
+    - MIT License
+      - https://opensource.org/licenses/MIT
+  - Embedded license files: 
+    - slf4j-reload4j-2.0.9.jar/META-INF/LICENSE.txt
+
+Mozilla Public License Version 1.1
+==================================
+
+36 Group: com.glazedlists  Name: glazedlists Version: 1.11.0 
+  - Project URL:
+    - http://www.glazedlists.com
+  - License URL:
+    - https://www.gnu.org/licenses/lgpl-2.1
+
+
+PUBLIC DOMAIN
+=============
+
+37 Group: org.tukaani  Name: xz Version: 1.9 
+  - Project URL:
+    - https://tukaani.org/xz/java.html
+  - POM License:
+    - PUBLIC DOMAIN
+
+
+The 2-Clause BSD License
+========================
+
+38 Group: com.esotericsoftware.yamlbeans  Name: yamlbeans Version: 1.15 
+  - POM Project URL:
+    - https://github.com/EsotericSoftware/yamlbeans
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+
+39 Group: com.formdev  Name: svgSalamander Version: 1.1.2.4 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/svgSalamander
+  - POM License:
+    - BSD Zero Clause License
+      - https://opensource.org/licenses/0BSD
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+
+40 Group: com.formdev  Name: svgSalamander Version: 1.1.3 
+  - POM Project URL:
+    - https://github.com/JFormDesigner/svgSalamander
+  - POM License:
+    - BSD Zero Clause License
+      - https://opensource.org/licenses/0BSD
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+
+41 Group: com.jgoodies  Name: forms Version: 1.2.1 
+  - POM Project URL:
+    - https://forms.dev.java.net/
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+  - Embedded license files: 
+    - forms-1.2.1.jar/LICENSE.txt 
+    - forms-1.2.1.jar/README.html
+
+
+42 Group: net.java.dev.timingframework  Name: timingframework Version: 1.0 
+  - POM Project URL:
+    - https://timingframework.dev.java.net/
+  - POM License:
+    - The 2-Clause BSD License
+      - https://opensource.org/licenses/BSD-2-Clause
+
+
+The 3-Clause BSD License
+========================
+
+43 Group: com.fifesoft  Name: rsyntaxtextarea Version: 2.5.8 
+  - POM Project URL:
+    - http://www.fifesoft.com/rsyntaxtextarea/
+  - POM License:
+    - The 3-Clause BSD License
+      - https://opensource.org/licenses/BSD-3-Clause
+
+
+The JSON License
+================
+
+44 Group: org.json  Name: json Version: 20220320 
+  - POM Project URL:
+    - https://github.com/douglascrockford/JSON-java
+  - POM License:
+    - The JSON License
+      - http://json.org/license.html
+
+
+Unknown
+=======
+
+45 Group: com.stencyl  Name: libimobiledevice Version: 2.0.0 
+
+

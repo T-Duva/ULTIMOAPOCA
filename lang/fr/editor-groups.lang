@@ -1,0 +1,27 @@
+
+# ACTOR GROUPS
+groups.help=Comment fonctionne les Groupes ?
+groups.create=Cliquez ici pour créer un Nouveau Groupe.
+groups.new=Créer un Nouveau Groupe...
+groups.newname=Nouveau Groupe <0>
+groups.error.name=Un autre Groupe dispose déjà de ce Nom. Choisissez un Nom différent.
+groups.default=Cliquez sur le Nom d'un Groupe pour le Renommer.
+groups.none=Sélectionnez un Groupe ou cliquez ici pour en créer un.
+groups.collideswith=Entre en Collision avec
+groups.nocollide=C'est un Groupe spécial sui autorise celui-ci à ne jamais entrer en Collision avec quelque chose.
+# COLLISION GROUPS
+cgroups.create=Cliquez ici pour créer un Nouveau Groupe de Collision.
+cgroups.collide=entre en collision avec
+cgroups.single=ce groupe de collision
+cgroups.warn=Attention : Ce Groupe de Collision correspond à un Groupe existant.
+cgroups.warn2=Vous ne pouvez pas dupliquer un Groupe de Collision par défaut (<0> et <1>). La sélection précédente est rétablie.
+cgroups.info=Les Groupes de Collisions déterminent quels Groupes d'Acteurs entrent en Collisions avec les autres. Les Duplicatas, indiqué par un icône "Attention" sont ignorés.
+actor.group.choose=Choisir le Groupe d'Acteurs...
+actorgroup.chooser.title=Choisir un Groupe d'Acteurs
+# DEFAULT NAMES
+groups.defaults=Les Groupes par défaut ne peuvent pas être changés ou supprimés..
+groups.defaults.regions=Régions
+groups.defaults.players=Joueurs
+groups.defaults.tiles=Tuiles
+groups.defaults.doodads=Objets décoratifs
+groups.defaults.actors=Acteurs				  

@@ -1,0 +1,5 @@
+type: jartool
+group: com.google.javascript
+name: closure-compiler
+version: v20200315
+tags: target_html5

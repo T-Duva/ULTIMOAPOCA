@@ -1,0 +1,10 @@
+kong-guest=[c:kongregate] player is a guest
+kong-guest.help=Is the current player a guest?
+kong-init=start [c:kongregate] API
+kong-init.help=Call this before using any Kongregate blocks.
+kong-name=name of [c:kongregate] player
+kong-name.help=Name of the current player, or Guest.
+kong-submit=submit score %1 to [c:kongregate] with name %0
+kong-submit.help=Submits a score to Kongregate. Remember to set it up first!
+kong-userid=ID of [c:kongregate] player
+kong-userid.help=User ID of the current player, or 0 for guests.

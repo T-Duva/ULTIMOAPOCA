@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_BackgroundMusic"
+    classname="scripts.Design_0_0_BackgroundMusic"
+    desc="Loop music when the scene is loaded."
+    description="Loop music when the scene is loaded."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Background Music"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The channel at which to play the music. Must be between 0 and 31 inclusive."
+        dropdown=""
+        fullname="Channel"
+        hidden="false"
+        id="1"
+        name="_Channel"
+        order="1"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the sound on the selected channel will be stopped before the music starts."
+        dropdown=""
+        fullname="Stop Channel First"
+        hidden="false"
+        id="2"
+        name="_StopChannelFirst"
+        order="2"/>
+    <sound
+        default=""
+        defaultValue=""
+        desc="The background music to play."
+        dropdown=""
+        fullname="Music to Play"
+        hidden="false"
+        id="3"
+        name="_MusictoPlay"
+        order="0"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

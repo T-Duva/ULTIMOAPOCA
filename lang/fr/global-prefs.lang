@@ -1,0 +1,60 @@
+
+# PREFERENCES
+prefs.title=Options
+prefs.title.lang=Langues
+prefs.title.work=Espace de travail
+prefs.title.editors=Editeurs
+prefs.title.tools=Outils
+prefs.title.network=Réseau
+# LANG
+prefs.lang.choose=Choisir la langue (requiert un redémarrage)
+prefs.lang.debug.title=Mode Débogage de Langue (requiert un redémarrage)
+prefs.lang.debug.normal=Normal
+prefs.lang.debug.debug=Débogage
+prefs.lang.debug.info=Le mode Débogage affiche les “clefs” pour toutes les phrases localisées. Utiles aux traducteurs qui veulent savoir où la phrase est utilisée. 
+prefs.lang.update=Mettre à jour les packs de Langue
+prefs.lang.update.info=Attention : Toutes les traductions ne sont pas complètes. Visiter le lien http://www.stencyl.com/translate/ pour plus de details.
+prefs.lang.update.progress=Pack de Langue pour <0>
+prefs.lang.update.progress2=Langues en téléchargement...
+prefs.lang.update.progress3=Langues en cours d’installation ...
+prefs.lang.update.success=Redémarrer Stencyl pour voir les las packs de langues à jour..
+prefs.work.folder.copy=Changement du dossier de l’Espace de Travail
+prefs.work.folder.copy.i=Voulez-vous copier vos jeux, kits, logs et extensions dans le nouveau dossier d’espace de travail ?
+# ERRORS
+work.error.loc.games=Le dossier de l'espace de travail sélectionné se trouve dans votre répertoire de jeux.
+work.error.loc.prefs=Le dossier de l'espace de travail sélectionné se trouve dans votre répertoire préféré.
+work.error.loc.logs=Le dossier de l'espace de travail sélectionné se trouve dans votre répertoire de logs.
+work.error.loc.exts=Le dossier de l'espace de travail sélectionné se trouve dans votre répertoire d'extensions.
+work.error.loc.engineexts=Le dossier de l'espace de travail sélectionné se trouve dans votre répertoire du moteur.
+# PROXY
+prefs.proxy.title=Réglages du Proxy (Requiert un redémarrage)
+prefs.proxy.server=Serveur
+prefs.proxy.port=Port
+# GENERAL
+prefs.gen.where.title=Ou voulez-vous prévisualiser les jeux ?
+prefs.gen.where.browser=Navigateur Web 
+prefs.gen.where.player=Lecteur Flash Autonome (Réglage par défaut)
+prefs.gen.tab.title=Réglages de Tabulation (Requiert redémarrage)
+prefs.gen.tab.var=Largeur Variable (Réglage par défaut)
+prefs.gen.tab.fix=Largeur fixe 
+prefs.gen.tab.uncolored=Incolore (Réglage par défaut)
+prefs.gen.tab.colored=Coloré
+prefs.gen.workspace.title=Dossier d’Espace de Travail
+prefs.gen.workspace.msg=Ne peut pas être modifié lorsqu’un jeu est ouvert.
+prefs.gen.asset.title=Importation des Graphiques
+prefs.gen.asset.scale=Echelle
+prefs.gen.asset.resize=Méthode de redimension
+prefs.gen.asset.resize1=Pas de lissage
+prefs.gen.asset.resize2=Bilinéaire
+prefs.gen.asset.resize3=Bicubique
+prefs.gen.workspace.view=Voir dossier d’Espace de Travail
+prefs.gen.workspace.dg1=Le dossier sélectionné d’Espace de Travail n’est pas accessible en écriture
+prefs.gen.workspace.dg2=Le dossier que vous avez selectionné comme Espace de Travail n’est pas accessible en écriture. Veuillez en choisir un autre.
+# EDITORS
+prefs.tools.image=Editeur d’Image
+prefs.tools.sound=Editeur de Son
+prefs.tools.code=Editeur de Code
+prefs.tools.sound.info=Nous recommandons Audacity.
+prefs.tools.pencyl=Pencyl (Editeur intégré)
+prefs.tools.pixelitor=Pixelitor (Editeur intégré)
+prefs.tools.builtin=Editeur intégré

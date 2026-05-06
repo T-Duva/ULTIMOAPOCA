@@ -1,0 +1,21 @@
+gamecenter-achievement-submit=reportar proeza %0 como %1 [pct] completa [c:gamecenter]
+gamecenter-achievement-submit.help=Submete uma proeza ao Game Center
+
+gamecenter-board-show=mostrar leaderboard para %0 [c:gamecenter]
+gamecenter-board-show.help=Abre a tabela de pontuações mestre no Game Center
+
+gamecenter-board-submit=submeter pontuação para [c:gamecenter] com ( ID: %1 , valor: %0 )
+gamecenter-board-submit.help=Submete uma pontuação ao Game Center
+
+gamecenter-enabled=Game Center iniciou [c:gamecenter]
+gamecenter-enabled.help=Retorna como verdadeiro se o Game Center estiver iniciado.
+
+gamecenter-id-name=%0 do jogador do [c:gamecenter]
+gamecenter-id-name.help=Display Name or Internal ID
+
+gamecenter-init=iniciar Game Center [c:gamecenter]
+gamecenter-init.help=Inicia Game Center API
+
+show=Mostrar
+name=nome
+ID=ID

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+
+    <block tag="kong-guest"
+           code="com.stencyl.kongregate.Kongregate.isGuest()"
+           type="normal"
+           returns="boolean"
+           category="game"
+           helpURL="game-flash">
+    </block>
+
+    <block tag="kong-init"
+           code="com.stencyl.kongregate.Kongregate.initAPI();"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+    </block>
+
+    <block tag="kong-name"
+           code="com.stencyl.kongregate.Kongregate.getUsername()"
+           type="normal"
+           returns="text"
+           category="game"
+           helpURL="game-flash">
+    </block>
+
+    <block tag="kong-submit"
+           code="com.stencyl.kongregate.Kongregate.submitStat(~, ~);"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+        <fields>
+            <text order="0" />
+            <number order="1" />
+        </fields>
+    </block>
+
+    <block tag="kong-userid"
+           code="com.stencyl.kongregate.Kongregate.getUserID()"
+           type="normal"
+           returns="int"
+           category="game"
+           helpURL="game-flash">
+    </block>
+
+</blocks>

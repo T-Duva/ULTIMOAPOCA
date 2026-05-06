@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_WrapAroundScreen"
+    classname="scripts.Design_0_0_WrapAroundScreen"
+    desc="Make the actor appear on the opposite site of the screen when it leaves the screen."
+    description="Make the actor appear on the opposite site of the screen when it leaves the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Wrap Around Screen"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="16.0"
+        defaultValue="16.0"
+        desc="The x-component of how many pixels of the actor are still visible before it wraps around the screen, and the x-component of how many pixels will be visible after it wraps around the screen."
+        dropdown=""
+        fullname="Wrap X"
+        hidden="false"
+        id="3"
+        name="_WrapX"
+        order="1"/>
+    <number
+        default="16.0"
+        defaultValue="16.0"
+        desc="The y-component of how many pixels of the actor are still visible before it wraps around the screen, and the y-component of how many pixels will be visible after it wraps around the screen."
+        dropdown=""
+        fullname="Wrap Y"
+        hidden="false"
+        id="4"
+        name="_WrapY"
+        order="2"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

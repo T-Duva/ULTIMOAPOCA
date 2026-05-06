@@ -1,0 +1,12 @@
+joystick-direction=κατεύθυνση joystick [c:mobile]
+joystick-direction.help=Διεύθυνση του Joystick σε μοίρες (0 - 360)
+joystick-magnitude=απόσταση joystick [c:mobile]
+joystick-magnitude.help=Απόσταση του Joystick (μέγεθος) μεταξύ 0 και 1 που περιλαμβάνετε
+x=x
+y=y
+joystick-set-xy=ορισμός %0 για joystick σε %1 [c:mobile]
+joystick-set-xy.help=Θέση τοποθεσίας για το joystick (Ισχύ μόνο στο Fixed επίπεδο. Διαμόρφωση στις Προτιμήσεις του Παιχνιδιού Mobile)
+block.enable=Εφαρμογή
+block.disable=Απεφαρμογή
+joystick-show-hide=%0 joystick [c:mobile]
+joystick-show-hide.help=Εφαρμογή/Αφαίρεση του joystick

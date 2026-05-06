@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_GameDebugger"
+    classname="scripts.Design_0_0_GameDebugger"
+    desc="This behavior allows you to draw the collision shapes of your actor."
+    description="This behavior allows you to draw the collision shapes of your actor."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Game Debugger"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="scene">
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, debug drawing and the other drawing options will be enabled.&#10;"
+        dropdown=""
+        fullname="Enabled"
+        hidden="false"
+        id="1"
+        name="_Enabled"
+        order="4"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Step Size"
+        hidden="true"
+        id="2"
+        name="_StepSize"
+        order="3"/>
+    <number
+        default="2.0"
+        defaultValue="2.0"
+        desc="Stroke thickness used for drawing collision shapes, orientation and velocity."
+        dropdown=""
+        fullname="Stroke Thickness"
+        hidden="false"
+        id="4"
+        name="_StrokeThickness"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X Center On Screen"
+        hidden="true"
+        id="5"
+        name="_XCenterOnScreen"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y Center On Screen"
+        hidden="true"
+        id="6"
+        name="_YCenterOnScreen"
+        order="1"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, two lines for the orientation of the actors will be drawn at their center of mass."
+        dropdown=""
+        fullname="Draw Orientation"
+        hidden="false"
+        id="7"
+        name="_DrawOrientation"
+        order="13"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, a line will be drawn from the center of each actor on screen, representing the current velocity. The line points in the direction of the velocity, and the length of the line indicates the speed."
+        dropdown=""
+        fullname="Draw Velocity"
+        hidden="false"
+        id="8"
+        name="_DrawVelocity"
+        order="15"/>
+    <text
+        default=""
+        defaultValue=""
+        desc=""
+        dropdown=""
+        fullname="Text"
+        hidden="true"
+        id="10"
+        name="_Text"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The horizontal offset at which the actor type and ID will be drawn."
+        dropdown=""
+        fullname="Actor ID X-Offset"
+        hidden="false"
+        id="11"
+        name="_ActorIDXOffset"
+        order="18"/>
+    <number
+        default="32.0"
+        defaultValue="32.0"
+        desc="The vertical offset at which the actor type and ID will be drawn."
+        dropdown=""
+        fullname="Actor ID Y-Offset"
+        hidden="false"
+        id="12"
+        name="_ActorIDYOffset"
+        order="19"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor type and ID of each actor on screen will be drawn."
+        dropdown=""
+        fullname="Draw Actor IDs"
+        hidden="false"
+        id="13"
+        name="_DrawActorIDs"
+        order="17"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, actors with disabled physics will not draw orientation, velocity or ID. This is useful to exclude GUI elements from these debug drawing features."
+        dropdown=""
+        fullname="Exclude Lightweight Actors"
+        hidden="false"
+        id="14"
+        name="_ExcludeLightweightActors"
+        order="24"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the mouse coordinates will be relative to the scene.&lt;br/&gt;&#10;Otherwise the mouse coordinates will be relative to the screen."
+        dropdown=""
+        fullname="Mouse as Scene Coordinates"
+        hidden="false"
+        id="15"
+        name="_MouseasSceneCoordinates"
+        order="21"/>
+    <number
+        default="8.0"
+        defaultValue="8.0"
+        desc="The horizontal offset from the mouse position at which the mouse coordinates will be drawn."
+        dropdown=""
+        fullname="Mouse X-Offset"
+        hidden="false"
+        id="16"
+        name="_MouseXOffset"
+        order="22"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The vertical offset from the mouse position at which the mouse coordinates will be drawn."
+        dropdown=""
+        fullname="Mouse Y-Offset"
+        hidden="false"
+        id="17"
+        name="_MouseYOffset"
+        order="23"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the coordinates of the mouse cursor will be drawn."
+        dropdown=""
+        fullname="Draw Mouse Position"
+        hidden="false"
+        id="18"
+        name="_DrawMousePosition"
+        order="20"/>
+    <control
+        default=""
+        defaultValue=""
+        desc="Use this control to toggle the game debugger on/off at runtime."
+        dropdown=""
+        fullname="Toggle Control"
+        hidden="false"
+        id="19"
+        name="_ToggleControl"
+        order="5"/>
+    <control
+        default=""
+        defaultValue=""
+        desc="Pressing this control will make the game run faster, by decreasing the step size by one."
+        dropdown=""
+        fullname="Increase Game Speed Control"
+        hidden="false"
+        id="20"
+        name="_IncreaseGameSpeedControl"
+        order="6"/>
+    <control
+        default=""
+        defaultValue=""
+        desc="Pressing this control will make the game run slower, by increasing the step size by one to a minimum of one."
+        dropdown=""
+        fullname="Decrease Game Speed Control"
+        hidden="false"
+        id="21"
+        name="_DecreaseGameSpeedControl"
+        order="7"/>
+    <font
+        default=""
+        defaultValue=""
+        desc="The font used for drawing the actor IDs and the mouse position."
+        dropdown=""
+        fullname="Font"
+        hidden="false"
+        id="24"
+        name="_Font"
+        order="9"/>
+    <color
+        default="0,128,0,255"
+        defaultValue="0,128,0,255"
+        desc="The color of the velocity line."
+        dropdown=""
+        fullname="Velocity Color"
+        hidden="false"
+        id="27"
+        name="_VelocityColor"
+        order="16"/>
+    <color
+        default="0,0,128,255"
+        defaultValue="0,0,128,255"
+        desc="A color attribute that can be used in other behaviors for debug drawing. It is not used in this behavior."
+        dropdown=""
+        fullname="Custom Color"
+        hidden="false"
+        id="28"
+        name="_CustomColor"
+        order="25"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, collision shapes will be drawn."
+        dropdown=""
+        fullname="Draw Shapes"
+        hidden="false"
+        id="29"
+        name="_DrawShapes"
+        order="10"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, joints will be drawn."
+        dropdown=""
+        fullname="Draw Joints"
+        hidden="false"
+        id="30"
+        name="_DrawJoints"
+        order="11"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, axis-aligned bounding boxes will be drawn."
+        dropdown=""
+        fullname="Draw Axis-Aligned Bounding Boxes"
+        hidden="false"
+        id="31"
+        name="_DrawAxisAlignedBoundingBoxes"
+        order="12"/>
+    <blocks>
+        <receiver blockID="72" id="1"/>
+        <receiver blockID="120" id="2"/>
+    </blocks>
+    <events>
+        <event
+            displayName="Import"
+            enabled="true"
+            id="8"
+            name="event-custom-import"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Enable"
+            enabled="true"
+            id="9"
+            name="event-custom"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="10"
+            name="init"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="Drawing"
+            enabled="true"
+            id="11"
+            name="draw"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="Keyboard"
+            enabled="true"
+            id="12"
+            name="event-key-press-release"
+            order="7"
+            repeats="true"/>
+        <event
+            displayName="Keyboard"
+            enabled="true"
+            id="13"
+            name="event-key-press-release"
+            order="8"
+            repeats="true"/>
+        <event
+            displayName="Keyboard"
+            enabled="true"
+            id="14"
+            name="event-key-press-release"
+            order="9"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,19 @@
+========================================================= 
+Reconstruccion Stencyl - 19/04/2026 12:19:59,15 
+SOURCE_BASE=JUEGO NUEVO 
+TARGET_GAME=JUEGO_BASE_LIMPIA 
+ASSETS_SOURCE=JUEGO NUEVO 
+========================================================= 
+[OK] Entorno validado. 
+[INFO] No existe destino previo para backup. 
+
+
+
+[COPY] master-icon.png 
+[COPY] ipad-splash-sb.png 
+[COPY] iphone-splash-sb.png 
+[COPY] inner-joystick.png 
+[COPY] inner-joystick@4x.png 
+[COPY] outer-joystick.png 
+[COPY] outer-joystick@4x.png 
+[OK] Reconstruccion completada. 

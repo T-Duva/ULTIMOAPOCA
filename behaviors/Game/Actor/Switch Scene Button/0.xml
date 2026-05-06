@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_SwitchSceneButton"
+    classname="scripts.Design_0_0_SwitchSceneButton"
+    desc="A button to switch to a different scene."
+    description="A button to switch to a different scene."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Switch Scene Button"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an unpressed state."
+        dropdown=""
+        fullname="Normal Animation"
+        hidden="false"
+        id="1"
+        name="_NormalAnimation"
+        order="6"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an pressed-down state."
+        dropdown=""
+        fullname="Pressed Animation"
+        hidden="false"
+        id="4"
+        name="_PressedAnimation"
+        order="7"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Down"
+        hidden="true"
+        id="5"
+        name="_Down"
+        order="1"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in a focused state. Not used in mobile games."
+        dropdown=""
+        fullname="Hover Animation"
+        hidden="false"
+        id="6"
+        name="_HoverAnimation"
+        order="8"/>
+    <scene
+        default=""
+        defaultValue=""
+        desc="The scene to switch to."
+        dropdown=""
+        fullname="Next Scene"
+        hidden="false"
+        id="9"
+        name="_NextScene"
+        order="2"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition out, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise the time to transition out and in."
+        dropdown=""
+        fullname="Out Time"
+        hidden="false"
+        id="10"
+        name="_OutTime"
+        order="4"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="The time to transition in, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise it is ignored."
+        dropdown=""
+        fullname="In Time"
+        hidden="false"
+        id="11"
+        name="_InTime"
+        order="5"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="The style to use for the switch scene transition."
+        dropdown="Fade=Fade&#10;Blinds=Blinds&#10;Bubbles=Bubbles&#10;Spotlight=Spotlight&#10;Blur=Blur&#10;Box=Box&#10;Crossfade=Crossfade&#10;Slide Up=Slide Up&#10;Slide Down=Slide Down&#10;Slide Left=Slide Left&#10;Slide Right=Slide Right"
+        fullname="Transition Style"
+        hidden="false"
+        id="12"
+        name="_TransitionStyle"
+        order="3"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="3"
+            name="event-mouse-enter-exit-actor"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="4"
+            name="event-mouse-enter-exit-actor"
+            order="4"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="5"
+            name="event-mouse-enter-exit-actor"
+            order="5"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="6"
+            name="event-mouse-enter-exit-actor"
+            order="6"
+            repeats="true"/>
+        <event
+            displayName="SwitchScene"
+            enabled="true"
+            id="15"
+            name="event-custom"
+            order="15"
+            repeats="true"/>
+    </events>
+</snippet>

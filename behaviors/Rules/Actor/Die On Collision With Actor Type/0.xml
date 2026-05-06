@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DieOnCollisionWithActorType"
+    classname="scripts.Design_0_0_DieOnCollisionWithActorType"
+    desc="Attach to an actor to make it die when it collides with a specific actor type."
+    description="Attach to an actor to make it die when it collides with a specific actor type."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Die On Collision With Actor Type"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <actortype
+        default=""
+        defaultValue=""
+        desc="When the actor collides with an actor, it will die if the other actor is of this type."
+        dropdown=""
+        fullname="Actor Type"
+        hidden="false"
+        id="2"
+        name="_ActorType"
+        order="1"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Collision"
+            enabled="true"
+            id="1"
+            name="event-collide-actortotype"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

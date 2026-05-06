@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+
+    <block tag="newgrounds-ad-show"
+           code="com.stencyl.newgrounds.Newgrounds.newgroundsShowAd();"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+    </block>
+
+    <block tag="newgrounds-medal-achieved"
+           code="com.stencyl.newgrounds.Newgrounds.newgroundsUnlockMedal(~);"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+
+    <block tag="newgrounds-medal-move"
+           code="com.stencyl.newgrounds.Newgrounds.newgroundsSetMedalPosition(~, ~);"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+        <fields>
+            <number order="0" />
+            <number order="1" />
+        </fields>
+    </block>
+
+    <block tag="newgrounds-score-show"
+           code="com.stencyl.newgrounds.Newgrounds.newgroundsShowScore(~);"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+        <fields>
+            <text order="0" />
+        </fields>
+    </block>
+
+    <block tag="newgrounds-score-submit"
+           code="com.stencyl.newgrounds.Newgrounds.newgroundsSubmitScore(~, ~);"
+           type="action"
+           returns="void"
+           category="game"
+           helpURL="game-flash">
+        <fields>
+            <text order="0" />
+            <number order="1" />
+        </fields>
+    </block>
+
+</blocks>

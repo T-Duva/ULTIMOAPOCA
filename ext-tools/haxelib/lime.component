@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: lime
+version: 6bd1a9b7a3dd9352f9c584799ed3dfcd143dcd87
+tags: stencyl_engine

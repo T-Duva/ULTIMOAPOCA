@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game-data>
+	<config classname="com.stencyl.newgrounds.Config">
+		<field name="newgroundsID" type="text" embedded="true" />
+		<field name="newgroundsKey" type="text" embedded="true" />
+	</config>
+</game-data>

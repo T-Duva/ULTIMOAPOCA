@@ -1,0 +1,6 @@
+type: extension-github
+group: Stencyl
+name: extension-newgrounds
+version: 32b20b59acae3c41b955927a7aaa2857217a825b
+semver: 1.0.0
+tags: stencyl_engine,base_bundle

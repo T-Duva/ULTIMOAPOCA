@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_OnScreenButton"
+    classname="scripts.Design_0_0_OnScreenButton"
+    desc="A button to simulate key presses/releases."
+    description="A button to simulate key presses/releases."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="On Screen Button"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an unpressed state."
+        dropdown=""
+        fullname="Normal Animation"
+        hidden="false"
+        id="1"
+        name="_NormalAnimation"
+        order="6"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in an pressed-down state."
+        dropdown=""
+        fullname="Pressed Animation"
+        hidden="false"
+        id="2"
+        name="_PressedAnimation"
+        order="7"/>
+    <control
+        default=""
+        defaultValue=""
+        desc="The control that this button maps to."
+        dropdown=""
+        fullname="Control"
+        hidden="false"
+        id="3"
+        name="_Control"
+        order="5"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor will be killed in web or desktop games."
+        dropdown=""
+        fullname="Show Only in Mobile Games"
+        hidden="false"
+        id="5"
+        name="_ShowOnlyinMobileGames"
+        order="11"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Down"
+        hidden="true"
+        id="6"
+        name="_Down"
+        order="1"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the button will be pressed if slide the mouse/finger over the button, and it will simulate a key release if you slide the mouse/finger off.&lt;br/&gt;&#10;Otherwise, the button will only be pressed if you click/touch it directly and sliding off the button will not simulate a key release."
+        dropdown=""
+        fullname="Allow Slide"
+        hidden="false"
+        id="8"
+        name="_AllowSlide"
+        order="10"/>
+    <animation
+        default=""
+        defaultValue=""
+        desc="Animation for the button in a focused state. Not used in mobile games."
+        dropdown=""
+        fullname="Hover Animation"
+        hidden="false"
+        id="9"
+        name="_HoverAnimation"
+        order="8"/>
+    <list
+        default="list"
+        defaultValue="list"
+        desc=""
+        dropdown=""
+        fullname="Touching IDs"
+        hidden="true"
+        id="10"
+        name="_TouchingIDs"
+        order="2"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="On Self"
+        hidden="true"
+        id="11"
+        name="_OnSelf"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Was Touching"
+        hidden="true"
+        id="12"
+        name="_WasTouching"
+        order="4"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc=""
+        dropdown=""
+        fullname="Enable Multi-Touch"
+        hidden="false"
+        id="13"
+        name="_EnableMultiTouch"
+        order="9"/>
+    <text
+        default=""
+        defaultValue=""
+        desc="Optional.  If left blank, the name will be set to the actor type."
+        dropdown=""
+        fullname="Button Name"
+        hidden="false"
+        id="14"
+        name="_ButtonName"
+        order="12"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="8"
+            name="event-mouse-enter-exit-actor"
+            order="4"
+            repeats="false"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="9"
+            name="event-mouse-enter-exit-actor"
+            order="5"
+            repeats="false"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="14"
+            name="event-mouse-enter-exit-actor"
+            order="10"
+            repeats="true"/>
+        <event
+            displayName="On Actor"
+            enabled="true"
+            id="15"
+            name="event-mouse-enter-exit-actor"
+            order="9"
+            repeats="true"/>
+        <event
+            displayName="Multi-Touch"
+            enabled="true"
+            id="16"
+            name="event-device-multitouch"
+            order="14"
+            repeats="true"/>
+        <event
+            displayName="Multi-Touch"
+            enabled="true"
+            id="17"
+            name="event-device-multitouch"
+            order="13"
+            repeats="true"/>
+        <event
+            displayName="Multi-Touch"
+            enabled="true"
+            id="18"
+            name="event-device-multitouch"
+            order="15"
+            repeats="true"/>
+        <event
+            displayName="Code"
+            enabled="true"
+            id="19"
+            name="event-custom-code"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

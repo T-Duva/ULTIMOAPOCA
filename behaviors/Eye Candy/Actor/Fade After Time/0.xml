@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FadeAfterTime"
+    classname="scripts.Design_0_0_FadeAfterTime"
+    desc="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration"
+    description="Attach this behaviour to an actor to have it fade out after the specified time and over a specified duration"
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Fade After Time"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The amount of time, in seconds, over which to fade out."
+        dropdown=""
+        fullname="Fade Time"
+        hidden="false"
+        id="1"
+        name="_FadeTime"
+        order="3"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The amount of time, in seconds after which the actor should start fading."
+        dropdown=""
+        fullname="Time to Fade After"
+        hidden="false"
+        id="3"
+        name="_TimetoFadeAfter"
+        order="2"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="An INTERNAL attribute to determine whether or not the actor is already fading."
+        dropdown=""
+        fullname="Fading"
+        hidden="true"
+        id="5"
+        name="_Fading"
+        order="1"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If selected, the actor is killed after fading out."
+        dropdown=""
+        fullname="Kill After Fade"
+        hidden="false"
+        id="6"
+        name="_KillAfterFade"
+        order="4"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Fade"
+            enabled="true"
+            id="1"
+            name="event-custom"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

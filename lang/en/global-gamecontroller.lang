@@ -1,0 +1,13 @@
+
+# Window
+gci.window=Game Controller
+# MODULES
+gci.mod.clients=Clients
+gci.mod.code=Code
+gci.mod.log=Log
+gci.mod.script=Script
+gci.mod.saves=Saves
+# Actions
+gci.reload.game=Reload Game
+#Log Viewer
+game.log.gotosource=Go to source

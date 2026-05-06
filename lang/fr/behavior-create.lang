@@ -1,0 +1,29 @@
+
+# MODES
+sb.mode.code=Mode Code
+sb.mode.design=Mode de Conception
+sb.mode.coded=<b>Mode Code</b><br>Écrivez du code simple pour créer des comportements.
+sb.mode.designd=<b>Mode Design </b><br>Assemblez les blocs pour créer les comportements de vos acteurs et de vos scènes.
+sb.mode.arbitrary=<b>Mode Libre</b><br>Écrivez du code arbitraire pour votre jeu. Ne peut être attaché aux acteurs ou scènes.
+# NEW BEHAVIOR DIALOG
+sb.edit.title=Éditer les Propriétés
+sb.new.mode=Mode
+sb.new.props=Basique
+sb.new.name=Nom
+sb.new.class=Nom de Classe
+sb.new.class.help=Les noms de classe doivent commencer avec une majuscule et ne contenir que des caractères alphanumériques ou des tirets (_).
+sb.new.package=Pack
+sb.new.package.help=Les noms de packs ne doivent contenir que des caractères alphanumériques et des tirets (_), mais peuvent être imbriqués avec des points.
+sb.new.type.help=Type de Comportement
+sb.new.type.actor=<b>Comportement d'Acteur</b><br>S'applique Seulement sur les Acteurs.
+sb.new.type.scene=<b>Comportement de Scène</b><br>S'applique Seulement sur les Scènes.
+sb.new.type.actor.short=Comportement d’Acteur
+sb.new.type.scene.short=Comportement de Scène
+sb.new.description=Description
+sb.error.integer=Entrez un entier.
+sb.error.number=Entrez un nombre.
+sb.error.text=Entrez du texte.
+sb.error.class=Nom de Classe non valide.
+sb.error.class.missing=Entrez un nom de classe
+sb.error.package=Nom de pack invalide.
+sb.error.package.missing=Entrez un nom de pack.

@@ -1,0 +1,10 @@
+kong-guest=[c:kongregate] ο παίκτης είναι επισκέπτης
+kong-guest.help=Είναι ο τωρινός παίκτης επισκέπτης;
+kong-init=ρύθμιση Kongregate API [c:kongregate]
+kong-init.help=Κλήση αυτού προτού γίνει χρήση οποιουδήποτε μπλοκ Kongregate.
+kong-name=ονομασία του [c:kongregate] παίκτη
+kong-name.help=Ονομασία του τωρινού παίκτη, η Επισκέπτη.
+kong-submit=υποβολή σκορ στο [c:kongregate] με ( όνομα: %0 , τιμή: %1 )
+kong-submit.help=Υποβάλει σκορ στο Kongregate. Θυμηθείτε να το στήσετε πρώτα!
+kong-userid=id του [c:kongregate] παίκτη
+kong-userid.help=ID χρήστη του τωρινού παίχτη, η 0 για επισκέπτες.

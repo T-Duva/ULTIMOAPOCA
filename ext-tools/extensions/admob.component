@@ -1,0 +1,5 @@
+type: extension-github
+group: Stencyl
+name: extension-admob
+version: 48f505ce9595a307a3f5adcfabb113963f92aaf8
+tags: stencyl_engine,base_bundle

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FollowDragandDrop"
+    classname="scripts.Design_0_0_FollowDragandDrop"
+    desc="Allows the actor to be dragged and dropped, following the mouse quickly. This behavior works with collisions. It also allows the actor to keep on moving, when the mouse is released."
+    description="Allows the actor to be dragged and dropped, following the mouse quickly. This behavior works with collisions. It also allows the actor to keep on moving, when the mouse is released."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Follow Drag and Drop"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="X Offset"
+        hidden="true"
+        id="1"
+        name="_XOffset"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Y Offset"
+        hidden="true"
+        id="2"
+        name="_YOffset"
+        order="2"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Grabbed"
+        hidden="true"
+        id="4"
+        name="_Grabbed"
+        order="3"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Old X"
+        hidden="true"
+        id="5"
+        name="_OldX"
+        order="4"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Old Y"
+        hidden="true"
+        id="6"
+        name="_OldY"
+        order="5"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="7"
+        name="_DistanceX"
+        order="6"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="8"
+        name="_DistanceY"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance"
+        hidden="true"
+        id="9"
+        name="_Distance"
+        order="8"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Direction"
+        hidden="true"
+        id="10"
+        name="_Direction"
+        order="9"/>
+    <number
+        default="5.0"
+        defaultValue="5.0"
+        desc="The actor will move at least at this speed."
+        dropdown=""
+        fullname="Minimum Speed"
+        hidden="false"
+        id="11"
+        name="_MinimumSpeed"
+        order="12"/>
+    <number
+        default="1000.0"
+        defaultValue="1000.0"
+        desc="How fast the actor should move towards the mouse, when dragged. The actual speed depends on the distance to the mouse. The maximum speed is &lt;var&gt;Minimum  Speed&lt;/var&gt; plus &lt;var&gt;Speed&lt;/var&gt;. The actor will move at maximum speed if it is in the opposite diagonal corner of the mouse."
+        dropdown=""
+        fullname="Speed"
+        hidden="false"
+        id="12"
+        name="_Speed"
+        order="11"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Screen Diagonal"
+        hidden="true"
+        id="14"
+        name="_ScreenDiagonal"
+        order="10"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor will keep on moving, when the mouse is released. This can be used to &quot;throw&quot; the actor.&lt;br/&gt;&#10;Otherwise the actor will stop moving, when the mouse is released."
+        dropdown=""
+        fullname="Keep Moving on Release"
+        hidden="false"
+        id="15"
+        name="_KeepMovingonRelease"
+        order="13"/>
+    <number
+        default="0.5"
+        defaultValue="0.5"
+        desc="When the mouse is released the speed if the actor will be multiplied by this factor. Only used if &lt;var&gt;Keep Moving on Release&lt;/var&gt; is selected."
+        dropdown=""
+        fullname="Release Speed Factor"
+        hidden="false"
+        id="16"
+        name="_ReleaseSpeedFactor"
+        order="14"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="2"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="ACTION"
+    code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetInvincibility&quot;, []);"
+    desc=""
+    global="false"
+    gui="Set Invincibility For %0 to %1"
+    id="1"
+    message="SetInvincibility"
+    name="SetInvincibility"
+    oid="-1"
+    return="void"
+    shared="false"
+    snippetID="0">
+    <blank name="Self" order="0" type="actor"/>
+    <blank name="Status" order="1" type="boolean"/>
+</custom-block>

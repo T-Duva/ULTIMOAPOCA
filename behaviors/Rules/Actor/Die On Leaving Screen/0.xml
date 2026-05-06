@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_DieOnLeavingScreen"
+    classname="scripts.Design_0_0_DieOnLeavingScreen"
+    desc="Attach to an actor to make it die once it leaves the screen."
+    description="Attach to an actor to make it die once it leaves the screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Die On Leaving Screen"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Creation"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+        <event
+            displayName="Leaves Screen"
+            enabled="true"
+            id="4"
+            name="event-actor-screen"
+            order="4"
+            repeats="true"/>
+    </events>
+</snippet>

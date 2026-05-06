@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FacetheMouse"
+    classname="scripts.Design_0_0_FacetheMouse"
+    desc="Makes the actor face the mouse."
+    description="Makes the actor face the mouse."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Face the Mouse"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance X"
+        hidden="true"
+        id="2"
+        name="_DistanceX"
+        order="1"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Distance Y"
+        hidden="true"
+        id="3"
+        name="_DistanceY"
+        order="2"/>
+    <number
+        default="-90.0"
+        defaultValue="-90.0"
+        desc="The facing of the actor&apos;s sprite."
+        dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;"
+        fullname="Facing"
+        hidden="false"
+        id="4"
+        name="_Facing"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="If selected, the actor will only face the mouse when it is pressed."
+        dropdown=""
+        fullname="Only When Pressed"
+        hidden="false"
+        id="5"
+        name="_OnlyWhenPressed"
+        order="4"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="1"
+            name="step"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

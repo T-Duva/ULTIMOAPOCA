@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FaceDirectionofMotion"
+    classname="scripts.Design_0_0_FaceDirectionofMotion"
+    desc="Make the actor always face the direction of its motion."
+    description="Make the actor always face the direction of its motion."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Face Direction of Motion"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="-90.0"
+        defaultValue="-90.0"
+        desc="The facing of the actor&apos;s sprite."
+        dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;"
+        fullname="Facing"
+        hidden="false"
+        id="4"
+        name="_Facing"
+        order="1"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="Below this speed the actor will be considered to be idle (i.e. not moving). May be changed for fine tuning, but must be greater than 0."
+        dropdown=""
+        fullname="Idle Threshold"
+        hidden="false"
+        id="5"
+        name="_IdleThreshold"
+        order="2"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

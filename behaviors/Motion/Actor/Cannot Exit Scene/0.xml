@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_CannotExitScene"
+    classname="scripts.Design_0_0_CannotExitScene"
+    desc="Prevent the actor from leaving the scene.&lt;br /&gt;&lt;br /&gt;&#10;The actor will still be able to leave the &lt;em&gt;screen&lt;/em&gt;, but it cannot leave the &lt;em&gt;scene&lt;/em&gt;."
+    description="Prevent the actor from leaving the scene.&lt;br /&gt;&lt;br /&gt;&#10;The actor will still be able to leave the &lt;em&gt;screen&lt;/em&gt;, but it cannot leave the &lt;em&gt;scene&lt;/em&gt;."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Cannot Exit Scene"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc=""
+        dropdown=""
+        fullname="Bottom"
+        hidden="true"
+        id="2"
+        name="_Bottom"
+        order="2"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Updated"
+            enabled="true"
+            id="2"
+            name="step"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="2"
+            repeats="true"/>
+    </events>
+</snippet>

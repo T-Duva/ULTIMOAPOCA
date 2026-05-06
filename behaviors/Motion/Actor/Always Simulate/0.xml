@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_AlwaysSimulate"
+    classname="scripts.Design_0_0_AlwaysSimulate"
+    desc="Allows the actor to simulate even when off screen."
+    description="Allows the actor to simulate even when off screen."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Always Simulate"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="2147483647"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="1"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

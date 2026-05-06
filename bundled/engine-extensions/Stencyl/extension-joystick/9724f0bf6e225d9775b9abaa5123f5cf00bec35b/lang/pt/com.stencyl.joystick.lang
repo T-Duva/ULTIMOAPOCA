@@ -1,0 +1,12 @@
+joystick-direction=direção do joystick [c:mobile]
+joystick-direction.help=A direção do joystick em graus (0 - 360)
+joystick-magnitude=distância do joystick [c:mobile]
+joystick-magnitude.help=A distância do joystick (magnitude) entre 0 e 1 inclusive
+x=x
+y=y
+joystick-set-xy=definir %0 para joystick para %1 [c:mobile]
+joystick-set-xy.help=Define a posição para o joystick. (Funciona apenas no modo Fixo. Configure nas Definições de Jogos para telem�vel)
+block.enable=Ativar
+block.disable=Desativar
+joystick-show-hide=%0 joystick [c:mobile]
+joystick-show-hide.help=Ativa/Desativa o joystick

@@ -1,0 +1,59 @@
+# blocks
+
+gpg-check-quests=has new quest completed [c:google]
+gpg-check-quests.help=Checks if a new quest has been completed.
+
+gpg-completed-quests=completed quest list [c:google]
+gpg-completed-quests.help=Gets list of completed quests.
+
+gpg-connection=connection %0 [c:google]
+gpg-connection.help=Check connection state of Google Play Games Services.
+
+gpg-get-reward=reward for quest with ID %0 [c:google]
+gpg-get-reward.help=Gets reward text for a completed quest.
+
+gpg-increment-achievments=increase achievement with ID %0 by %1 [c:google]
+gpg-increment-achievments.help=Increment value for an achievement by the given amount.
+
+gpg-initialize=%0 Google Play Games [c:google]
+gpg-initialize.help=Sign In/Out of Google Play Games Services.
+
+gpg-show=show %0 [c:google]
+gpg-show.help=Show game's achievements/leaderboards/quests.
+
+gpg-show-leaderboard=show leaderboard with ID %0 [c:google]
+gpg-show-leaderboard.help=Show a specific leaderboard from the game.
+
+gpg-submit-score=submit score %1 to leaderboard with ID %0 [c:google]
+gpg-submit-score.help=Submit a score to a specific leaderboard.
+
+gpg-unlock-achievments=unlock achievement with ID %0 [c:google]
+gpg-unlock-achievments.help=Unlock a game's achievement.
+
+gpg-update-event=update event with ID %0 with value %1 [c:google]
+gpg-update-event.help=Update an event by the given amount.
+
+events.defs.gpg=Google Play Games
+
+# block dropdowns
+
+established=is established
+pending=is pending
+failed=has failed
+cancelled=was cancelled by user
+
+initialize=initialize
+signout=sign out from
+
+achievements=achievements
+leaderboards=leaderboards
+quests=quests
+
+# gui
+
+googleplaygames=Google Play Games
+
+fields.enableGPG.label=Enable Google Play Games
+
+fields.googleAppID.label=Google App ID
+fields.googleAppID.hint=Google App ID associated with this game

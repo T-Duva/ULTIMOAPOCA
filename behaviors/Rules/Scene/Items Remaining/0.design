@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="-1" id="-1">
+                        <set-val-0-2 comment="false" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </set-val-0-2>
+                        <actors-in-group comment="false" x="0" y="0">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                            </group>
+                            <actorgroup eid="var" id="0" vid="1"/>
+                        </actors-in-group>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="-1" id="-1">
+                                <set-val-0-4 comment="false" x="0" y="0">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-4>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="-1" id="-1">
+                                        <scene-shout comment="false" x="0" y="0">
+                                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                        </scene-shout>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <str-length comment="false" id="0" x="0" y="0">
+                                            <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                                        </str-length>
+                                        <int id="1" val="0"/>
+                                    </more>
+                                </if>
+                                <if comment="false" x="0" y="0">
+                                    <group eventID="-1" id="-1">
+                                        <scene-change-color comment="false" x="0" y="0">
+                                            <get-val-0-12 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <get-val-0-13 comment="false" id="2" x="0" y="0"/>
+                                            <color b="0" g="0" id="3" r="0"/>
+                                            <int id="4" val="0"/>
+                                            <get-val-0-14 comment="false" id="5" x="0" y="0"/>
+                                            <color b="0" g="0" id="6" r="0"/>
+                                        </scene-change-color>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <and comment="false" id="0" x="0" y="0">
+                                            <get-val-0-11 comment="false" id="0" x="0" y="0"/>
+                                            <value comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="12"/>
+                                                <int id="1" val="0"/>
+                                            </value>
+                                        </and>
+                                        <not comment="false" id="1" x="0" y="0">
+                                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                                        </not>
+                                    </and>
+                                </if>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-0-4 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="-1" id="-1">
+                        <set-font-new comment="false" x="0" y="0">
+                            <font eid="var" id="0" vid="10"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="0" y="0">
+                            <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-0-6 comment="false" id="1" x="0" y="0"/>
+                            <get-val-0-7 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="0">
+        <receiver-2-1 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="0" y="0">
+                    <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+        </receiver-2-1>
+    </group>
+</groups>

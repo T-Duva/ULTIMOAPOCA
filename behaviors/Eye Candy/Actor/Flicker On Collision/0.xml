@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<snippet
+    attachedevent="false"
+    class="scripts.Design_0_0_FlickerOnCollision"
+    classname="scripts.Design_0_0_FlickerOnCollision"
+    desc="When attached, the actor will flicker the given number of times over the given number of seconds when it collides with something."
+    description="When attached, the actor will flicker the given number of times over the given number of seconds when it collides with something."
+    design="true"
+    drawOrder="0"
+    id="0"
+    name="Flicker On Collision"
+    oid="-1"
+    package="scripts"
+    shared="false"
+    type="actor">
+    <actor
+        default="thisactor"
+        defaultValue="thisactor"
+        desc=""
+        dropdown=""
+        fullname="Actor"
+        hidden="true"
+        id="2147483647"
+        name="actor"
+        order="0"/>
+    <number
+        default="1.0"
+        defaultValue="1.0"
+        desc="The amount of time, in seconds, that the actor should flicker for."
+        dropdown=""
+        fullname="Flicker Time"
+        hidden="false"
+        id="1"
+        name="_FlickerTime"
+        order="4"/>
+    <number
+        default="3.0"
+        defaultValue="3.0"
+        desc="The number of times the actor should flicker during the flickering period."
+        dropdown=""
+        fullname="Number of Flickers"
+        hidden="false"
+        id="2"
+        name="_NumberofFlickers"
+        order="5"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc="INTERNAL ATTRIBUTE. Whether or not the actor is already flickering, useful for driving logic."
+        dropdown=""
+        fullname="Flickering"
+        hidden="true"
+        id="3"
+        name="_Flickering"
+        order="2"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="The opacity to flicker back and forth with as a percent. 0 = completely transparent, 100 = completely opaque."
+        dropdown=""
+        fullname="Flicker Opacity"
+        hidden="false"
+        id="4"
+        name="_FlickerOpacity"
+        order="6"/>
+    <boolean
+        default="true"
+        defaultValue="true"
+        desc="If true, then the actor will fade smoothly to the given opacity, rather than flickering straight away. (This may be unnoticeable beyond a certain rate of flickers/second.)"
+        dropdown=""
+        fullname="Fade"
+        hidden="false"
+        id="5"
+        name="_Fade"
+        order="7"/>
+    <number
+        default="0.0"
+        defaultValue="0.0"
+        desc="INTERNAL ATTRIBUTE. A shortcut for the amount of time one flicker lasts."
+        dropdown=""
+        fullname="Flicker Length"
+        hidden="true"
+        id="6"
+        name="_FlickerLength"
+        order="3"/>
+    <boolean
+        default="false"
+        defaultValue="false"
+        desc=""
+        dropdown=""
+        fullname="Stop"
+        hidden="true"
+        id="7"
+        name="_Stop"
+        order="1"/>
+    <blocks/>
+    <events>
+        <event
+            displayName="Flicker"
+            enabled="true"
+            id="1"
+            name="event-custom"
+            order="3"
+            repeats="true"/>
+        <event
+            displayName="Collision"
+            enabled="true"
+            id="2"
+            name="collide"
+            order="2"
+            repeats="true"/>
+        <event
+            displayName="Created"
+            enabled="true"
+            id="3"
+            name="init"
+            order="1"
+            repeats="true"/>
+    </events>
+</snippet>

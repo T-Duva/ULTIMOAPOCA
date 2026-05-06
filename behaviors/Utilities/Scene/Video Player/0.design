@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="4" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="4" id="-1">
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="private var video:Video;&#10;private var connection:NetConnection;&#10;private var stream:NetStream;"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="private function NetStatusHandler(event:NetStatusEvent):Void&#10;{&#10;&#9;switch (event.info.code)&#10;&#9;{&#10;&#9;case &amp;quot;NetConnection.Connect.Success&amp;quot;:&#10;&#9;&#9;stream = new NetStream(connection);&#10;&#9;&#9;stream.addEventListener(NetStatusEvent.NET_STATUS, NetStatusHandler);&#10;&#9;&#9;stream.addEventListener(AsyncErrorEvent.ASYNC_ERROR, AsyncErrorHandler); &#10;&#9;&#9;video.attachNetStream(stream);&#10;&#9;&#9;"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="&#9;&#10;&#9;case &amp;quot;NetStream.Play.StreamNotFound&amp;quot;:&#10;&#9;&#9;trace(&amp;quot;Video Player Error: Stream not found.&amp;quot;);&#10;&#9;&#9;"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="&#9;case &amp;quot;NetStream.Play.Stop&amp;quot;:&#10;&#9;&#9;if (_WhenFinished == &amp;quot;Hide&amp;quot;)&#10;&#9;&#9;{&#10;&#9;&#9;&#9;_customEvent_HideVideo();&#10;&#9;&#9;}&#10;&#9;&#9;else if (_WhenFinished == &amp;quot;Loop&amp;quot;)&#10;&#9;&#9;{&#10;&#9;&#9;&#9;_customEvent_PlayVideo();&#10;&#9;&#9;}&#10;&#9;}&#10;}"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="private function SecurityErrorHandler(event:SecurityErrorEvent):Void&#10;{&#10;&#9;trace(&amp;quot;Video Player Security Error: &amp;quot; + event);&#10;}"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="private function AsyncErrorHandler(event:AsyncErrorEvent):Void&#10;{ &#10;   //ignore metadata error message&#10;} "/>
+                        </code-long>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="6" id="0">
+        <event-custom-import comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="6" id="-1">
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="import flash.media.Video;&#10;import flash.system.Security;&#10;import flash.net.NetConnection;&#10;import flash.net.NetStream;&#10;import flash.events.NetStatusEvent;&#10;import flash.events.AsyncErrorEvent;&#10;import flash.events.SecurityErrorEvent;&#10;"/>
+                        </code-long>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+        </event-custom-import>
+    </group>
+    <group eventID="7" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="7" id="-1">
+                        <set-val-0-15 comment="false" x="0" y="0">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-15>
+                        <set-val-0-13 comment="false" x="0" y="0">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-0-13>
+                        <print comment="false" x="0" y="0">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="Security sandbox: "/>
+                                <code-short comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="Security.sandboxType"/>
+                                </code-short>
+                            </str-combine>
+                        </print>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="video = new Video();&#10;&#10;if (_Fullscreen)&#10;{&#10;&#9;video.width = getScreenWidth();&#10;&#9;video.height = getScreenHeight();&#10;}"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="else&#10;{&#10;&#9;video.x = _PositionX;&#10;&#9;video.y = _PositionY;&#10;&#9;video.width = _VideoWidth;&#10;&#9;video.height = _VideoHeight;&#10;}"/>
+                        </code-long>
+                        <code-long comment="false" x="0" y="0">
+                            <int id="0" val="connection = new NetConnection();&#10;connection.addEventListener(NetStatusEvent.NET_STATUS, NetStatusHandler);&#10;connection.addEventListener(SecurityErrorEvent.SECURITY_ERROR, SecurityErrorHandler);&#10;connection.connect(null);&#10;"/>
+                        </code-long>
+                        <say-this comment="false" x="0" y="0">
+                            <int id="0" val="ShowVideo"/>
+                        </say-this>
+                        <say-this comment="false" x="0" y="0">
+                            <int id="0" val="PlayVideo"/>
+                        </say-this>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+        </init>
+    </group>
+    <group eventID="8" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="8" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="8" id="-1">
+                                <set-val-0-15 comment="false" x="0" y="0">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-15>
+                                <custom-code comment="false" x="0" y="0">
+                                    <int id="0" val="engine.hudLayer.addChildAt(video, 0);"/>
+                                </custom-code>
+                            </group>
+                            <get-val-0-15 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+            <int id="0" val="ShowVideo"/>
+        </event-custom>
+    </group>
+    <group eventID="9" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="9" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="9" id="-1">
+                                <set-val-0-15 comment="false" x="0" y="0">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-15>
+                                <custom-code comment="false" x="0" y="0">
+                                    <int id="0" val="engine.hudLayer.removeChildAt(0);"/>
+                                </custom-code>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-0-15 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+            <int id="0" val="HideVideo"/>
+        </event-custom>
+    </group>
+    <group eventID="10" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="10" id="-1">
+                        <custom-code comment="false" x="0" y="0">
+                            <int id="0" val="stream.play(_VideoURL);&#9; "/>
+                        </custom-code>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+            <int id="0" val="PlayVideo"/>
+        </event-custom>
+    </group>
+    <group eventID="12" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="12" id="-1">
+                        <custom-code comment="false" x="0" y="0">
+                            <int id="0" val="stream.togglePause();"/>
+                        </custom-code>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+            <int id="0" val="PauseVideo"/>
+        </event-custom>
+    </group>
+    <group eventID="13" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <do-on-platform comment="false" x="0" y="0">
+                    <group eventID="13" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="13" id="-1">
+                                <set-val-0-13 comment="false" x="0" y="0">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-13>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <not comment="false" id="0" x="0" y="0">
+                                    <is-transitioning comment="false" id="0" x="0" y="0"/>
+                                </not>
+                                <get-val-0-13 comment="false" id="1" x="0" y="0"/>
+                            </and>
+                        </if>
+                        <if comment="false" x="0" y="0">
+                            <group eventID="13" id="-1">
+                                <set-val-0-14 comment="false" x="0" y="0">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-14>
+                                <say-this comment="false" x="0" y="0">
+                                    <int id="0" val="HideVideo"/>
+                                </say-this>
+                                <code-long comment="false" x="0" y="0">
+                                    <int id="0" val="stream.close();&#10;connection.close();"/>
+                                </code-long>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <is-transitioning comment="false" id="0" x="0" y="0"/>
+                                <and comment="false" id="1" x="0" y="0">
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                                    </not>
+                                    <not comment="false" id="1" x="0" y="0">
+                                        <get-val-0-14 comment="false" id="0" x="0" y="0"/>
+                                    </not>
+                                </and>
+                            </and>
+                        </if>
+                    </group>
+                    <int id="0" val="0"/>
+                </do-on-platform>
+            </group>
+        </step>
+    </group>
+</groups>

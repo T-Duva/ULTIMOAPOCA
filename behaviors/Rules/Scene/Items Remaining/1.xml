@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-1"
+    blocktype="NORMAL"
+    code="(sayToScene(&quot;Items Remaining&quot;, &quot;_customBlock_GetItemsRemaining&quot;) : Float)"
+    desc=""
+    global="false"
+    gui="Number Of Items Remaining"
+    id="1"
+    message="GetItemsRemaining"
+    name="GetItemsRemaining"
+    oid="-1"
+    return="number"
+    shared="false"
+    snippetID="0"/>

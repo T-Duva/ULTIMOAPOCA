@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<custom-block
+    blocktag="custom-4"
+    blocktype="NORMAL"
+    code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetXOffset&quot;) : Float)"
+    desc=""
+    global="false"
+    gui="Get Score Drawing X Offset"
+    id="4"
+    message="GetXOffset"
+    name="GetXOffset"
+    oid="-1"
+    return="number"
+    shared="false"
+    snippetID="0"/>

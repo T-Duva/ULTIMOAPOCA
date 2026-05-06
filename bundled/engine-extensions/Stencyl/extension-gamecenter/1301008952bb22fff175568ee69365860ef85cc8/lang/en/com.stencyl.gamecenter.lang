@@ -1,0 +1,44 @@
+gamecenter-achievement-banner=show banner with title %0 and message %1 [c:gamecenter]
+gamecenter-achievement-banner.help=Show a Game Center achievement banner
+
+gamecenter-achievement-show-reset=%0 achievements [c:gamecenter]
+gamecenter-achievement-show-reset.help=Show achievements board or erase Player's achievement data for this game
+
+gamecenter-achievement-submit=report achievement %0 as %1 [pct] complete [c:gamecenter]
+gamecenter-achievement-submit.help=Submit an achievement to Game Center
+
+gamecenter-board-show=show leaderboard for %0 [c:gamecenter]
+gamecenter-board-show.help=Opens up the master leaderboard in Game Center
+
+gamecenter-board-submit=submit score %0 to [c:gamecenter] with ID %1
+gamecenter-board-submit.help=Submits a score to Game Center
+
+gamecenter-enabled=Game Center is started [c:gamecenter]
+gamecenter-enabled.help=Returns true if Game Center is initialized
+
+gamecenter-id-name=%0 of [c:gamecenter] player
+gamecenter-id-name.help=Display Name or Internal ID
+
+gamecenter-init=start Game Center [c:gamecenter]
+gamecenter-init.help=Initializes Game Center API
+
+event-mobile-gamecenter=when %0 [e:dash] %2
+event-mobile-gamecenter.help=When the Game Center is accessed.
+
+mobile-gamecenter-id=board / achievement ID [c:gamecenter]
+mobile-gamecenter-id.help=The ID of the board or the achievement that triggered this event.
+
+events.defs.gamecenter=Game Center
+
+show=show
+reset=reset
+name=name
+ID=ID
+event.mobile.gamecenter.ready=Game Center is started
+event.mobile.gamecenter.score=Game Center receives a score
+event.mobile.gamecenter.achieve=Game Center receives an achievement
+event.mobile.gamecenter.reset=Game Center reset achievements
+event.mobile.gamecenter.ready.fail=Game Center failed to start
+event.mobile.gamecenter.score.fail=Game Center failed to receive a score
+event.mobile.gamecenter.achieve.fail=Game Center failed to receive an achievement
+event.mobile.gamecenter.reset.fail=Game Center failed to reset achievements

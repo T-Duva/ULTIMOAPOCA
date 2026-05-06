@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: openfl
+version: d9d2b74fc6d2d83e098ccc3ab38b75937e17a53b
+tags: stencyl_engine

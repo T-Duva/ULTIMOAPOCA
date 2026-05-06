@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="2" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-0-2 comment="false" x="0" y="0">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-2>
+                <setvel comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <to-degreesradians comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <atan2 comment="false" id="1" x="0" y="0">
+                            <get-dxy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-dxy>
+                            <get-dxy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-dxy>
+                        </atan2>
+                    </to-degreesradians>
+                    <get-val-0-1 comment="false" id="2" x="0" y="0"/>
+                </setvel>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <set-val-0-1 comment="false" x="0" y="0">
+                            <sqrt comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <pow comment="false" id="0" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-dxy>
+                                        <int id="1" val="2"/>
+                                    </pow>
+                                    <pow comment="false" id="1" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-dxy>
+                                        <int id="1" val="2"/>
+                                    </pow>
+                                </plus>
+                            </sqrt>
+                        </set-val-0-1>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+                <set-val-0-2 comment="false" x="0" y="0">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-0-2>
+            </group>
+        </step>
+    </group>
+</groups>

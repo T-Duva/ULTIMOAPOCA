@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.stencyl.extension.google" android:versionCode="::APP_BUILD_NUMBER::" android:versionName="::APP_VERSION::" android:installLocation="::ANDROID_INSTALL_LOCATION::">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />-->
+    
+	<application>
+        <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
+        <meta-data android:value="@string/app_id" android:name="com.google.android.gms.games.APP_ID"/>
+        <meta-data android:value="@string/app_id" android:name="com.google.android.gms.appstate.APP_ID"/> -->
+        
+	</application>
+	
+	
+</manifest>

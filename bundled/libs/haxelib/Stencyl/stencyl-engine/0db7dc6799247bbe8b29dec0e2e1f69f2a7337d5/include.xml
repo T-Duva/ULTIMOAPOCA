@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<haxeflag name="--remap" value="nme:openfl" />
+	<define name="openfl-enable-handle-error" if="debug" />
+	<set name="openfl-no-default-fonts" if="cppia" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="tweenxcore" />
+	<haxelib name="debug-console" />
+	<haxelib name="polygonal-ds" />
+	<haxelib name="box2d" />
+	<haxelib name="cloner" />
+	<haxelib name="mbs" />
+	<haxelib name="hscript" unless="cppia" />
+	<haxelib name="format" if="flash" unless="publishing" />
+	<source path="src-override" />
+
+	<template path="templates" />
+	
+	<haxedef name="actuate_manual_time" />
+	<haxedef name="actuate_manual_update" />
+	<haxedef name="hscriptPos" unless="publishing" />
+	<haxedef name="lime_disable_assets_version" />
+
+	<!--<library handler="stencyl" type="stencyl-assets" />
+	<library name="stencyl" type="stencyl-assets" preload="true" />-->
+
+	<section if="flash">
+	
+		<haxeflag name="-D network-sandbox" />
+		<haxeflag name="-D as3_native" />
+		<haxeflag name="-D swf-directblit" />
+		
+	</section>
+
+	<section if="cppia">
+		
+		<target name="stencyl-cppia" handler="stencyl-cppia" />
+		<haxelib name="stencyl-cppia" />
+		
+	</section>
+
+</project>

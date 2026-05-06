@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+	<service
+		classname="com.stencyl.kongregate.Kongregate"
+		label="Kongregate API"
+		provides="com.stencyl.Extension" />
+</services>

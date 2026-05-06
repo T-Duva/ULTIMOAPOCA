@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-0-35 comment="false" x="0" y="0">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <control eid="var" id="1" vid="34"/>
+                            </keystate>
+                        </as-number>
+                        <as-number comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <control eid="var" id="1" vid="33"/>
+                            </keystate>
+                        </as-number>
+                    </minus>
+                </set-val-0-35>
+                <set-val-0-36 comment="false" x="0" y="0">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <as-number comment="false" id="0" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <control eid="var" id="1" vid="32"/>
+                            </keystate>
+                        </as-number>
+                        <as-number comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <control eid="var" id="1" vid="31"/>
+                            </keystate>
+                        </as-number>
+                    </minus>
+                </set-val-0-36>
+                <if comment="false" x="0" y="0">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="3" id="-1">
+                                <push-shove comment="false" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-0-35 comment="false" id="2" x="0" y="0"/>
+                                    <get-val-0-36 comment="false" id="3" x="0" y="0"/>
+                                    <get-val-0-42 comment="false" id="4" x="0" y="0"/>
+                                </push-shove>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-44 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Gradually"/>
+                            </eq>
+                        </if>
+                        <else-if comment="false" x="0" y="0">
+                            <group eventID="3" id="-1">
+                                <push-shove comment="false" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-0-35 comment="false" id="2" x="0" y="0"/>
+                                    <get-val-0-36 comment="false" id="3" x="0" y="0"/>
+                                    <get-val-0-42 comment="false" id="4" x="0" y="0"/>
+                                </push-shove>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-44 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Instantly"/>
+                            </eq>
+                        </else-if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-0-35 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                            <eq comment="false" id="1" x="0" y="0">
+                                <get-val-0-36 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </and>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="4" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="0" y="0">
+                            <group eventID="4" id="-1">
+                                <set-stroke-color comment="false" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Game Debugger"/>
+                                        <int id="1" val="_CustomColor"/>
+                                    </scene-get-attribute>
+                                </set-stroke-color>
+                                <set-thickness comment="false" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="Game Debugger"/>
+                                        <int id="1" val="_StrokeThickness"/>
+                                    </scene-get-attribute>
+                                </set-thickness>
+                                <set-val-0-43 comment="false" x="0" y="0">
+                                    <sqrt comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <pow comment="false" id="0" x="0" y="0">
+                                                <get-val-0-35 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                            <pow comment="false" id="1" x="0" y="0">
+                                                <get-val-0-36 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                        </plus>
+                                    </sqrt>
+                                </set-val-0-43>
+                                <draw-line comment="false" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-wh comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-wh>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-0-42 comment="false" id="0" x="0" y="0"/>
+                                            <div comment="false" id="1" x="0" y="0">
+                                                <get-val-0-35 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-0-43 comment="false" id="1" x="0" y="0"/>
+                                            </div>
+                                        </times>
+                                    </minus>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-wh comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-wh>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <get-val-0-42 comment="false" id="0" x="0" y="0"/>
+                                            <div comment="false" id="1" x="0" y="0">
+                                                <get-val-0-36 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-0-43 comment="false" id="1" x="0" y="0"/>
+                                            </div>
+                                        </times>
+                                    </minus>
+                                    <get-wh comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-wh>
+                                    <get-wh comment="false" id="3" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-wh>
+                                </draw-line>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <and comment="false" id="0" x="0" y="0">
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-0-35 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                    <eq comment="false" id="1" x="0" y="0">
+                                        <get-val-0-36 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </eq>
+                                </and>
+                            </not>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <scene-has-snippet comment="false" id="0" x="0" y="0">
+                            <int id="0" val="Game Debugger"/>
+                        </scene-has-snippet>
+                        <as-boolean comment="false" id="1" x="0" y="0">
+                            <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                <int id="0" val="Game Debugger"/>
+                                <int id="1" val="_Enabled"/>
+                            </scene-get-attribute>
+                        </as-boolean>
+                    </and>
+                </if>
+            </group>
+        </draw>
+    </group>
+</groups>

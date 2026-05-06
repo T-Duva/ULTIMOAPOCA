@@ -1,0 +1,5 @@
+type: haxelib-github
+group: Stencyl
+name: cloner
+version: f7ea70c72006f9a435b1f7c4257e1d958a241f27
+tags: stencyl_engine
